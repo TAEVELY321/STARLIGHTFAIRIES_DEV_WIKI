@@ -7,7 +7,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 const chars = JSON.parse(read('assets/characters.json'));
 const pages = ['index','characters','world','story','systems','resources','guide','artwork','adv-guide','modeling-guide'].map(n=>n+'.html').concat(chars.map(c=>`characters/${c.id}.html`));
-let links = 0, records = 0;
+let links = 0, records = 0, volumes = 0;
 for(const file of pages) {
   const html = read(file);
   assert(html.startsWith('<!doctype html>'), `${file}: doctype`);
@@ -29,9 +29,22 @@ for(const c of chars) {
   const html = read(`characters/${c.id}.html`);
   const raw = read(`sources/${c.file}`).replace(/\r\n/g,'\n');
   const sourceChapters = [...raw.matchAll(/^####\s+(\d+)화[.\s]+([^\n]+)/gm)];
-  assert.equal(sourceChapters.length,50,`${c.id}: source chapter count`);
-  assert.equal((html.match(/id="chapter-\d+"/g)||[]).length,50,`${c.id}: output chapter count`);
-  assert.equal((html.match(/class="volume"/g)||[]).length,5,`${c.id}: volumes`);
+  const sourceVolumes = [...raw.matchAll(/^### 6\.\d+\./gm)];
+  if(!c.supporting) {
+    assert.equal(sourceChapters.length,50,`${c.id}: original chapter count`);
+    assert.equal(sourceVolumes.length,5,`${c.id}: original volumes`);
+  }
+  assert.equal((html.match(/id="chapter-\d+"/g)||[]).length,sourceChapters.length,`${c.id}: output chapter count`);
+  assert.equal((html.match(/class="volume"/g)||[]).length,sourceVolumes.length,`${c.id}: volumes`);
+  volumes += sourceVolumes.length;
+  if(c.supporting) {
+    assert(html.includes('관련 문서 기반 정리'),`${c.id}: source provenance`);
+    assert(!html.includes('data-portrait-tab'),`${c.id}: no main portrait form switch`);
+    assert.equal(html.includes('id="corruption"'),!!c.corrupted,`${c.id}: dedicated corruption section`);
+    assert.equal(html.includes('data-volumes="open"'),sourceVolumes.length>0,`${c.id}: no empty story controls`);
+    for(const id of c.references) assert(chars.some(other=>other.id===id),`${c.id}: valid source reference ${id}`);
+    for(const chapter of raw.split(/^#### /m).slice(1)) assert(chapter.includes('**구분:')&&chapter.includes('근거:'),`${c.id}: story type and source`);
+  }
   for(const m of sourceChapters) {
     assert(html.includes(`id="chapter-${m[1]}"`),`${c.id}: chapter ${m[1]} missing`);
     assert(html.includes(m[2].trim()),`${c.id}: chapter title ${m[2]} missing`);
@@ -70,13 +83,29 @@ for(const id of ['momoka','umiko','natsumi']) assert(!read(`characters/${id}.htm
 for(const id of ['hina','shizuki']) assert(art[id].body.length===1,`${id}: supplied adult modeling reference`);
 assert(read('index.html').includes('src="sources/branding/StarlightFairiesMainTitle.png"'));
 assert(read('index.html').includes('class="header-logo"'));
-console.log('PASS: 8 two-form selectors, 8 front views, 10 five-color palettes, ordered collapsible sheets, body slots and relocated branding assets.');
+console.log(`PASS: 8 two-form selectors, 8 front views, ${chars.length} five-color palettes, ordered collapsible sheets, body slots and relocated branding assets.`);
 vm.runInNewContext(read('assets/search-index.js'),context);
-assert.equal(context.window.STARFAIR_SEARCH.length,10);
+assert.equal(context.window.STARFAIR_SEARCH.length,chars.length);
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='shizuki').text.includes('다크니스 네뷸라'));
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='umiko').text.includes('로맨스 만화'));
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='kazuki').text.includes('외부 협력자'));
-console.log(`PASS: ${pages.length} pages, ${links} local links/assets, 10 character profiles, ${records} chapter records, 50 volume sections and search data.`);
+console.log(`PASS: ${pages.length} pages, ${links} local links/assets, ${chars.length} character profiles, ${records} chapter records, ${volumes} volume sections and search data.`);
+const supportingChapters = {
+  akari:[1,11,19,21,31,42,43,47,48],
+  minami:[1,2,48,50],
+  chiyo:[3,4,5,6,11,12,19,21,39,40,41,42,43,45,46,47,48,49,50],
+  riko:[7,8,10,48,50],
+  mai:[12,13,14,48,50],
+  nagisa:[]
+};
+assert.deepEqual(chars.filter(c=>c.supporting).map(c=>c.id),Object.keys(supportingChapters),'requested six supporting characters');
+for(const [id,chapters] of Object.entries(supportingChapters)) {
+  const html=read(`characters/${id}.html`);
+  assert.deepEqual([...html.matchAll(/id="chapter-(\d+)"/g)].map(m=>Number(m[1])),chapters,`${id}: confirmed appearances and mentions only`);
+}
+assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='minami').text.includes('브로큰 스완'));
+assert(read('characters/nagisa.html').includes('등장 화수 확인 대기'));
+console.log('PASS: six supporting profiles, confirmed chapter selection, four separate corruption sections and no portrait form toggles.');
 const production = JSON.parse(read('assets/resource-guide.json'));
 assert.equal(new Set(production.backgrounds.map(r=>r[0])).size,30,'background camera IDs');
 assert(production.variants.every(r=>production.backgrounds.some(bg=>bg[0]===r[0])),'variant parent exists');

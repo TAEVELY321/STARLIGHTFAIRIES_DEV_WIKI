@@ -16,7 +16,7 @@ class Element {
 const data=JSON.parse(fs.readFileSync(path.join(root,'assets/characters.json'),'utf8'));
 const indexContext={window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(root,'assets/search-index.js'),'utf8'),indexContext);
-const groups=['전체','페어리즈','흑성교단','협력자·조력자'];
+const groups=['전체',...new Set(data.map(c=>c.group))];
 const cards=data.map(c=>new Element({dataset:{character:c.id,group:c.group}}));
 const filters=groups.map(group=>new Element({dataset:{groupFilter:group}}));
 const q=new Element();
@@ -62,8 +62,15 @@ assert.equal(cards.filter(c=>!c.hidden).length,4,'Cult category includes four re
 q.value='존재하지않는검색어123';q.emit('input');
 assert.equal(items['empty-results'].hidden,false,'Empty query results are announced');
 reset.emit('click');
-assert.equal(cards.filter(c=>!c.hidden).length,10,'Reset restores all ten characters');
+assert.equal(cards.filter(c=>!c.hidden).length,data.length,'Reset restores all characters');
 assert.equal(select.value,'전체');
+filters.find(f=>f.dataset.groupFilter==='마을·여학원').emit('click');
+assert.equal(cards.filter(c=>!c.hidden).length,6,'Supporting category includes all six new characters');
+q.value='브로큰 스완';q.emit('input');
+assert.deepEqual(cards.filter(c=>!c.hidden).map(c=>c.dataset.character),['minami'],'Corruption name finds Minami within supporting category');
+q.value='시라이 치요';q.emit('input');
+assert(cards.some(c=>c.dataset.character==='chiyo'&&!c.hidden),'New character name is searchable');
+reset.emit('click');
 filters[1].emit('click');
 assert.equal(cards.filter(c=>!c.hidden).length,4,'Fairies chip filters four members');
 assert(sidebar.inert,'Closed mobile menu cannot receive focus');

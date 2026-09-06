@@ -6,7 +6,7 @@ import vm from 'node:vm';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 const chars = JSON.parse(read('assets/characters.json'));
-const pages = ['index','characters','world','story','systems','resources','guide','artwork'].map(n=>n+'.html').concat(chars.map(c=>`characters/${c.id}.html`));
+const pages = ['index','characters','world','story','systems','resources','guide','artwork','adv-guide','modeling-guide'].map(n=>n+'.html').concat(chars.map(c=>`characters/${c.id}.html`));
 let links = 0, records = 0;
 for(const file of pages) {
   const html = read(file);
@@ -77,3 +77,15 @@ assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='shizuki').text.includes('�
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='umiko').text.includes('로맨스 만화'));
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='kazuki').text.includes('외부 협력자'));
 console.log(`PASS: ${pages.length} pages, ${links} local links/assets, 10 character profiles, ${records} chapter records, 50 volume sections and search data.`);
+const production = JSON.parse(read('assets/resource-guide.json'));
+assert.equal(new Set(production.backgrounds.map(r=>r[0])).size,30,'background camera IDs');
+assert(production.variants.every(r=>production.backgrounds.some(bg=>bg[0]===r[0])),'variant parent exists');
+assert.equal(production.variants.reduce((n,r)=>n+Number(r[3]),0),24,'additional background states');
+assert.equal(production.mainStanding.reduce((n,r)=>n+Number(r[4]),0),26,'main standing sets');
+assert.equal(production.supportStanding.reduce((n,r)=>n+Number(r[2]),0),31,'support standing sets');
+assert.equal(production.extraStanding.reduce((n,r)=>n+Number(r[1]),0),14,'planned extra standing sets');
+assert.deepEqual(production.cgActs.flatMap(a=>a.rows.map(r=>Number(r[0]))),Array.from({length:50},(_,i)=>i+1),'CG budget includes every original chapter exactly once');
+for(const act of production.cgActs) assert.equal(act.rows.reduce((n,r)=>n+Number(r[1]),0),act.total,`Act ${act.act} subtotal`);
+assert.equal(production.cgActs.reduce((n,a)=>n+a.total,0),40,'full CG budget');
+assert.equal(production.cgActs.flatMap(a=>a.rows).find(r=>r[0]==='35')[1],'0','episode 35 animation has no duplicate still CG');
+console.log('PASS: production guide budgets, background references, 50 chapter allocations and animation exclusion.');

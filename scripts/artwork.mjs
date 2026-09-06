@@ -4,9 +4,9 @@ const esc = value => String(value).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt
 const urlPath = value => value.split('/').map(encodeURIComponent).join('/');
 const gray = ['#DADADA','#BEBEBE','#A0A0A0','#828282','#646464'];
 export function artworkHelpers(root, manifest) {
-  const sheetURL = (file,prefix) => `${prefix}sources/CharacterSheet/${urlPath(file)}`;
-  const dimensions = file => {
-    const buffer=fs.readFileSync(path.join(root,'sources/CharacterSheet',file));
+  const sheetURL = (file,prefix,source='CharacterSheet') => `${prefix}sources/${source}/${urlPath(file)}`;
+  const dimensions = (file,source='CharacterSheet') => {
+    const buffer=fs.readFileSync(path.join(root,'sources',source,file));
     if(buffer.toString('hex',0,8)!=='89504e470d0a1a0a') throw Error('Artwork must be PNG: '+file);
     return [buffer.readUInt32BE(16),buffer.readUInt32BE(20)];
   };
@@ -18,10 +18,10 @@ export function artworkHelpers(root, manifest) {
     return {...a, portraits:a.portraits || (toggle?labels.map(label=>({label,caption:label+' · 이미지 TBD'})):[{label:'대표 이미지',caption:'대표 이미지 TBD'}]),toggle};
   }
   function cropped(p,cropId,prefix) {
-    const [width,height]=dimensions(p.file);
+    const [width,height]=dimensions(p.file,p.source);
     const scaleHeight=2048*height/width;
     const clipping=p.clip?`<defs><clipPath id="${cropId}"><polygon points="${p.clip}"/></clipPath></defs>`:'';
-    return `<svg class="front-illustration" viewBox="${p.view.join(' ')}" role="img" aria-label="${esc(p.caption)} 정면" xmlns="http://www.w3.org/2000/svg">${clipping}<image href="${sheetURL(p.file,prefix)}" width="2048" height="${scaleHeight}"${p.clip?` clip-path="url(#${cropId})"`:''}/></svg>`;
+    return `<svg class="front-illustration" viewBox="${p.view.join(' ')}" role="img" aria-label="${esc(p.caption)} 정면" xmlns="http://www.w3.org/2000/svg">${clipping}<image href="${sheetURL(p.file,prefix,p.source)}" width="2048" height="${scaleHeight}"${p.clip?` clip-path="url(#${cropId})"`:''}/></svg>`;
   }
   function portrait(c,prefix='../') {
     const a=info(c);

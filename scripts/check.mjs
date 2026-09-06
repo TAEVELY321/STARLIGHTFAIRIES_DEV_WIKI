@@ -63,15 +63,17 @@ const gallery = read('artwork.html');
 for(const c of chars) {
   const html=read(`characters/${c.id}.html`);
   const toggle=['momoka','umiko','hina','shizuki','natsumi','kaori','yoru','yuuna'].includes(c.id);
-  assert.equal((html.match(/data-portrait-tab/g)||[]).length,toggle?2:0,`${c.id}: portrait toggle scope`);
+  assert.equal((html.match(/data-portrait-tab/g)||[]).length,c.id==='shizuki'?3:toggle?2:0,`${c.id}: portrait toggle scope`);
   assert.equal((html.match(/class="swatch"/g)||[]).length,5,`${c.id}: five palette colors`);
   assert(html.includes('class="character-artwork"')&&html.includes('class="sheet-group"'),`${c.id}: collapsible concept sheets`);
   assert(gallery.includes(`id="${c.id}"`),`${c.id}: gallery section`);
   if(art[c.id]) {
-    assert.equal(art[c.id].palette.length,5);
-    art[c.id].palette.forEach(color=>assert(/^#[A-F0-9]{6}$/.test(color)));
+    if(art[c.id].palette) {
+      assert.equal(art[c.id].palette.length,5);
+      art[c.id].palette.forEach(color=>assert(/^#[A-F0-9]{6}$/.test(color)));
+    } else assert(html.includes('회색은 TBD 자리 표시'),`${c.id}: unchanged fallback palette`);
     art[c.id].portraits.filter(p=>p.file).forEach(p=>{
-      const buffer=fs.readFileSync(path.join(root,'sources/CharacterSheet',p.file));
+      const buffer=fs.readFileSync(path.join(root,'sources',p.source || 'CharacterSheet',p.file));
       const scaleHeight=2048*buffer.readUInt32BE(20)/buffer.readUInt32BE(16);
       assert(p.view[0]>=0 && p.view[1]>=0 && p.view[0]+p.view[2]<=2048 && p.view[1]+p.view[3]<=scaleHeight,`${c.id}: front viewport within image`);
     });
@@ -87,7 +89,9 @@ for(const id of ['momoka','umiko','natsumi']) assert(!read(`characters/${id}.htm
 for(const id of ['hina','shizuki']) assert(art[id].body.length===1,`${id}: supplied adult modeling reference`);
 assert(read('index.html').includes('src="sources/branding/StarlightFairiesMainTitle.png"'));
 assert(read('index.html').includes('class="header-logo"'));
-console.log(`PASS: 8 two-form selectors, 8 front views, ${chars.length} five-color palettes, ordered collapsible sheets, body slots and relocated branding assets.`);
+assert.deepEqual(art.shizuki.portraits.map(p=>p.label),['변신 전','변신 후(다크니스)','변신 후(페어리즈)']);
+for(const id of ['momoka','umiko']) assert(art[id].portraits.every(p=>p.source==='CG' && /_(P01|T01)_E00\.png$/.test(p.file)),`${id}: approved CG portraits`);
+console.log(`PASS: 7 two-form selectors, Shizuki's three-form selector, CG portraits, ${chars.length} unchanged five-color palettes, ordered collapsible sheets and body slots.`);
 vm.runInNewContext(read('assets/search-index.js'),context);
 assert.equal(context.window.STARFAIR_SEARCH.length,chars.length);
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='shizuki').text.includes('다크니스 네뷸라'));

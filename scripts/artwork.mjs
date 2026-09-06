@@ -12,7 +12,8 @@ export function artworkHelpers(root, manifest) {
   };
   function info(c) {
     const a=manifest[c.id] || {};
-    const toggle=c.group==='페어리즈'||c.group==='흑성교단';
+    // A navigation category does not make external collaborators a transformed character.
+    const toggle=c.portraitToggle ?? (c.group==='페어리즈'||c.group==='흑성교단');
     const labels=c.group==='흑성교단'?['인간 형태','절광체 형태']:['변신 전','변신 후'];
     return {...a, portraits:a.portraits || (toggle?labels.map(label=>({label,caption:label+' · 이미지 TBD'})):[{label:'대표 이미지',caption:'대표 이미지 TBD'}]),toggle};
   }

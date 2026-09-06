@@ -58,14 +58,16 @@ assert(cards.find(c=>c.dataset.character==='shizuki').hidden===false,'Alias from
 q.value='로맨스 만화';q.emit('input');
 assert.deepEqual(cards.filter(c=>!c.hidden).map(c=>c.dataset.character),['umiko'],'Full text phrase finds source-backed hobby');
 q.value='';select.value='흑성교단';select.emit('change');
-assert.equal(cards.filter(c=>!c.hidden).length,4,'Cult category includes four related character documents');
+assert.deepEqual(cards.filter(c=>!c.hidden).map(c=>c.dataset.character),['natsumi','kaori','yoru','yuuna','kazuki'],'Cult filter includes Kazuki with the four cult characters');
+select.value='협력자·조력자';select.emit('change');
+assert.deepEqual(cards.filter(c=>!c.hidden).map(c=>c.dataset.character),['spectra','akari'],'Ally filter contains Spectra and Akari, excluding Kazuki');
 q.value='존재하지않는검색어123';q.emit('input');
 assert.equal(items['empty-results'].hidden,false,'Empty query results are announced');
 reset.emit('click');
 assert.equal(cards.filter(c=>!c.hidden).length,data.length,'Reset restores all characters');
 assert.equal(select.value,'전체');
 filters.find(f=>f.dataset.groupFilter==='마을·여학원').emit('click');
-assert.equal(cards.filter(c=>!c.hidden).length,6,'Supporting category includes all six new characters');
+assert.deepEqual(cards.filter(c=>!c.hidden).map(c=>c.dataset.character),['minami','chiyo','riko','mai','nagisa'],'Town and school filter excludes Akari after reclassification');
 q.value='브로큰 스완';q.emit('input');
 assert.deepEqual(cards.filter(c=>!c.hidden).map(c=>c.dataset.character),['minami'],'Corruption name finds Minami within supporting category');
 q.value='시라이 치요';q.emit('input');

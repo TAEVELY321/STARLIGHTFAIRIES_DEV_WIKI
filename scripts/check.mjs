@@ -58,7 +58,7 @@ const art = JSON.parse(read('assets/artwork.json'));
 const gallery = read('artwork.html');
 for(const c of chars) {
   const html=read(`characters/${c.id}.html`);
-  const toggle=c.group==='페어리즈'||c.group==='흑성교단';
+  const toggle=['momoka','umiko','hina','shizuki','natsumi','kaori','yoru','yuuna'].includes(c.id);
   assert.equal((html.match(/data-portrait-tab/g)||[]).length,toggle?2:0,`${c.id}: portrait toggle scope`);
   assert.equal((html.match(/class="swatch"/g)||[]).length,5,`${c.id}: five palette colors`);
   assert(html.includes('class="character-artwork"')&&html.includes('class="sheet-group"'),`${c.id}: collapsible concept sheets`);
@@ -73,7 +73,7 @@ for(const c of chars) {
     });
   } else assert(html.includes('회색은 TBD 자리 표시'),`${c.id}: gray fallback palette`);
   const section=html.slice(html.indexOf('id="artwork"'),html.indexOf('id="overview"'));
-  const first=section.indexOf('<summary>'+(c.group==='페어리즈'?'변신 전':c.group==='흑성교단'?'인간 형태':'시트'));
+  const first=section.indexOf('<summary>'+(c.group==='페어리즈'?'변신 전':toggle?'인간 형태':'시트'));
   const body=section.indexOf('<summary>바디');
   assert(first>=0 && body>first,`${c.id}: body follows primary sheet`);
   if(toggle) assert(section.indexOf('<summary>'+(c.group==='페어리즈'?'변신 후':'절광체 형태'))<body,`${c.id}: transformed sheet before body`);

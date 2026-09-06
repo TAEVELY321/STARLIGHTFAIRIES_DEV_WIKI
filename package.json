@@ -1,0 +1,7 @@
+{
+  "name": "starlightfairies-dev-wiki",
+  "private": true,
+  "type": "module",
+  "scripts": {"build": "node scripts/build.mjs", "check": "node scripts/check.mjs && node scripts/check-interactions.mjs", "preview": "node scripts/serve.mjs"},
+  "devDependencies": {"marked": "17.0.5"}
+}

@@ -1,328 +1,1018 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="사쿠라이 모모카 — 스타라이트 페어리즈 내부 개발용 위키. 원작소설 1~5권 설정과 2D ADV·3D 턴제 전투 제작 자료."><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#ab2867"><title>사쿠라이 모모카 | 스타라이트 페어리즈 개발 위키</title><link rel="icon" href="../sources/branding/StarlightFairiesLogo.png"><link rel="stylesheet" href="../assets/style.css"><script defer src="../assets/app.js"></script></head>
-<body id="top"><a class="skip" href="#content">본문으로 건너뛰기</a><header class="topbar"><div class="topbar-inner"><button class="menu-button" type="button" aria-label="문서 메뉴 열기" aria-controls="sidebar" aria-expanded="false">☰</button><a class="brand" href="../index.html"><img class="header-logo" src="../sources/branding/StarlightFairiesLogo.png" alt="스타라이트 페어리즈"><span class="brand-caption">DEV WIKI</span></a><form class="search" action="../characters.html" role="search"><label class="sr-only" for="global-search">캐릭터 문서 검색</label><input id="global-search" name="q" type="search" placeholder="캐릭터·변신명·설정 검색" autocomplete="off"><button type="submit">검색</button></form><span class="internal-label">INTERNAL DOCUMENTS</span><button class="theme-button" type="button" aria-label="어두운 테마로 변경" aria-pressed="false">◐</button></div></header>
-<div class="layout"><aside class="sidebar" id="sidebar"><nav aria-label="주요 문서"><p class="nav-heading">프로젝트</p><a class="nav-link "  href="../index.html"><span class="nav-symbol" aria-hidden="true">⌂</span>대문</a><a class="nav-link active" aria-current="page" href="../characters.html"><span class="nav-symbol" aria-hidden="true">♧</span>등장인물</a><p class="nav-heading">원작과 게임</p><a class="nav-link "  href="../world.html"><span class="nav-symbol" aria-hidden="true">◇</span>세계관·용어</a><a class="nav-link "  href="../story.html"><span class="nav-symbol" aria-hidden="true">▤</span>원작 1~5권</a><a class="nav-link "  href="../systems.html"><span class="nav-symbol" aria-hidden="true">▣</span>게임 기획</a><p class="nav-heading">개발 자료</p><a class="nav-link "  href="../artwork.html"><span class="nav-symbol" aria-hidden="true">▧</span>캐릭터 설정화</a><a class="nav-link "  href="../resources.html"><span class="nav-symbol" aria-hidden="true">▦</span>리소스 제작 기준</a><a class="nav-link "  href="../adv-guide.html"><span class="nav-symbol" aria-hidden="true">▧</span>ADV·2D 제작 가이드</a><a class="nav-link "  href="../modeling-guide.html"><span class="nav-symbol" aria-hidden="true">◇</span>3D 모델링 가이드</a><a class="nav-link "  href="../guide.html"><span class="nav-symbol" aria-hidden="true">≡</span>자료·편집 안내</a><p class="nav-heading">스타라이트 페어리즈</p><a class="nav-link" href="../characters/momoka.html"><span class="nav-symbol" aria-hidden="true" style="color:#bc3976">✦</span>사쿠라이 모모카</a><a class="nav-link" href="../characters/umiko.html"><span class="nav-symbol" aria-hidden="true" style="color:#236ca5">✦</span>시미즈 우미코</a><a class="nav-link" href="../characters/hina.html"><span class="nav-symbol" aria-hidden="true" style="color:#a56b16">✦</span>미츠하라 히나</a><a class="nav-link" href="../characters/shizuki.html"><span class="nav-symbol" aria-hidden="true" style="color:#7952b0">✦</span>호시조라 시즈키</a></nav><div class="sidebar-brand"><img src="../sources/branding/BlossomGamesLogo.png" alt="Blossom Games"><span>원작 1–5권 · 게임 개발 자료</span></div></aside><div class="scrim" aria-hidden="true"></div>
-<main class="main" id="content"><nav class="breadcrumbs" aria-label="현재 위치"><a href="../index.html">스타라이트 페어리즈</a><span>›</span><a href="../characters.html">등장인물</a><span>›</span><span>사쿠라이 모모카</span></nav><article class="article"><header class="article-heading"><span class="eyebrow">CHARACTER DOCUMENT · MOMOKA</span><h1>사쿠라이 모모카</h1><p class="subtitle">페어리 로제트</p><div class="meta"><span>기준 · 원작소설 1~5권</span><span>게임 · 2D ADV + 3D 턴제 전투</span><span>정리 · 2026.09.06</span></div></header><div class="article-layout"><div class="article-body"><div class="notice"><strong>스포일러 안내</strong><p>원작소설 1~5권의 정체·결말을 포함합니다. 작중 행적은 원작 기준이며, 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있습니다.</p></div><div class="character-top" style="--character:#bc3976"><div><div class="summary-copy"><p>《스타라이트 페어리즈》의 주인공. 호시노미야 여학원에 다니며 사랑의 별빛을 쓰는 페어리 로제트로 싸운다. 어머니에게 빌린 브로치를 지닌 채 미나미의 암흑게이트에 들어간 것이 첫 각성의 계기다. 처음부터 다른 사람의 마음을 정확히 아는 인물이 아니라, 좋은 뜻의 격려도 상처가 될 수 있음을 배우는 인물이다.</p>
-</div><div class="tag-row"><span class="badge pink">원작소설 직접 대조</span><span class="badge ">신장·체중 반영</span><span class="badge ">가상 캐스팅 ≠ 확정 성우</span></div><p class="source-ref">출처: 원작소설 1~5권 · 권·화 근거는 본문 참조</p></div><aside class="infobox" aria-label="캐릭터 기본 정보"><div class="box-title">사쿠라이 모모카</div><div class="portrait-switch" data-portrait-switch><div class="portrait-tabs" role="tablist" aria-label="사쿠라이 모모카 모습 선택"><button type="button" role="tab" id="momoka-tab-0" aria-selected="true" aria-controls="momoka-portrait-0" tabindex="0" data-portrait-tab>변신 전</button><button type="button" role="tab" id="momoka-tab-1" aria-selected="false" aria-controls="momoka-portrait-1" tabindex="-1" data-portrait-tab>변신 후</button></div><div class="portrait-panel" id="momoka-portrait-0" role="tabpanel" aria-labelledby="momoka-tab-0" tabindex="0" ><div class="front-frame"><svg class="front-illustration" viewBox="90 75 660 1080" role="img" aria-label="사쿠라이 모모카 · 동복 정면" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="momoka-clip-0"><polygon points="265,75 545,75 545,330 750,560 750,1155 90,1155 90,440 265,300"/></clipPath></defs><image href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" width="2048" height="1174.8726860596903" clip-path="url(#momoka-clip-0)"/></svg></div><p class="portrait-caption">사쿠라이 모모카 · 동복</p></div><div class="portrait-panel" id="momoka-portrait-1" role="tabpanel" aria-labelledby="momoka-tab-1" tabindex="0" hidden><div class="front-frame"><svg class="front-illustration" viewBox="70 48 695 1110" role="img" aria-label="페어리 로제트 정면" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="momoka-clip-1"><polygon points="250,48 585,48 585,350 765,520 765,1158 70,1158 70,330 250,245"/></clipPath></defs><image href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png" width="2048" height="1174.8726860596903" clip-path="url(#momoka-clip-1)"/></svg></div><p class="portrait-caption">페어리 로제트</p></div><a class="artwork-shortcut" href="../artwork.html#momoka">설정화·바디 시트 보기 →</a></div><dl class="kv"><dt>이름</dt><dd>사쿠라이 모모카</dd><dt>변신·이명</dt><dd>페어리 로제트</dd><dt>연령</dt><dd>17세(호시노미야 여학원 2학년)</dd><dt>신장</dt><dd>160 cm</dd><dt>체중</dt><dd>45 kg</dd><dt>상징</dt><dd>사랑</dd><dt>구분</dt><dd>페어리즈</dd><dt>첫 등장</dt><dd>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</dd></dl></aside></div><section class="section" id="profile"><h2><span class="section-number">1.</span>기본 프로필</h2><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">문서 ID</th><td><code>momoka</code></td></tr><tr><th class="label" scope="row">이름</th><td>사쿠라이 모모카</td></tr><tr><th class="label" scope="row">성별</th><td>여성</td></tr><tr><th class="label" scope="row">연령</th><td>17세(호시노미야 여학원 2학년)</td></tr><tr><th class="label" scope="row">신장</th><td>160 cm</td></tr><tr><th class="label" scope="row">체중</th><td>45 kg</td></tr><tr><th class="label" scope="row">신체정보 출처</th><td>사용자 제공 제작 설정 · 2026.09.06</td></tr><tr><th class="label" scope="row">생일</th><td>4월 15일</td></tr><tr><th class="label" scope="row">가족</th><td>사쿠라이 마사히로(아버지), 사쿠라이 아카리(어머니)</td></tr><tr><th class="label" scope="row">상징 모티브</th><td>로제트 성운</td></tr><tr><th class="label" scope="row">상징색</th><td>핑크</td></tr><tr><th class="label" scope="row">계승한 힘</th><td>사랑</td></tr><tr><th class="label" scope="row">주요 출연작</th><td>《스타라이트 페어리즈》</td></tr><tr><th class="label" scope="row">인물 유형</th><td>주연, 주인공</td></tr><tr><th class="label" scope="row">변신체</th><td>페어리 로제트, 페어리 로제트 스펙트럼, 루미너스 변형</td></tr><tr><th class="label" scope="row">변신 타입</th><td>페어리즈</td></tr><tr><th class="label" scope="row">좋아하는 것</th><td>스타라이트 페어리즈 구성원, 딸기와 딸기 계열 음료, 친구들과 보내는 일상, 별빛전설, 단체 변신 포즈·사진 촬영(본문 행동 기준)</td></tr><tr><th class="label" scope="row">싫어하는 것</th><td>벌(기존 프로필 명시). 가치관상 거부하는 일: 상대의 선택을 빼앗는 것, 한 사람을 역할이나 실패만으로 단정하는 것(성장 서사 요약)</td></tr><tr><th class="label" scope="row">즐겨 마시는 음료</th><td>딸기라테, 딸기소다, 딸기우유</td></tr><tr><th class="label" scope="row">생활상의 약점</th><td>늦잠·지각, 정리정돈·준비물 관리, 감정이 앞서는 성급한 행동</td></tr><tr><th class="label" scope="row">관계·일상 키워드</th><td>치요와 지각 트윈즈, 나기사의 카페, 팀 비밀회의·단체 포즈, 친구의 이름과 일상을 기억하기</td></tr><tr><th class="label" scope="row">첫 등장</th><td>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</td></tr><tr><th class="label" scope="row">성우(가상 캐스팅)</th><td>이토 미쿠(츠루마키 코코로 스타일)</td></tr><tr><th class="label" scope="row">게임 확정 성우</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">컬러 팔레트</th><td><div class="palette" aria-label="사쿠라이 모모카 5색 참고 팔레트"><div class="palette-chip"><span class="swatch" style="background:#FBDCE3" aria-hidden="true"></span><code>#FBDCE3</code></div><div class="palette-chip"><span class="swatch" style="background:#F36891" aria-hidden="true"></span><code>#F36891</code></div><div class="palette-chip"><span class="swatch" style="background:#37384F" aria-hidden="true"></span><code>#37384F</code></div><div class="palette-chip"><span class="swatch" style="background:#51BBC7" aria-hidden="true"></span><code>#51BBC7</code></div><div class="palette-chip"><span class="swatch" style="background:#CDBDA6" aria-hidden="true"></span><code>#CDBDA6</code></div></div><p class="palette-note">이미지 기반 추정 · 교복·로제트 시트의 머리, 분홍 장식, 교복, 눈, 금색 장식에서 추정. 확정 색상 규격은 TBD.</p></td></tr></tbody></table></div></section><section class="section" id="production"><h2><span class="section-number">2.</span>리소스 제작용 프로필</h2><p class="muted small">신체 수치는 기본 프로필의 사용자 제공 제작 설정을 따르며, 기재하지 않은 항목은 추정하지 않습니다. 성격·모에요소는 원문 묘사를 바탕으로 묶은 제작용 분류이며, 추가 공식 설정을 의미하지 않습니다.</p><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">신장</th><td>160 cm</td></tr><tr><th class="label" scope="row">체중</th><td>45 kg</td></tr><tr><th class="label" scope="row">쓰리사이즈 (B / W / H)</th><td><span class="badge tbd">TBD</span> <span class="muted">cm</span></td></tr><tr><th class="label" scope="row">혈액형</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">체형·등신·상대 스케일</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">헤어</th><td>분홍색 / 변신 후 두 갈래로 묶음</td></tr><tr><th class="label" scope="row">눈동자</th><td>푸른색</td></tr><tr><th class="label" scope="row">성격 키워드</th><td>명랑함 · 공감 · 집념 · 직감 <span class="badge ">원문 기반 요약</span></td></tr><tr><th class="label" scope="row">모에요소·캐릭터 속성</th><td>밝은 주인공 · 마법소녀 · 변신 후 트윈테일 <span class="badge ">제작용 분류</span></td></tr><tr><th class="label" scope="row">무기·주요 소품</th><td>분홍빛 지팡이 · 하트 모양 브로치</td></tr><tr><th class="label" scope="row">색상 수치·소재 규격</th><td><span class="badge tbd">TBD</span> <span class="muted">원문 색상명은 기본 프로필·특징 참조</span></td></tr><tr><th class="label" scope="row">게임 리소스 경로·담당자</th><td><span class="badge tbd">TBD</span></td></tr></tbody></table></div><h3>형태·의상 구분</h3><p class="muted small">원작에 등장하는 형태를 정리했습니다. 게임에서 필요한 모델·스탠딩·차분의 범위는 TBD입니다.</p><div class="form-line"><span>일상·교복</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>페어리 로제트</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>페어리 로제트 스펙트럼</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>루미너스 변형</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="notice"><strong>디자인 메모</strong><p>스펙트럼은 색을 혼합하지 않고 각자의 색을 유지한다. 루미너스 변형은 새 의상 없이 기존 외형 전체가 발광한다.</p></div><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">ADV</th><td>공통 규격·추천 수량: <a href="../adv-guide.html#standing">ADV·2D 제작 가이드</a>. 캐릭터별 발주·완료 상태: <span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">3D 전투</th><td><a href="../modeling-guide.html">파츠 분리·전체 바디・Shape Key 가이드</a>. 리깅・VFX・소켓・성능 예산: <span class="badge tbd">TBD</span></td></tr></tbody></table></div></section><section class="section" id="artwork"><h2><span class="section-number">자료.</span>설정화</h2><details class="character-artwork"><summary>캐릭터 시트 펼치기 <span class="badge">형태별·바디</span></summary><div class="character-artwork-content"><details class="sheet-group"><summary>변신 전<span class="badge">2개 시트</span></summary><div class="sheet-content"><figure class="sheet-figure"><a href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer" aria-label="동복 원본 크기로 열기"><img class="sheet-image" src="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" alt="동복 전체 설정화" loading="lazy" decoding="async"></a><figcaption>동복 <a href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a></figcaption></figure><figure class="sheet-figure"><a href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer" aria-label="하복 원본 크기로 열기"><img class="sheet-image" src="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" alt="하복 전체 설정화" loading="lazy" decoding="async"></a><figcaption>하복 <a href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a></figcaption></figure></div></details><details class="sheet-group"><summary>변신 후<span class="badge">1개 시트</span></summary><div class="sheet-content"><figure class="sheet-figure"><a href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer" aria-label="페어리 로제트 원본 크기로 열기"><img class="sheet-image" src="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png" alt="페어리 로제트 전체 설정화" loading="lazy" decoding="async"></a><figcaption>페어리 로제트 <a href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a></figcaption></figure></div></details><details class="sheet-group"><summary>바디<span class="badge">TBD</span></summary><div class="sheet-content"><div class="sheet-tbd"><strong>TBD</strong><p>의복을 착용한 체형 참고 시트 TBD</p></div></div></details><p class="small"><a href="../artwork.html#momoka">설정화 모음 페이지에서 보기 →</a></p></div></details></section><section class="section" id="overview"><h2><span class="section-number">3.</span>개요</h2><div class="prose"><p>《스타라이트 페어리즈》의 주인공. 호시노미야 여학원에 다니며 사랑의 별빛을 쓰는 페어리 로제트로 싸운다. 어머니에게 빌린 브로치를 지닌 채 미나미의 암흑게이트에 들어간 것이 첫 각성의 계기다. 처음부터 다른 사람의 마음을 정확히 아는 인물이 아니라, 좋은 뜻의 격려도 상처가 될 수 있음을 배우는 인물이다.</p>
-<p>서사의 중심은 ‘사랑하면 반드시 구할 수 있다’는 확신에서 벗어나 상대의 답을 듣는 과정이다. 치요에게는 글을 쓰는 능력과 우정을 분리하고, 유우나에게는 잘못에 대한 책임과 친구로서의 마음을 함께 인정한다. 마지막에는 자신이 원하는 생환과 유우나의 선택을 구분하며 상실 뒤에도 관계의 의미를 지킨다. [원작 1권 1·5<del>6화, 5권 42</del>44·49~50화]</p>
-</div></section><section class="section" id="traits"><h2><span class="section-number">4.</span>특징</h2><div class="prose"><h3>4.1. 성격과 변화</h3>
-<p>명랑하고 먼저 다가가며 떠오른 일을 곧바로 행동에 옮긴다. 치요에게 발표를 권하거나 미나미에게 무대 복귀를 격려할 때도 상대가 원하는 답을 충분히 묻지 못한다. 하지만 자신의 말이 상처가 되었음을 알면 변명하기보다 사과하고 접근 방식을 바꾼다. 직감적인 공감과 끝까지 남는 집념이 강점이며, 선의만으로 결과를 약속하려는 성급함이 약점이다. [1권 1·3·6화]</p>
-<h3>4.2. 일상·취향과 연기 단서</h3>
-<p>등교 지각과 흐트러진 준비로 우미코에게 자주 지적받는다. 방에는 별·꽃 장식, 작은 망원경과 별 지도, 인형과 책이 함께 놓이며 비밀회의에서도 팀의 소개 동작부터 고민한다. 딸기 소다·라테 등 딸기 계열 음료를 고르는 장면이 있다. 이러한 행동은 원작의 생활 묘사이며, 별도로 제공된 취향 설정 전체가 소설에서 직접 진술된다는 뜻은 아니다. [1권 1~2화, 2권 11·19화]</p>
-<h3>4.3. 사람을 보는 방식</h3>
-<p>유우나가 적이라는 사실을 알고도 치요를 구한 행동을 지우지 않는다. 동시에 친구라는 이유로 거짓말과 공격을 괜찮다고 하지도 않는다. 분노·애정·두려움이 함께 존재하는 모습을 연기해야 하며, 후반의 침착함을 초반부터 완성된 통찰로 표현하지 않는다. [2권 20화, 5권 42~45화]</p>
-<h3>4.4. 좋아하는 것·싫어하는 것</h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>구분</th>
-<th>내용</th>
-<th>근거와 적용 범위</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>제공 프로필의 기호</td>
-<td>딸기</td>
-<td>기존 사용자 제공 개별 문서의 설정을 유지한다. 원작에도 딸기 계열 음료를 고르는 장면이 있으나 모든 단 음식을 좋아한다고 확대하지 않는다.</td>
-</tr>
-<tr>
-<td>제공 프로필의 기피</td>
-<td>벌</td>
-<td>기존 설정을 보존한다. 소설에서 구체적인 공포 계기나 알레르기가 확인된 것은 아니므로 해당 항목은 TBD다.</td>
-</tr>
-<tr>
-<td>원작의 애착</td>
-<td>치요의 이야기·친구들과의 학교와 카페</td>
-<td>1권 3~6화, 2권 11·19화, 5권 45·50화. 작품의 성과와 우정의 조건을 구분하며 일상을 함께하고 싶어 한다.</td>
-</tr>
-<tr>
-<td>원작의 즐거움</td>
-<td>팀 소개 동작·사진·별빛전설</td>
-<td>1권 1화, 2권 11화, 4권 31화. 책임감과 함께 동경하던 천사의 모습을 즐기는 면이 있다.</td>
-</tr>
-<tr>
-<td>성장에 따른 가치관</td>
-<td>타인의 답을 역할과 실패로 단정하는 일을 거부</td>
-<td>5권 42~44화. 처음부터 완성된 취향 목록이 아니라 시행착오로 얻은 태도다.</td>
-</tr>
-</tbody></table></div>
-<p>늦잠·정리정돈·준비물 누락은 생활상의 약점이며 싫어하는 대상과는 다르다. 우미코와 말다툼한다는 이유로 규칙이나 계획성 자체를 싫어한다고 쓰지 않는다.</p>
-<h3>4.5. 외형·제작 설정 보존</h3>
-<p>아래는 기존 개별 캐릭터 문서의 상세 외형 설정을 보존한 제작 참고다. 원작의 사건·발화 근거와 구분하며, 최종 형태와 정확한 색상·치수는 사용자 설정 및 제공 시트를 따른다.</p>
-<p><span class="source-ref">작중 이미지 — 원문 첨부 이미지 미제공 · TBD</span></p>
-<p>분홍색 머리카락과 푸른 눈동자를 지녔으며, 전체적으로 밝고 명랑한 인상을 준다. 평소에는 호시노미야 여학원의 교복을 입고 다니며, 어머니에게 빌린 하트 모양 브로치를 교복 리본 아래에 달고 다니다가 첫 각성을 맞는다. 3권에서 브로치의 기원을 알게 된 뒤 아카리에게 정식으로 물려받는다.</p>
-<p>페어리 로제트로 변신하면 길게 풀어진 머리카락이 두 갈래로 묶이고, 흰색을 바탕으로 분홍색 장식이 더해진 마법소녀 의상을 입는다. 겹쳐진 치맛자락은 활짝 핀 꽃을 연상시키며, 가슴 중앙에는 사랑의 별빛과 연결된 하트 장식이 빛난다. 흰색 부츠와 분홍빛 지팡이를 사용하며, 마법을 펼칠 때에는 하트와 꽃잎을 닮은 문양이 나타난다.</p>
-<p>페어리 로제트 스펙트럼으로 변형하면 기본적인 분홍색 인상은 유지되지만, 드레스와 리본, 장갑과 부츠의 가장자리에 무지갯빛 광채가 비친다. 브로치의 분홍색 장식은 일곱 장의 투명한 꽃잎으로 펼쳐지며, 지팡이 끝의 투명한 고리 안에서는 일곱 개의 작은 별이 서로 다른 궤도를 따라 회전한다. 여러 색이 하나로 섞여 사라지는 것이 아니라, 각자의 색을 유지한 채 이어져 있다는 것이 디자인의 핵심이다.</p>
-<p>최종전의 루미너스 변형에서는 새로운 의상으로 바뀌지 않는다. 기존 모습 그대로 몸과 머리카락, 눈동자, 의상과 무기 전체가 모모카의 분홍빛과 루미너스의 순백색 빛으로 강하게 발광한다.</p>
-</div></section><section class="section" id="abilities"><h2><span class="section-number">5.</span>능력</h2><div class="prose"><p>사랑의 브로치를 매개로 로제트에 각성한다. 아카리는 브로치의 보관자였으며 페어리즈로 변신한 전임자는 아니다. 브로치에 이어진 가능성과 모모카가 선택한 마음이 만나 현재의 힘이 된다. [3권 21화]</p>
-<p>지팡이, 분홍빛 마법탄, 꽃잎·리본·덩굴과 방어막을 사용한다. 상대를 구속하거나 퇴로를 만들고, 동료가 대화할 시간을 확보하는 장면도 많다. 정화는 부상·실패·죽음을 원상복구하는 능력이 아니며 당사자가 다음 선택을 할 수 있도록 돕는 과정과 연결된다. [1권 1<del>6화, 2권 18</del>20화, 3권 30화]</p>
-<p>로제트 스펙트럼은 모모카가 내린 사랑의 답에 스펙트라의 힘 일부가 더해진 강화 형태다. 여러 사람의 빛을 연결하지만 유우나의 의지를 대신 만들 수 없고, 연결을 통한 역류 공격도 받는다. 최종전의 루미너스 변형은 마을이 되돌려 준 별빛과 네 페어리즈가 이어진 결과다. 게임 스킬의 이름·수치·AP 효과는 별도의 게임 설계로 확정한다. [5권 44·46~49화]</p>
-</div></section><section class="section" id="family"><h2><span class="section-number">6.</span>가족관계</h2><div class="prose"><p>어머니는 사쿠라이 아카리, 아버지는 사쿠라이 마사히로다. 아카리는 어린 모모카에게 전설을 읽어 주고 사랑의 브로치를 보관했다. 모모카의 정체를 안 뒤에는 비밀을 지키며 집과 자료 조사로 동료들을 돕는다. 마사히로는 아카리의 대화에서 자료 정리와 출장, 비밀을 언제 알릴지 등의 맥락으로 언급된다. 부모의 역할을 동일한 비중의 현장 조력으로 확대하지 않는다. [1권 1화, 2권 11화, 3권 21화]</p>
-</div></section><section class="section" id="relationships"><h2><span class="section-number">7.</span>인간관계</h2><div class="prose"><div class="table-wrap"><table>
-<thead>
-<tr>
-<th>인물</th>
-<th>관계와 변화</th>
-<th>원작 근거</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>우미코</td>
-<td>생활에서는 잔소리와 말다툼을 주고받고 전투에서는 직감과 계획을 보완한다. 익명 협력에서 서로의 이름을 아는 동료가 되고, 마지막에는 우미코가 이름으로 불릴 관계를 받아들인다.</td>
-<td>1권 2~6화, 5권 50화</td>
-</tr>
-<tr>
-<td>치요</td>
-<td>작품을 좋아하는 친구이지만 성급한 발표 권유로 상처를 키운다. 글을 쓰지 않아도 친구라는 사실을 전하고 이후 집필과 출간을 함께 기뻐한다.</td>
-<td>1권 3~6화, 5권 45·50화</td>
-</tr>
-<tr>
-<td>히나·시즈키</td>
-<td>히나의 행동력에 도움받고, 적이던 시즈키도 현재의 선택을 기준으로 동료로 맞는다. 두 선배의 사정을 모두 안다고 가정하지 않고 곁을 지킨다.</td>
-<td>1권 8<del>10화, 3권 24</del>30화, 4권 31~39화</td>
-</tr>
-<tr>
-<td>유우나</td>
-<td>잠입해 온 적이자 함께 웃은 친구다. 정체를 안 뒤에도 관계를 모두 거짓으로 만들지 않으며 잘못에는 사과와 책임을 요구한다. 생환을 약속할 수 없어도 마지막까지 이름으로 부른다.</td>
-<td>2권 11·19<del>20화, 5권 41</del>50화</td>
-</tr>
-<tr>
-<td>스펙트라</td>
-<td>전설과 정화의 한계를 알려 주는 안내자. 사랑의 답을 대신 정해 주는 대신 모모카가 답하도록 돕고 힘 일부를 나눈다.</td>
-<td>3권 21화, 5권 44화</td>
-</tr>
-<tr>
-<td>미나미·나기사</td>
-<td>미나미는 첫 정화에서 자신의 성급함을 배우게 한 인물이며, 나기사는 통학로와 카페의 일상을 잇는 친근한 어른이다.</td>
-<td>1권 1화, 2권 19화</td>
-</tr>
-</tbody></table></div>
-</div></section><section class="section" id="story"><h2><span class="section-number">8.</span>작중 행적</h2><div class="notice"><strong>기준</strong><p>원작소설 1~5권 기준. 아래 권·화 번호는 게임 챕터 번호나 전투 스테이지 번호가 아닙니다.</p></div><div class="prose"><p>사용자가 제공한 원작소설 1~5권 DOCX를 직접 대조한 주요 행적이다. 실제 등장·회상·언급을 구분하고 해당 근거가 있는 화만 수록한다. 모든 이름 언급을 빠짐없이 나열한 전수 출연표는 아니다. 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있다.</p>
-</div><div class="volume-actions"><button type="button" data-volumes="open">전체 권 펼치기</button><button type="button" data-volumes="close">전체 권 접기</button></div><details class="volume" id="volume-1"><summary>1권 · 운명이 소녀를 부를 때 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-1">1화. 운명이 소녀를 부를 때</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>어머니의 사랑의 브로치를 빌려 등교하다 나기사가 알려 준 신사 뒷길에서 암흑게이트에 들어간다. 미나미에게 무대로 돌아가라고 성급히 격려했다가 상처를 키우지만, 곁을 떠나지 않겠다는 마음으로 로제트에 각성한다. 상대가 원한 삶을 대신 정하지 않겠다고 사과하고 재활 상담이라는 작은 선택을 도와 첫 별빛정화를 이룬다.</p>
-<p class="source-ref">근거: 원작소설 1권 1화 〈운명이 소녀를 부를 때〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-2">2화. 이름을 모르는 동료</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>새 학기 교실에서 치요와 일상을 나누고 우미코에게 지각과 교복 차림을 지적받는다. 미나미 사건의 잔류 영역에서 아쿠아리우스와 처음 공동 전투를 하며, 발레 슈즈를 부수는 대신 기억을 먹는 어둠과 연결만 제거한다. 서로의 이름을 모르는 채 동료가 된다.</p>
-<p class="source-ref">근거: 원작소설 1권 2화 〈이름을 모르는 동료〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-3">3화. 작은 별빛의 이야기</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>치요의 공책을 우연히 발견하지만 보여 줄 시점은 치요가 정할 일이라고 존중한다. 동화를 진심으로 좋아해 발표를 권하지만 실패 뒤 다음에는 더 재미있게 쓰면 된다는 말로 상처를 키운다. 사과를 시도하던 중 빈자리와 브로치의 차가운 반응으로 위기를 알아챈다.</p>
-<p class="source-ref">근거: 원작소설 1권 3화 〈작은 별빛의 이야기〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-4">4화. 비에 젖은 원고</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>로제트로 종이인형의 어둠을 끊되 치요의 원고를 지키며 내면으로 향한다. 치요가 가장 친한 친구에게 받은 상처를 말하자 사과해야 하는 자신이 베일 뒤에 숨어 있다는 문제를 마주한다. 정체 노출 위험을 경고하는 아쿠아리우스와 갈등한다.</p>
-<p class="source-ref">근거: 원작소설 1권 4화 〈비에 젖은 원고〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-5">5화. 가면 너머의 이름</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>가면을 깨는 데 성공해도 정화가 완성되지 않자 베일을 걷고 사쿠라이 모모카라는 이름과 실제로 읽은 동화의 문장을 밝힌다. 자신의 기대를 치요를 위한 일로 정해 버렸다고 사과하지만, 가까운 친구의 실망을 두려워한 핵이 다시 폭주해 영역 밖으로 밀려난다.</p>
-<p class="source-ref">근거: 원작소설 1권 5화 〈가면 너머의 이름〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-6">6화. 별빛을 맡긴다는 것</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>아쿠아리우스가 우미코라는 사실을 알고 같은 무게의 신뢰를 나눈 뒤 재진입한다. 치요가 글을 쓰지 않기로 해도 친구라는 관계는 변하지 않는다고 말하며 작은 별이 한 걸음 곁을 비추던 문장을 되돌려 준다. 귀환 뒤에도 기다려 주며 친구의 한 줄을 지켜본다.</p>
-<p class="source-ref">근거: 원작소설 1권 6화 〈별빛을 맡긴다는 것〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-7">7화. 막이 오르지 않는 무대</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>화 말미 교실에서 브로치와 팩트의 검은 파동을 느끼며 강당의 게이트 발생을 알아챈다.</p>
-<p class="source-ref">근거: 원작소설 1권 7화 〈막이 오르지 않는 무대〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-8">8화. 닫힌 막, 열린 어둠</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>우미코의 학생회 호출을 구실로 교실을 나와 강당으로 향한다. 리코의 영역에 진입하지만 암흑현현과 다크니스 네뷸라의 개입으로 붙들린다. 아직 자신의 정체를 모르는 히나에게 일상 호칭을 부를 뻔한다.</p>
-<p class="source-ref">근거: 원작소설 1권 8화 〈닫힌 막, 열린 어둠〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-9">9화. 용기의 황금빛 광채</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>네뷸라와 대치하면서 맨몸으로 구조에 나선 히나를 지키려 한다. 솔라리스 각성 뒤에는 분홍빛으로 낫의 움직임을 늦추고 사람들을 감싸며 세 사람의 협공을 시작한다.</p>
-<p class="source-ref">근거: 원작소설 1권 9화 〈용기의 황금빛 광채〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-10">10화. 빛이여, 마을의 천사들에게 닿아라!</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>리코의 내면에서 혼자 모든 배역을 맡는 공연을 마주하고, 대회를 놓치는 일과 동료들이 연극 자체를 버리는 일은 다르다고 전한다. 동료들이 인장을 끊는 동안 내면 대화와 외부 리본 지원을 병행해 정화를 완성하고 시민 앞에서 페어리즈를 소개한다.</p>
-<p class="source-ref">근거: 원작소설 1권 10화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-2"><summary>2권 · 푸른 별빛이 비추는 내일 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-11">11화. 스타라이트 페어리즈, 비밀회의!</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>자택의 비밀회의에서 팀의 소개 동작을 제안하며 우미코·히나와 어울린다. 변신 모습을 어머니에게 들키지만 집을 동료들이 쉬어 갈 장소로 받아들인다. 전학생 유우나에게 학교와 카페의 일상을 나누어 준다.</p>
-<p class="source-ref">근거: 원작소설 2권 11화 〈스타라이트 페어리즈, 비밀회의!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-12">12화. 언제나 두 번째</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>전학 후 학교생활에 익숙해지는 유우나와 어울리고 수학 공부를 도움받는다. 유우나의 일상이 잠입 임무 이상의 의미를 갖도록 만드는 친구로 그려진다.</p>
-<p class="source-ref">근거: 원작소설 2권 12화 〈언제나 두 번째〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-13">13화. 누구의 그림자</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>히나와 합류해 녹타라를 견제하고 우미코가 마이에게 접근할 공간을 확보한다. 힘으로 외피를 부수는 것만으로는 당사자를 구할 수 없는 상황을 마주한다.</p>
-<p class="source-ref">근거: 원작소설 2권 13화 〈누구의 그림자〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-14">14화. 보이지 않는 노력</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>우미코에게 자신의 노력도 말해도 된다고 힘을 보탠다. 히나와 외부 공격을 막으며 우미코와 마이의 대화를 지킨다.</p>
-<p class="source-ref">근거: 원작소설 2권 14화 〈보이지 않는 노력〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-15">15화. 별빛을 잇는 집</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>시미즈가를 방문해 별빛의 계승과 우미코의 가정사를 듣는다. 가문이 정한 역할 밖의 미래를 찾으려는 우미코를 친구로 지지한다.</p>
-<p class="source-ref">근거: 원작소설 2권 15화 〈별빛을 잇는 집〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-16">16화. 아이들만 있다면</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>보육원에서 아이들과 어린 우미코를 보호한다. 우미코가 전투에 참여할 수 없게 된 상황에서 히나와 함께 나이 역행 공격을 버틴다.</p>
-<p class="source-ref">근거: 원작소설 2권 16화 〈아이들만 있다면〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-17">17화. 작은 우미코</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>나이 역행의 제한 시간 속에서 방어와 구조를 이어 간다. 우미코와 히나가 당사자의 마음에 접근할 시간을 확보한다.</p>
-<p class="source-ref">근거: 원작소설 2권 17화 〈작은 우미코〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-18">18화. 내가 바라는 내일</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>지팡이의 리본과 방어막으로 민간인들을 지킨다. 어린 우미코가 읽어 낸 공격의 전조를 받아 대응하며 정화를 돕고, 사건 뒤 스스로의 미래를 찾으려는 우미코에게 소원 종이를 건넨다.</p>
-<p class="source-ref">근거: 원작소설 2권 18화 〈내가 바라는 내일〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-19">19화. 별빛축제의 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>치요·유우나와 유카타를 입고 별빛축제를 즐기며 내년의 약속을 나눈다. 교단의 습격에 로제트로 싸우다가 치요를 몸으로 구한 아포크라의 외피가 깨지는 순간 유우나의 얼굴을 알아본다.</p>
-<p class="source-ref">근거: 원작소설 2권 19화 〈별빛축제의 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-20">20화. 별빛 아래 드러난 얼굴</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>유우나를 붙잡고 싶은 마음보다 치요와 아이의 대피를 먼저 택한다. 동료들에게 아포크라의 정체와 구조 행동을 알리고, 함께한 시간이 전부 거짓이었다고 단정하지 않겠다고 한다.</p>
-<p class="source-ref">근거: 원작소설 2권 20화 〈별빛 아래 드러난 얼굴〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-3"><summary>3권 · 믿음의 보랏빛 광채 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-21">21화. 오로라 책방</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>전학 처리된 유우나에게 연락이 닿지 않는 상황을 겪는다. 어머니가 모은 사고 자료와 브로치의 내력을 듣고 오로라 책방을 찾아, 자신의 사랑의 힘이 누구의 대역도 아닌 자신의 선택임을 배운다.</p>
-<p class="source-ref">근거: 원작소설 3권 21화 〈오로라 책방〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-22">22화. 8년 전의 관측자</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>연락을 피하는 연구원의 거절권을 존중하며 조사에 동행한다. 히나에게 과거와 현재의 시즈키가 모두 같은 사람의 진실일 수 있다고 말하고, 연구원이 남긴 증언과 사고 영역을 마주한다.</p>
-<p class="source-ref">근거: 원작소설 3권 22화 〈8년 전의 관측자〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-23">23화. 기록되지 않은 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>사고를 재현한 영역에서 동료들과 연구원을 구하고 기록을 확보한다. 사건 뒤에는 원본 자료와 저장 매체의 보존, 여러 곳에 사본을 남기는 후속 조치에 참여한다.</p>
-<p class="source-ref">근거: 원작소설 3권 23화 〈기록되지 않은 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-24">24화. 네뷸라의 이름</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>시즈키를 충분히 모르는 자신이 섣불리 말하기보다 히나의 대화와 기다림을 지지한다. 친구를 되찾는 과정에도 당사자가 판단할 여지가 필요함을 보여 준다.</p>
-<p class="source-ref">근거: 원작소설 3권 24화 〈네뷸라의 이름〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-25">25화. 길을 잃은 북극성</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>연구소 장치에 개입해 동료들과 게이트의 확장을 억제한다. 분홍빛으로 흔들리는 고리를 모아 새로운 어둠이 넘어오는 틈을 막는다.</p>
-<p class="source-ref">근거: 원작소설 3권 25화 〈길을 잃은 북극성〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-26">26화. 복수라는 이름의 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>벽과 천장에 별빛 표식을 남겨 방향이 뒤틀린 공간의 이동을 돕는다. 우미코와 로스트 폴라리스를 붙잡으며 히나와 시즈키의 대화를 지킨다.</p>
-<p class="source-ref">근거: 원작소설 3권 26화 〈복수라는 이름의 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-27">27화. 믿음의 보랏빛 광채</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>새로 합류한 네뷸라를 동료로 맞고 암흑태생 생명체의 처리를 맡는다. 네 사람의 첫 공동 전투를 시작한다.</p>
-<p class="source-ref">근거: 원작소설 3권 27화 〈믿음의 보랏빛 광채〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-28">28화. 아빠가 남긴 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>네 사람의 연계로 로스트 폴라리스와 게이트를 정화한다. 아버지를 잃은 시즈키 곁에 머물며 억지로 괜찮다고 결론짓지 않는다.</p>
-<p class="source-ref">근거: 원작소설 3권 28화 〈아빠가 남긴 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-29">29화. 별빛연구소의 진실</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>자료에서 교단이 피해자의 실제 상처를 이용했음을 확인한다. 세 사람과 카즈키의 중앙 수렴실로 향한다.</p>
-<p class="source-ref">근거: 원작소설 3권 29화 〈별빛연구소의 진실〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-30">30화. 복수보다 내일</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>사랑이 원하는 결말을 보장하지 않아도 사랑했던 사실은 남는다고 카즈키에게 맞선다. 수렴 장치의 연결부를 끊고 전투 뒤 나타난 아포크라를 유우나로 부른다.</p>
-<p class="source-ref">근거: 원작소설 3권 30화 〈복수보다 내일〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-4"><summary>4권 · 태양은 가려져도 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-31">31화. 네 개의 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>합류한 시즈키와 점심을 먹고 네 사람의 소개 동작과 사진을 준비한다. 소문과 책임을 구별하며 새 동료가 일상의 자리를 갖도록 다가간다.</p>
-<p class="source-ref">근거: 원작소설 4권 31화 〈네 개의 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-32">32화. 내가 선택한 어둠</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>동료들과 천문대 잔류 균열에 대응하며 네뷸라의 구조 활동을 지원한다. 과거의 잘못을 지우지 않으면서 현재의 구조 선택을 함께 지킨다.</p>
-<p class="source-ref">근거: 원작소설 4권 32화 〈내가 선택한 어둠〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-34">34화. 에테르녹스</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>시간 정지와 그림자 분신이 결합된 에테르녹스와 싸운다. 우미코가 내부에 접근할 수 있도록 히나·네뷸라와 외부 전투를 맡는다.</p>
-<p class="source-ref">근거: 원작소설 4권 34화 〈에테르녹스〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-35">35화. 언니가 바란 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>두 자매의 분리와 정화에 힘을 보탠다. 사건 뒤 살아남았으니 다행이라는 말로 결론짓지 않고 카오리가 상실을 받아들일 시간을 지킨다.</p>
-<p class="source-ref">근거: 원작소설 4권 35화 〈언니가 바란 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-36">36화. 꿈이었던 선생님</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>히나에게 음식과 휴식을 챙기며 요루를 존경했던 감정까지 잘못이라고 여기지 말라고 한다. 진로희망서의 답은 히나가 쓰는 것이라며 동행한다.</p>
-<p class="source-ref">근거: 원작소설 4권 36화 〈꿈이었던 선생님〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-37">37화. 서른 해 전의 월식</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>요루가 스승을 구할 수 있는데도 실험을 위해 방치한 선택에 분노한다. 네 사람과 이클리시아의 흑월 전투에 들어간다.</p>
-<p class="source-ref">근거: 원작소설 4권 37화 〈서른 해 전의 월식〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-38">38화. 태양을 가리는 검은 달</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>빛이 약해지는 상황에서도 동료들을 도우며 히나의 선택을 대신 규정하지 않으려 한다. 요루의 영향이 있었다는 이유로 히나의 행동까지 빼앗을 수 없다고 맞선다.</p>
-<p class="source-ref">근거: 원작소설 4권 38화 〈태양을 가리는 검은 달〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-39">39화. 내가 되고 싶은 선생님</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>회복한 솔라리스의 돌진을 뒤쫓는 촉수를 분홍빛으로 붙잡는다. 전투 뒤 다친 동료들과 함께 천문대를 나선다.</p>
-<p class="source-ref">근거: 원작소설 4권 39화 〈내가 되고 싶은 선생님〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-40">40화. 흑성교단의 끝</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>교단의 끝이 곧 유우나의 구출을 뜻하지 않음을 듣는다. 유우나가 남긴 자리와 축제 사진을 기억하며 단순히 적의 간부로 정리하지 않는다.</p>
-<p class="source-ref">근거: 원작소설 4권 40화 〈흑성교단의 끝〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-5"><summary>5권 · 빛이여, 마을의 천사들에게 닿아라 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-41">41화. 돌아오지 않는 전학생</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>돌아오지 않는 유우나의 자리를 지키며 치요와 마음을 나눈다. 카오리에게 유우나의 과거를 듣고 피해자나 그릇으로만 보지 않기로 한다. 놀이공원의 반응을 따라 이번에는 유우나의 이야기부터 듣겠다고 출발한다.</p>
-<p class="source-ref">근거: 원작소설 5권 41화 〈돌아오지 않는 전학생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-42">42화. 머물고 싶었던 장소</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>놀이공원에서 변신 전 모습으로 유우나와 먼저 대화한다. 정체 추적과 보고 지연의 이유를 직접 듣고, 잘못을 묻는 일과 친구로 남고 싶은 마음을 함께 밝힌다. 돌아올 장소를 지우려는 마지막 임무와 맞선다.</p>
-<p class="source-ref">근거: 원작소설 5권 42화 〈머물고 싶었던 장소〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-43">43화. 아포크라의 마지막 임무</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>관리인과 치요를 보호한 유우나의 행동을 보며 잘못한 채로도 돌아와 사과하고 방법을 찾자고 말한다. 그러나 네메시스가 사랑이 모든 사람을 구할 수 있느냐고 묻자 답을 잃고 별빛이 꺼진다.</p>
-<p class="source-ref">근거: 원작소설 5권 43화 〈아포크라의 마지막 임무〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-44">44화. 사랑의 스펙트럼</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>스펙트라와 대화하며 곁에 있기·기다리기·존중하기·떠나보내기도 사랑임을 깨닫는다. 돌아오지 못하더라도 유우나였던 시간을 지우지 않겠다고 말하고 스펙트라가 나눈 힘을 받아 로제트 스펙트럼으로 강화된다. 유우나 자신의 선택에 손을 뻗는다.</p>
-<p class="source-ref">근거: 원작소설 5권 44화 〈사랑의 스펙트럼〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-45">45화. 단 하루의 전학생</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>밤새 유우나 곁을 지키고 학교와 카페에서 다시 친구로 맞는다. 좋은 선택이 잘못을 지우지도, 잘못이 함께 웃은 시간을 모두 지우지도 않는다고 말한다.</p>
-<p class="source-ref">근거: 원작소설 5권 45화 〈단 하루의 전학생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-46">46화. 어둠이 태어나는 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>유우나를 따라가 애착을 악용한 책임은 네메시스에게 있다고 말한다. 돌아갈 장소를 원한 마음과 가해자의 이용을 구별하며 의식의 분리를 시도하지만 현현을 막지 못한다.</p>
-<p class="source-ref">근거: 원작소설 5권 46화 〈어둠이 태어나는 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-47">47화. 호시노미야 암흑현현</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>마을 전체가 영역이 되자 네 사람의 구조 동선을 나누고 본체 공략으로 전환한다. 스펙트럼으로 유우나의 빛에 닿지만 역류 공격에 밀려 각자의 두려움 속에 고립된다.</p>
-<p class="source-ref">근거: 원작소설 5권 47화 〈호시노미야 암흑현현〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-48">48화. 별빛이 꺼진 뒤에도</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>구하지 못할 사람을 사랑한 책임을 묻는 환영에 무너져 변신이 풀린다. 주민들이 되돌려 주는 목소리와 빛이 닿으며 완전히 혼자는 아니라는 연결을 되찾기 시작한다.</p>
-<p class="source-ref">근거: 원작소설 5권 48화 〈별빛이 꺼진 뒤에도〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-49">49화. 빛이여, 마을의 천사들에게 닿아라!</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>마을이 되돌려 준 별빛으로 두려움 속에서 다시 일어나 루미너스 변형에 이른다. 스펙트럼으로 유우나의 의식을 잇고, 함께 돌아가고 싶은 바람과 유우나가 택한 마지막 결말을 구분하며 작별한다.</p>
-<p class="source-ref">근거: 원작소설 5권 49화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-50">50화. 별빛은 계속된다</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>어머니와 재회하고 학교 복구를 돕는다. 치요와 유우나의 빈 책상을 바라보며 친구를 기억한다. 졸업식 뒤 우미코의 이름을 부르고, 소풍에서 여섯 사람의 사진을 남기며 일상을 잇는다.</p>
-<p class="source-ref">근거: 원작소설 5권 50화 〈별빛은 계속된다〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details></section><section class="section" id="quotes"><h2><span class="section-number">9.</span>어록</h2><div class="prose"><p>원작의 실제 발화를 대조했다. 아래 문장은 본인의 대사이며, 환영의 발언이나 편지·책의 문장을 섞지 않는다.</p>
-<blockquote>
-<p>네가 돌아오지 못한다고 해도, 네가 유우나였던 시간까지 없었던 일로 만들지 않을 거야.</p>
-</blockquote>
-<p>— 원작 5권 44화. 원하는 생환을 약속할 수 없어도 친구의 삶을 지우지 않겠다는 말.</p>
-<blockquote>
-<p>나는 네가 잘못하지 않았다고 말해 주려는 게 아니야. 잘못한 채로도 돌아오라고 하는 거야. 돌아와서 사과하고, 혼나고, 같이 방법을 찾자고 하는 거야!</p>
-</blockquote>
-<p>— 원작 5권 43화. 사과와 책임을 회피시키지 않으면서 유우나에게 손을 내민다.</p>
-<blockquote>
-<p>네가 우리를 속였던 것도 기억할 거야. 치요를 위험하게 한 것도, 우리와 싸운 것도 전부 기억할 거야.</p>
-</blockquote>
-<p>— 원작 5권 44화. 기억하는 사랑이 잘못을 지우는 일이 아님을 밝힌다.</p>
-</div></section><section class="section" id="trivia"><h2><span class="section-number">10.</span>기타</h2><div class="prose"><ul>
-<li>이름 <code>로제트</code>와 상징 모티브는 장미꽃 형태로 보이는 로제트 성운에서 유래했다.</li>
-<li>루미너스의 네 힘 가운데 <code>사랑</code>을 계승한다. 작품에서 사랑은 상대를 자신의 바람대로 바꾸는 힘이 아니라 끝까지 한 사람으로 바라보는 마음으로 정의된다.</li>
-<li>1권 첫 변신 당시 자신의 입에서 자연스럽게 나온 나노리를 외친 뒤, 본인도 방금 무슨 말을 했는지 당황한다. 이후에는 누구보다 단체 포즈와 자기소개를 진지하게 즐긴다.</li>
-<li>스타라이트 페어리즈의 캐치프레이즈와 단체 포즈를 먼저 제안한 인물이다. 우미코는 불필요하다며 반대하지만 가장 세밀하게 자세를 교정하고, 히나는 처음부터 적극적으로 찬성한다.</li>
-<li>아카리에게 정체를 들킨 뒤 로제트의 모습으로 무심코 <code>엄마</code>라고 부르고 급히 <code>아카리 씨</code>라고 정정하려 한다. 그러나 아카리는 이미 딸이라는 사실을 한눈에 알아본다.</li>
-<li>팀 내에서 가장 먼저 자신의 정체를 타인에게 자발적으로 공개했다. 치요를 구하기 위해 별빛의 베일을 걷고 본명을 밝힌 행동은 우미코가 동료를 신뢰하는 방식에도 큰 영향을 준다.</li>
-<li>아카리의 촬영회에 적극적으로 참여한다. 로제트와 솔라리스는 신이 나서 변신과 해제를 반복하고, 아쿠아리우스는 불평하면서도 모든 촬영 요청에 응한다.</li>
-<li>딸기 계열 음료를 자주 마신다. 원작소설에서는 딸기라테, 딸기소다, 딸기우유 등이 등장한다.</li>
-<li>우미코와는 성격과 생활 습관이 정반대지만, 서로의 부족한 부분을 가장 자연스럽게 보완한다. 최종화에서 우미코가 요비스테를 푼 뒤에는 공식적으로 서로 이름을 부르는 사이가 된다.</li>
-<li>시즈키가 합류한 뒤 시민들 앞에서 다크니스 네뷸라를 동료라고 선언한다. 과거를 지워주거나 용서를 대신 선언한 것이 아니라, 시즈키가 현재 선택한 행동을 믿어준 것이다.</li>
-<li>페어리 로제트 스펙트럼은 화력 중심의 전형적인 주인공 강화형태와 달리 <code>연결</code>에 특화되어 있다. 여러 사람의 빛을 모모카의 색으로 바꾸지 않고 각자의 색으로 유지한다는 점이 특징이다.</li>
-<li>최종전에서 마을 사람들이 캐치프레이즈를 페어리즈에게 돌려주는 구조는, 늘 사람들에게 빛을 보냈던 모모카가 자신이 구했던 사람들로부터 다시 빛을 받는 장면이다.</li>
-<li>네메시스를 쓰러뜨렸지만 유우나를 생환시키지 못했다. 이는 모모카의 사랑이 만능의 기적이 되지 않으면서도, 유우나의 마지막 선택과 삶의 의미를 지켜냈다는 결말이다.</li>
-<li>최종화의 붉은 보석 반지를 낀 소녀는 여섯 사람의 사진을 찍어 모모카에게 건넨다. 본편에서는 이름을 밝히지 않는다. 후속작 《크리스탈 페어리즈》와의 바톤터치는 기존 제공 캐릭터 문서의 별도 확장 설정으로 보존하며, 본편에서 확인한 정체와 구분한다.</li>
-</ul>
-<h3>원작 대조와 별도 설정</h3>
-<p>2026.09.06 제공된 원작소설 1~5권 DOCX를 기준으로 개요·특징·활동·관계·주요 행적·발화를 대조했다. 기본 프로필의 사용자 제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존한다. 위 기타 항목의 어원·디자인 해설·확장 설정은 소설 속 발화와 구분한다. 미확인 외형·가족·게임 수치는 임의로 보충하지 않는다. 기준 판본과 정정 사항은 자료·편집 안내의 원작 대조 기록을 참조한다.</p>
-</div></section><section class="section" id="source"><h2><span class="section-number">자료.</span>출처·게임화 메모</h2><p><a href="../sources/%EC%82%AC%EC%BF%A0%EB%9D%BC%EC%9D%B4_%EB%AA%A8%EB%AA%A8%EC%B9%B4_%ED%8E%98%EC%96%B4%EB%A6%AC_%EB%A1%9C%EC%A0%9C%ED%8A%B8_%EC%9C%84%ED%82%A4.md">사쿠라이_모모카_페어리_로제트_위키.md 열기 ↗</a></p><p>사용자가 제공한 원작소설 1~5권 DOCX의 주요 장면을 직접 대조했습니다. 다른 캐릭터 문서를 사실 확인의 근거로 대체하지 않습니다. 기본 프로필의 사용자 제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존합니다. <a href="../guide.html#novel-audit">기준 판본·정정 내용·재확인 지점 →</a></p><div class="notice"><strong>게임화</strong><p>원작과 게임의 기본 스토리는 동일합니다. 전체 구성은 게임 기획서 v1과 사용자 전투 보완을 따릅니다. 장면별 변경·축소·확장 사유와 ADV·전투 배치는 각색 시 기록합니다. <a href="../systems.html#battle">공통 전투 규칙 →</a></p></div><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">대응 게임 챕터</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">축소·확장·변경 내역</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">변경 사유·담당자·승인일</th><td><span class="badge tbd">TBD</span></td></tr></tbody></table></div></section><div class="notice"><strong>모모카 문서 보강 이력</strong><p>2026.09.06 · 원작소설 1~5권 직접 대조로 개요·특징·관계·행적·어록을 다시 정리했습니다. 기존 수치·생일·별도 제작 설정은 보존했습니다. <a href="../sources/archive/%EC%82%AC%EC%BF%A0%EB%9D%BC%EC%9D%B4_%EB%AA%A8%EB%AA%A8%EC%B9%B4_%ED%8E%98%EC%96%B4%EB%A6%AC_%EB%A1%9C%EC%A0%9C%ED%8A%B8_%EC%9C%84%ED%82%A4_%EB%B3%B4%EA%B0%95%EC%A0%84_2026-09-06.md">보강 전 제공 MD 열기 →</a></p></div></div><aside class="toc" aria-label="이 문서의 목차"><strong>이 문서의 목차</strong><a class="" href="#profile">1. 기본 프로필</a><a class="" href="#production">2. 제작용 프로필</a><a class="" href="#artwork">설정화·바디</a><a class="" href="#overview">3. 개요</a><a class="" href="#traits">4. 특징</a><a class="" href="#abilities">5. 능력</a><a class="" href="#family">6. 가족관계</a><a class="" href="#relationships">7. 인간관계</a><a class="" href="#story">8. 작중 행적</a><a class="sub" href="#volume-1">1권</a><a class="sub" href="#volume-2">2권</a><a class="sub" href="#volume-3">3권</a><a class="sub" href="#volume-4">4권</a><a class="sub" href="#volume-5">5권</a><a class="" href="#quotes">9. 어록</a><a class="" href="#trivia">10. 기타</a><a class="" href="#source">출처·게임화 메모</a><a href="../resources.html">리소스 제작 기준 ↗</a></aside></div></article><footer class="footer"><span>Blossom Games · STARLIGHT FAIRIES DEVELOPMENT WIKI</span><span>설정 미확정 항목은 TBD로 표기합니다.</span></footer></main></div><a class="top-link" href="#top" aria-label="문서 맨 위로">↑</a></body></html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="사쿠라이 모모카 — 스타라이트 페어리즈 내부 개발용 위키. 원작소설 1~5권 설정과 2D ADV·3D 턴제 전투 제작 자료.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#ab2867">
+    <title>사쿠라이 모모카 | 스타라이트 페어리즈 개발 위키</title>
+    <link rel="icon" href="../sources/branding/StarlightFairiesLogo.png">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script defer src="../assets/app.js"></script>
+</head>
+
+<body id="top"><a class="skip" href="#content">본문으로 건너뛰기</a>
+    <header class="topbar">
+        <div class="topbar-inner"><button class="menu-button" type="button" aria-label="문서 메뉴 열기"
+                aria-controls="sidebar" aria-expanded="false">☰</button><a class="brand" href="../index.html"><img
+                    class="header-logo" src="../sources/branding/StarlightFairiesLogo.png" alt="스타라이트 페어리즈"><span
+                    class="brand-caption">DEV WIKI</span></a>
+            <form class="search" action="../characters.html" role="search"><label class="sr-only"
+                    for="global-search">캐릭터 문서 검색</label><input id="global-search" name="q" type="search"
+                    placeholder="캐릭터·변신명·설정 검색" autocomplete="off"><button type="submit">검색</button></form><span
+                class="internal-label">INTERNAL DOCUMENTS</span><button class="theme-button" type="button"
+                aria-label="어두운 테마로 변경" aria-pressed="false">◐</button>
+        </div>
+    </header>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <nav aria-label="주요 문서">
+                <p class="nav-heading">프로젝트</p><a class="nav-link " href="../index.html"><span class="nav-symbol"
+                        aria-hidden="true">⌂</span>대문</a><a class="nav-link active" aria-current="page"
+                    href="../characters.html"><span class="nav-symbol" aria-hidden="true">♧</span>등장인물</a>
+                <p class="nav-heading">원작과 게임</p><a class="nav-link " href="../world.html"><span class="nav-symbol"
+                        aria-hidden="true">◇</span>세계관·용어</a><a class="nav-link " href="../story.html"><span
+                        class="nav-symbol" aria-hidden="true">▤</span>원작 1~5권</a><a class="nav-link "
+                    href="../systems.html"><span class="nav-symbol" aria-hidden="true">▣</span>게임 기획</a>
+                <p class="nav-heading">개발 자료</p><a class="nav-link " href="../artwork.html"><span class="nav-symbol"
+                        aria-hidden="true">▧</span>캐릭터 설정화</a><a class="nav-link " href="../resources.html"><span
+                        class="nav-symbol" aria-hidden="true">▦</span>리소스 제작 기준</a><a class="nav-link "
+                    href="../adv-guide.html"><span class="nav-symbol" aria-hidden="true">▧</span>ADV·2D 제작 가이드</a><a
+                    class="nav-link " href="../modeling-guide.html"><span class="nav-symbol"
+                        aria-hidden="true">◇</span>3D 모델링 가이드</a><a class="nav-link " href="../guide.html"><span
+                        class="nav-symbol" aria-hidden="true">≡</span>자료·편집 안내</a>
+                <p class="nav-heading">스타라이트 페어리즈</p><a class="nav-link" href="../characters/momoka.html"><span
+                        class="nav-symbol" aria-hidden="true" style="color:#bc3976">✦</span>사쿠라이 모모카</a><a
+                    class="nav-link" href="../characters/umiko.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#236ca5">✦</span>시미즈 우미코</a><a class="nav-link"
+                    href="../characters/hina.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#a56b16">✦</span>미츠하라 히나</a><a class="nav-link"
+                    href="../characters/shizuki.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#7952b0">✦</span>호시조라 시즈키</a>
+            </nav>
+            <div class="sidebar-brand"><img src="../sources/branding/BlossomGamesLogo.png" alt="Blossom Games"><span>원작
+                    1–5권 · 게임 개발 자료</span></div>
+        </aside>
+        <div class="scrim" aria-hidden="true"></div>
+        <main class="main" id="content">
+            <nav class="breadcrumbs" aria-label="현재 위치"><a href="../index.html">스타라이트 페어리즈</a><span>›</span><a
+                    href="../characters.html">등장인물</a><span>›</span><span>사쿠라이 모모카</span></nav>
+            <article class="article">
+                <header class="article-heading"><span class="eyebrow">CHARACTER DOCUMENT · MOMOKA</span>
+                    <h1>사쿠라이 모모카</h1>
+                    <p class="subtitle">페어리 로제트</p>
+                    <div class="meta"><span>기준 · 원작소설 1~5권</span><span>게임 · 2D ADV + 3D 턴제 전투</span><span>정리 ·
+                            2026.09.06</span></div>
+                </header>
+                <div class="article-layout">
+                    <div class="article-body">
+                        <div class="notice"><strong>스포일러 안내</strong>
+                            <p>원작소설 1~5권의 정체·결말을 포함합니다. 작중 행적은 원작 기준이며, 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있습니다.</p>
+                        </div>
+                        <div class="character-top" style="--character:#bc3976">
+                            <div>
+                                <div class="summary-copy">
+                                    <p>《스타라이트 페어리즈》의 주인공. 호시노미야 여학원에 다니며 사랑의 별빛을 쓰는 페어리 로제트로 싸운다. 어머니에게 빌린 브로치를 지닌 채
+                                        미나미의 암흑게이트에 들어간 것이 첫 각성의 계기다. 처음부터 다른 사람의 마음을 정확히 아는 인물이 아니라, 좋은 뜻의 격려도 상처가 될 수
+                                        있음을 배우는 인물이다.</p>
+                                </div>
+                                <div class="tag-row"><span class="badge pink">원작소설 직접 대조</span><span
+                                        class="badge ">신장·체중 반영</span><span class="badge ">가상 캐스팅 ≠ 확정 성우</span></div>
+                                <p class="source-ref">출처: 원작소설 1~5권 · 권·화 근거는 본문 참조</p>
+                            </div>
+                            <aside class="infobox" aria-label="캐릭터 기본 정보">
+                                <div class="box-title">사쿠라이 모모카</div>
+                                <div class="portrait-switch" data-portrait-switch>
+                                    <div class="portrait-tabs" role="tablist" aria-label="사쿠라이 모모카 모습 선택"><button
+                                            type="button" role="tab" id="momoka-tab-0" aria-selected="true"
+                                            aria-controls="momoka-portrait-0" tabindex="0" data-portrait-tab>변신
+                                            전</button><button type="button" role="tab" id="momoka-tab-1"
+                                            aria-selected="false" aria-controls="momoka-portrait-1" tabindex="-1"
+                                            data-portrait-tab>변신 후</button></div>
+                                    <div class="portrait-panel" id="momoka-portrait-0" role="tabpanel"
+                                        aria-labelledby="momoka-tab-0" tabindex="0">
+                                        <div class="front-frame"><svg class="front-illustration"
+                                                viewBox="90 75 660 1080" role="img" aria-label="사쿠라이 모모카 · 동복 정면"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <clipPath id="momoka-clip-0">
+                                                        <polygon
+                                                            points="265,75 545,75 545,330 750,560 750,1155 90,1155 90,440 265,300" />
+                                                    </clipPath>
+                                                </defs>
+                                                <image
+                                                    href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                    width="2048" height="1174.8726860596903"
+                                                    clip-path="url(#momoka-clip-0)" />
+                                            </svg></div>
+                                        <p class="portrait-caption">사쿠라이 모모카 · 동복</p>
+                                    </div>
+                                    <div class="portrait-panel" id="momoka-portrait-1" role="tabpanel"
+                                        aria-labelledby="momoka-tab-1" tabindex="0" hidden>
+                                        <div class="front-frame"><svg class="front-illustration"
+                                                viewBox="70 48 695 1110" role="img" aria-label="페어리 로제트 정면"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <clipPath id="momoka-clip-1">
+                                                        <polygon
+                                                            points="250,48 585,48 585,350 765,520 765,1158 70,1158 70,330 250,245" />
+                                                    </clipPath>
+                                                </defs>
+                                                <image
+                                                    href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png"
+                                                    width="2048" height="1174.8726860596903"
+                                                    clip-path="url(#momoka-clip-1)" />
+                                            </svg></div>
+                                        <p class="portrait-caption">페어리 로제트</p>
+                                    </div><a class="artwork-shortcut" href="../artwork.html#momoka">설정화·바디 시트 보기 →</a>
+                                </div>
+                                <dl class="kv">
+                                    <dt>이름</dt>
+                                    <dd>사쿠라이 모모카</dd>
+                                    <dt>변신·이명</dt>
+                                    <dd>페어리 로제트</dd>
+                                    <dt>연령</dt>
+                                    <dd>17세(호시노미야 여학원 2학년)</dd>
+                                    <dt>신장</dt>
+                                    <dd>160 cm</dd>
+                                    <dt>체중</dt>
+                                    <dd>45 kg</dd>
+                                    <dt>상징</dt>
+                                    <dd>사랑</dd>
+                                    <dt>구분</dt>
+                                    <dd>페어리즈</dd>
+                                    <dt>첫 등장</dt>
+                                    <dd>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                        <section class="section" id="profile">
+                            <h2><span class="section-number">1.</span>기본 프로필</h2>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">문서 ID</th>
+                                            <td><code>momoka</code></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">이름</th>
+                                            <td>사쿠라이 모모카</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성별</th>
+                                            <td>여성</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">연령</th>
+                                            <td>17세(호시노미야 여학원 2학년)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">신장</th>
+                                            <td>160 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체중</th>
+                                            <td>45 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">쓰리사이즈 (B / W / H)</th>
+                                            <td>85(C) / 58 / 86 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">신체정보 출처</th>
+                                            <td>사용자 제공 제작 설정 · 2026.09.06</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">생일</th>
+                                            <td>4월 15일</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">가족</th>
+                                            <td>사쿠라이 마사히로(아버지), 사쿠라이 아카리(어머니)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">상징 모티브</th>
+                                            <td>로제트 성운</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">상징색</th>
+                                            <td>핑크</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">계승한 힘</th>
+                                            <td>사랑</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">주요 출연작</th>
+                                            <td>《스타라이트 페어리즈》</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">인물 유형</th>
+                                            <td>주연, 주인공</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변신체</th>
+                                            <td>페어리 로제트, 페어리 로제트 스펙트럼, 루미너스 변형</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변신 타입</th>
+                                            <td>페어리즈</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">좋아하는 것</th>
+                                            <td>스타라이트 페어리즈 구성원, 딸기와 딸기 계열 음료, 친구들과 보내는 일상, 별빛전설, 단체 변신 포즈·사진 촬영(본문 행동
+                                                기준)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">싫어하는 것</th>
+                                            <td>벌(기존 프로필 명시). 가치관상 거부하는 일: 상대의 선택을 빼앗는 것, 한 사람을 역할이나 실패만으로 단정하는 것(성장 서사
+                                                요약)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">즐겨 마시는 음료</th>
+                                            <td>딸기라테, 딸기소다, 딸기우유</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">생활상의 약점</th>
+                                            <td>늦잠·지각, 정리정돈·준비물 관리, 감정이 앞서는 성급한 행동</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">관계·일상 키워드</th>
+                                            <td>치요와 지각 트윈즈, 나기사의 카페, 팀 비밀회의·단체 포즈, 친구의 이름과 일상을 기억하기</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">첫 등장</th>
+                                            <td>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성우(가상 캐스팅)</th>
+                                            <td>이토 미쿠(츠루마키 코코로 스타일)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">게임 확정 성우</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">컬러 팔레트</th>
+                                            <td>
+                                                <div class="palette" aria-label="사쿠라이 모모카 5색 참고 팔레트">
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#FBDCE3"
+                                                            aria-hidden="true"></span><code>#FBDCE3</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#F36891"
+                                                            aria-hidden="true"></span><code>#F36891</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#37384F"
+                                                            aria-hidden="true"></span><code>#37384F</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#51BBC7"
+                                                            aria-hidden="true"></span><code>#51BBC7</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#CDBDA6"
+                                                            aria-hidden="true"></span><code>#CDBDA6</code></div>
+                                                </div>
+                                                <p class="palette-note">이미지 기반 추정 · 교복·로제트 시트의 머리, 분홍 장식, 교복, 눈, 금색 장식에서
+                                                    추정. 확정 색상 규격은 TBD.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section" id="production">
+                            <h2><span class="section-number">2.</span>리소스 제작용 프로필</h2>
+                            <p class="muted small">신체 수치는 기본 프로필의 사용자 제공 제작 설정을 따르며, 기재하지 않은 항목은 추정하지 않습니다. 성격·모에요소는 원문
+                                묘사를 바탕으로 묶은 제작용 분류이며, 추가 공식 설정을 의미하지 않습니다.</p>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">신장</th>
+                                            <td>160 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체중</th>
+                                            <td>45 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">쓰리사이즈 (B / W / H)</th>
+                                            <td>85(C) / 58 / 86 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">혈액형</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체형·등신·상대 스케일</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">헤어</th>
+                                            <td>분홍색 / 변신 후 두 갈래로 묶음</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">눈동자</th>
+                                            <td>푸른색</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성격 키워드</th>
+                                            <td>명랑함 · 공감 · 집념 · 직감 <span class="badge ">원문 기반 요약</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">모에요소·캐릭터 속성</th>
+                                            <td>밝은 주인공 · 마법소녀 · 변신 후 트윈테일 <span class="badge ">제작용 분류</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">무기·주요 소품</th>
+                                            <td>분홍빛 지팡이 · 하트 모양 브로치</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">색상 수치·소재 규격</th>
+                                            <td><span class="badge tbd">TBD</span> <span class="muted">원문 색상명은 기본 프로필·특징
+                                                    참조</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">게임 리소스 경로·담당자</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>형태·의상 구분</h3>
+                            <p class="muted small">원작에 등장하는 형태를 정리했습니다. 게임에서 필요한 모델·스탠딩·차분의 범위는 TBD입니다.</p>
+                            <div class="form-line"><span>일상·교복</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>페어리 로제트</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>페어리 로제트 스펙트럼</span><span><span class="badge tbd">TBD</span>
+                                    <span class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>루미너스 변형</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="notice"><strong>디자인 메모</strong>
+                                <p>스펙트럼은 색을 혼합하지 않고 각자의 색을 유지한다. 루미너스 변형은 새 의상 없이 기존 외형 전체가 발광한다.</p>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">ADV</th>
+                                            <td>공통 규격·추천 수량: <a href="../adv-guide.html#standing">ADV·2D 제작 가이드</a>.
+                                                캐릭터별 발주·완료 상태: <span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">3D 전투</th>
+                                            <td><a href="../modeling-guide.html">파츠 분리·전체 바디・Shape Key 가이드</a>.
+                                                리깅・VFX・소켓・성능 예산: <span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section" id="artwork">
+                            <h2><span class="section-number">자료.</span>설정화</h2>
+                            <details class="character-artwork">
+                                <summary>캐릭터 시트 펼치기 <span class="badge">형태별·바디</span></summary>
+                                <div class="character-artwork-content">
+                                    <details class="sheet-group">
+                                        <summary>변신 전<span class="badge">2개 시트</span></summary>
+                                        <div class="sheet-content">
+                                            <figure class="sheet-figure"><a
+                                                    href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    aria-label="동복 원본 크기로 열기"><img class="sheet-image"
+                                                        src="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        alt="동복 전체 설정화" loading="lazy" decoding="async"></a>
+                                                <figcaption>동복 <a
+                                                        href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a>
+                                                </figcaption>
+                                            </figure>
+                                            <figure class="sheet-figure"><a
+                                                    href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    aria-label="하복 원본 크기로 열기"><img class="sheet-image"
+                                                        src="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        alt="하복 전체 설정화" loading="lazy" decoding="async"></a>
+                                                <figcaption>하복 <a
+                                                        href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%AA%A8%EB%AA%A8%EC%B9%B4%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </details>
+                                    <details class="sheet-group">
+                                        <summary>변신 후<span class="badge">1개 시트</span></summary>
+                                        <div class="sheet-content">
+                                            <figure class="sheet-figure"><a
+                                                    href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    aria-label="페어리 로제트 원본 크기로 열기"><img class="sheet-image"
+                                                        src="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png"
+                                                        alt="페어리 로제트 전체 설정화" loading="lazy" decoding="async"></a>
+                                                <figcaption>페어리 로제트 <a
+                                                        href="../sources/CharacterSheet/%EB%AA%A8%EB%AA%A8%EC%B9%B4-%EB%A1%9C%EC%A0%9C%ED%8A%B8/%EB%A1%9C%EC%A0%9C%ED%8A%B8%20%EC%8B%9C%ED%8A%B8.png"
+                                                        target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </details>
+                                    <details class="sheet-group">
+                                        <summary>바디<span class="badge">TBD</span></summary>
+                                        <div class="sheet-content">
+                                            <div class="sheet-tbd"><strong>TBD</strong>
+                                                <p>의복을 착용한 체형 참고 시트 TBD</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <p class="small"><a href="../artwork.html#momoka">설정화 모음 페이지에서 보기 →</a></p>
+                                </div>
+                            </details>
+                        </section>
+                        <section class="section" id="overview">
+                            <h2><span class="section-number">3.</span>개요</h2>
+                            <div class="prose">
+                                <p>《스타라이트 페어리즈》의 주인공. 호시노미야 여학원에 다니며 사랑의 별빛을 쓰는 페어리 로제트로 싸운다. 어머니에게 빌린 브로치를 지닌 채 미나미의
+                                    암흑게이트에 들어간 것이 첫 각성의 계기다. 처음부터 다른 사람의 마음을 정확히 아는 인물이 아니라, 좋은 뜻의 격려도 상처가 될 수 있음을 배우는
+                                    인물이다.</p>
+                                <p>서사의 중심은 ‘사랑하면 반드시 구할 수 있다’는 확신에서 벗어나 상대의 답을 듣는 과정이다. 치요에게는 글을 쓰는 능력과 우정을 분리하고, 유우나에게는
+                                    잘못에 대한 책임과 친구로서의 마음을 함께 인정한다. 마지막에는 자신이 원하는 생환과 유우나의 선택을 구분하며 상실 뒤에도 관계의 의미를 지킨다.
+                                    [원작 1권 1·5<del>6화, 5권 42</del>44·49~50화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="traits">
+                            <h2><span class="section-number">4.</span>특징</h2>
+                            <div class="prose">
+                                <h3>4.1. 성격과 변화</h3>
+                                <p>명랑하고 먼저 다가가며 떠오른 일을 곧바로 행동에 옮긴다. 치요에게 발표를 권하거나 미나미에게 무대 복귀를 격려할 때도 상대가 원하는 답을 충분히 묻지
+                                    못한다. 하지만 자신의 말이 상처가 되었음을 알면 변명하기보다 사과하고 접근 방식을 바꾼다. 직감적인 공감과 끝까지 남는 집념이 강점이며, 선의만으로
+                                    결과를 약속하려는 성급함이 약점이다. [1권 1·3·6화]</p>
+                                <h3>4.2. 일상·취향과 연기 단서</h3>
+                                <p>등교 지각과 흐트러진 준비로 우미코에게 자주 지적받는다. 방에는 별·꽃 장식, 작은 망원경과 별 지도, 인형과 책이 함께 놓이며 비밀회의에서도 팀의 소개
+                                    동작부터 고민한다. 딸기 소다·라테 등 딸기 계열 음료를 고르는 장면이 있다. 이러한 행동은 원작의 생활 묘사이며, 별도로 제공된 취향 설정 전체가
+                                    소설에서 직접 진술된다는 뜻은 아니다. [1권 1~2화, 2권 11·19화]</p>
+                                <h3>4.3. 사람을 보는 방식</h3>
+                                <p>유우나가 적이라는 사실을 알고도 치요를 구한 행동을 지우지 않는다. 동시에 친구라는 이유로 거짓말과 공격을 괜찮다고 하지도 않는다. 분노·애정·두려움이
+                                    함께 존재하는 모습을 연기해야 하며, 후반의 침착함을 초반부터 완성된 통찰로 표현하지 않는다. [2권 20화, 5권 42~45화]</p>
+                                <h3>4.4. 좋아하는 것·싫어하는 것</h3>
+                                <div class="table-wrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>구분</th>
+                                                <th>내용</th>
+                                                <th>근거와 적용 범위</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>제공 프로필의 기호</td>
+                                                <td>딸기</td>
+                                                <td>기존 사용자 제공 개별 문서의 설정을 유지한다. 원작에도 딸기 계열 음료를 고르는 장면이 있으나 모든 단 음식을 좋아한다고
+                                                    확대하지 않는다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>제공 프로필의 기피</td>
+                                                <td>벌</td>
+                                                <td>기존 설정을 보존한다. 소설에서 구체적인 공포 계기나 알레르기가 확인된 것은 아니므로 해당 항목은 TBD다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>원작의 애착</td>
+                                                <td>치요의 이야기·친구들과의 학교와 카페</td>
+                                                <td>1권 3~6화, 2권 11·19화, 5권 45·50화. 작품의 성과와 우정의 조건을 구분하며 일상을 함께하고 싶어 한다.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>원작의 즐거움</td>
+                                                <td>팀 소개 동작·사진·별빛전설</td>
+                                                <td>1권 1화, 2권 11화, 4권 31화. 책임감과 함께 동경하던 천사의 모습을 즐기는 면이 있다.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>성장에 따른 가치관</td>
+                                                <td>타인의 답을 역할과 실패로 단정하는 일을 거부</td>
+                                                <td>5권 42~44화. 처음부터 완성된 취향 목록이 아니라 시행착오로 얻은 태도다.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p>늦잠·정리정돈·준비물 누락은 생활상의 약점이며 싫어하는 대상과는 다르다. 우미코와 말다툼한다는 이유로 규칙이나 계획성 자체를 싫어한다고 쓰지 않는다.
+                                </p>
+                                <h3>4.5. 외형·제작 설정 보존</h3>
+                                <p>아래는 기존 개별 캐릭터 문서의 상세 외형 설정을 보존한 제작 참고다. 원작의 사건·발화 근거와 구분하며, 최종 형태와 정확한 색상·치수는 사용자 설정
+                                    및 제공 시트를 따른다.</p>
+                                <p><span class="source-ref">작중 이미지 — 원문 첨부 이미지 미제공 · TBD</span></p>
+                                <p>분홍색 머리카락과 푸른 눈동자를 지녔으며, 전체적으로 밝고 명랑한 인상을 준다. 평소에는 호시노미야 여학원의 교복을 입고 다니며, 어머니에게 빌린 하트
+                                    모양 브로치를 교복 리본 아래에 달고 다니다가 첫 각성을 맞는다. 3권에서 브로치의 기원을 알게 된 뒤 아카리에게 정식으로 물려받는다.</p>
+                                <p>페어리 로제트로 변신하면 길게 풀어진 머리카락이 두 갈래로 묶이고, 흰색을 바탕으로 분홍색 장식이 더해진 마법소녀 의상을 입는다. 겹쳐진 치맛자락은 활짝
+                                    핀 꽃을 연상시키며, 가슴 중앙에는 사랑의 별빛과 연결된 하트 장식이 빛난다. 흰색 부츠와 분홍빛 지팡이를 사용하며, 마법을 펼칠 때에는 하트와 꽃잎을
+                                    닮은 문양이 나타난다.</p>
+                                <p>페어리 로제트 스펙트럼으로 변형하면 기본적인 분홍색 인상은 유지되지만, 드레스와 리본, 장갑과 부츠의 가장자리에 무지갯빛 광채가 비친다. 브로치의 분홍색
+                                    장식은 일곱 장의 투명한 꽃잎으로 펼쳐지며, 지팡이 끝의 투명한 고리 안에서는 일곱 개의 작은 별이 서로 다른 궤도를 따라 회전한다. 여러 색이 하나로
+                                    섞여 사라지는 것이 아니라, 각자의 색을 유지한 채 이어져 있다는 것이 디자인의 핵심이다.</p>
+                                <p>최종전의 루미너스 변형에서는 새로운 의상으로 바뀌지 않는다. 기존 모습 그대로 몸과 머리카락, 눈동자, 의상과 무기 전체가 모모카의 분홍빛과 루미너스의
+                                    순백색 빛으로 강하게 발광한다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="abilities">
+                            <h2><span class="section-number">5.</span>능력</h2>
+                            <div class="prose">
+                                <p>사랑의 브로치를 매개로 로제트에 각성한다. 아카리는 브로치의 보관자였으며 페어리즈로 변신한 전임자는 아니다. 브로치에 이어진 가능성과 모모카가 선택한
+                                    마음이 만나 현재의 힘이 된다. [3권 21화]</p>
+                                <p>지팡이, 분홍빛 마법탄, 꽃잎·리본·덩굴과 방어막을 사용한다. 상대를 구속하거나 퇴로를 만들고, 동료가 대화할 시간을 확보하는 장면도 많다. 정화는
+                                    부상·실패·죽음을 원상복구하는 능력이 아니며 당사자가 다음 선택을 할 수 있도록 돕는 과정과 연결된다. [1권 1<del>6화, 2권
+                                        18</del>20화, 3권 30화]</p>
+                                <p>로제트 스펙트럼은 모모카가 내린 사랑의 답에 스펙트라의 힘 일부가 더해진 강화 형태다. 여러 사람의 빛을 연결하지만 유우나의 의지를 대신 만들 수 없고,
+                                    연결을 통한 역류 공격도 받는다. 최종전의 루미너스 변형은 마을이 되돌려 준 별빛과 네 페어리즈가 이어진 결과다. 게임 스킬의 이름·수치·AP 효과는
+                                    별도의 게임 설계로 확정한다. [5권 44·46~49화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="family">
+                            <h2><span class="section-number">6.</span>가족관계</h2>
+                            <div class="prose">
+                                <p>어머니는 사쿠라이 아카리, 아버지는 사쿠라이 마사히로다. 아카리는 어린 모모카에게 전설을 읽어 주고 사랑의 브로치를 보관했다. 모모카의 정체를 안 뒤에는
+                                    비밀을 지키며 집과 자료 조사로 동료들을 돕는다. 마사히로는 아카리의 대화에서 자료 정리와 출장, 비밀을 언제 알릴지 등의 맥락으로 언급된다. 부모의
+                                    역할을 동일한 비중의 현장 조력으로 확대하지 않는다. [1권 1화, 2권 11화, 3권 21화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="relationships">
+                            <h2><span class="section-number">7.</span>인간관계</h2>
+                            <div class="prose">
+                                <div class="table-wrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>인물</th>
+                                                <th>관계와 변화</th>
+                                                <th>원작 근거</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>우미코</td>
+                                                <td>생활에서는 잔소리와 말다툼을 주고받고 전투에서는 직감과 계획을 보완한다. 익명 협력에서 서로의 이름을 아는 동료가 되고,
+                                                    마지막에는 우미코가 이름으로 불릴 관계를 받아들인다.</td>
+                                                <td>1권 2~6화, 5권 50화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>치요</td>
+                                                <td>작품을 좋아하는 친구이지만 성급한 발표 권유로 상처를 키운다. 글을 쓰지 않아도 친구라는 사실을 전하고 이후 집필과 출간을
+                                                    함께 기뻐한다.</td>
+                                                <td>1권 3~6화, 5권 45·50화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>히나·시즈키</td>
+                                                <td>히나의 행동력에 도움받고, 적이던 시즈키도 현재의 선택을 기준으로 동료로 맞는다. 두 선배의 사정을 모두 안다고 가정하지
+                                                    않고 곁을 지킨다.</td>
+                                                <td>1권 8<del>10화, 3권 24</del>30화, 4권 31~39화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>유우나</td>
+                                                <td>잠입해 온 적이자 함께 웃은 친구다. 정체를 안 뒤에도 관계를 모두 거짓으로 만들지 않으며 잘못에는 사과와 책임을
+                                                    요구한다. 생환을 약속할 수 없어도 마지막까지 이름으로 부른다.</td>
+                                                <td>2권 11·19<del>20화, 5권 41</del>50화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>스펙트라</td>
+                                                <td>전설과 정화의 한계를 알려 주는 안내자. 사랑의 답을 대신 정해 주는 대신 모모카가 답하도록 돕고 힘 일부를 나눈다.
+                                                </td>
+                                                <td>3권 21화, 5권 44화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>미나미·나기사</td>
+                                                <td>미나미는 첫 정화에서 자신의 성급함을 배우게 한 인물이며, 나기사는 통학로와 카페의 일상을 잇는 친근한 어른이다.</td>
+                                                <td>1권 1화, 2권 19화</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="story">
+                            <h2><span class="section-number">8.</span>작중 행적</h2>
+                            <div class="notice"><strong>기준</strong>
+                                <p>원작소설 1~5권 기준. 아래 권·화 번호는 게임 챕터 번호나 전투 스테이지 번호가 아닙니다.</p>
+                            </div>
+                            <div class="prose">
+                                <p>사용자가 제공한 원작소설 1~5권 DOCX를 직접 대조한 주요 행적이다. 실제 등장·회상·언급을 구분하고 해당 근거가 있는 화만 수록한다. 모든 이름
+                                    언급을 빠짐없이 나열한 전수 출연표는 아니다. 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있다.</p>
+                            </div>
+                            <div class="volume-actions"><button type="button" data-volumes="open">전체 권
+                                    펼치기</button><button type="button" data-volumes="close">전체 권 접기</button></div>
+                            <details class="volume" id="volume-1">
+                                <summary>1권 · 운명이 소녀를 부를 때 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-1">1화. 운명이 소녀를 부를 때</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>어머니의 사랑의 브로치를 빌려 등교하다 나기사가 알려 준 신사 뒷길에서 암흑게이트에 들어간다. 미나미에게 무대로 돌아가라고 성급히 격려했다가
+                                        상처를 키우지만, 곁을 떠나지 않겠다는 마음으로 로제트에 각성한다. 상대가 원한 삶을 대신 정하지 않겠다고 사과하고 재활 상담이라는 작은 선택을
+                                        도와 첫 별빛정화를 이룬다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 1화 〈운명이 소녀를 부를 때〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-2">2화. 이름을 모르는 동료</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>새 학기 교실에서 치요와 일상을 나누고 우미코에게 지각과 교복 차림을 지적받는다. 미나미 사건의 잔류 영역에서 아쿠아리우스와 처음 공동 전투를
+                                        하며, 발레 슈즈를 부수는 대신 기억을 먹는 어둠과 연결만 제거한다. 서로의 이름을 모르는 채 동료가 된다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 2화 〈이름을 모르는 동료〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-3">3화. 작은 별빛의 이야기</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>치요의 공책을 우연히 발견하지만 보여 줄 시점은 치요가 정할 일이라고 존중한다. 동화를 진심으로 좋아해 발표를 권하지만 실패 뒤 다음에는 더
+                                        재미있게 쓰면 된다는 말로 상처를 키운다. 사과를 시도하던 중 빈자리와 브로치의 차가운 반응으로 위기를 알아챈다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 3화 〈작은 별빛의 이야기〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-4">4화. 비에 젖은 원고</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>로제트로 종이인형의 어둠을 끊되 치요의 원고를 지키며 내면으로 향한다. 치요가 가장 친한 친구에게 받은 상처를 말하자 사과해야 하는 자신이 베일
+                                        뒤에 숨어 있다는 문제를 마주한다. 정체 노출 위험을 경고하는 아쿠아리우스와 갈등한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 4화 〈비에 젖은 원고〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-5">5화. 가면 너머의 이름</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>가면을 깨는 데 성공해도 정화가 완성되지 않자 베일을 걷고 사쿠라이 모모카라는 이름과 실제로 읽은 동화의 문장을 밝힌다. 자신의 기대를 치요를
+                                        위한 일로 정해 버렸다고 사과하지만, 가까운 친구의 실망을 두려워한 핵이 다시 폭주해 영역 밖으로 밀려난다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 5화 〈가면 너머의 이름〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-6">6화. 별빛을 맡긴다는 것</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>아쿠아리우스가 우미코라는 사실을 알고 같은 무게의 신뢰를 나눈 뒤 재진입한다. 치요가 글을 쓰지 않기로 해도 친구라는 관계는 변하지 않는다고
+                                        말하며 작은 별이 한 걸음 곁을 비추던 문장을 되돌려 준다. 귀환 뒤에도 기다려 주며 친구의 한 줄을 지켜본다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 6화 〈별빛을 맡긴다는 것〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-7">7화. 막이 오르지 않는 무대</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>화 말미 교실에서 브로치와 팩트의 검은 파동을 느끼며 강당의 게이트 발생을 알아챈다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 7화 〈막이 오르지 않는 무대〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-8">8화. 닫힌 막, 열린 어둠</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>우미코의 학생회 호출을 구실로 교실을 나와 강당으로 향한다. 리코의 영역에 진입하지만 암흑현현과 다크니스 네뷸라의 개입으로 붙들린다. 아직 자신의
+                                        정체를 모르는 히나에게 일상 호칭을 부를 뻔한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 8화 〈닫힌 막, 열린 어둠〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-9">9화. 용기의 황금빛 광채</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>네뷸라와 대치하면서 맨몸으로 구조에 나선 히나를 지키려 한다. 솔라리스 각성 뒤에는 분홍빛으로 낫의 움직임을 늦추고 사람들을 감싸며 세 사람의
+                                        협공을 시작한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 9화 〈용기의 황금빛 광채〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-10">10화. 빛이여, 마을의 천사들에게 닿아라!</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>리코의 내면에서 혼자 모든 배역을 맡는 공연을 마주하고, 대회를 놓치는 일과 동료들이 연극 자체를 버리는 일은 다르다고 전한다. 동료들이 인장을
+                                        끊는 동안 내면 대화와 외부 리본 지원을 병행해 정화를 완성하고 시민 앞에서 페어리즈를 소개한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 10화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-2">
+                                <summary>2권 · 푸른 별빛이 비추는 내일 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-11">11화. 스타라이트 페어리즈, 비밀회의!</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>자택의 비밀회의에서 팀의 소개 동작을 제안하며 우미코·히나와 어울린다. 변신 모습을 어머니에게 들키지만 집을 동료들이 쉬어 갈 장소로 받아들인다.
+                                        전학생 유우나에게 학교와 카페의 일상을 나누어 준다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 11화 〈스타라이트 페어리즈, 비밀회의!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-12">12화. 언제나 두 번째</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>전학 후 학교생활에 익숙해지는 유우나와 어울리고 수학 공부를 도움받는다. 유우나의 일상이 잠입 임무 이상의 의미를 갖도록 만드는 친구로 그려진다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 2권 12화 〈언제나 두 번째〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-13">13화. 누구의 그림자</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>히나와 합류해 녹타라를 견제하고 우미코가 마이에게 접근할 공간을 확보한다. 힘으로 외피를 부수는 것만으로는 당사자를 구할 수 없는 상황을
+                                        마주한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 13화 〈누구의 그림자〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-14">14화. 보이지 않는 노력</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>우미코에게 자신의 노력도 말해도 된다고 힘을 보탠다. 히나와 외부 공격을 막으며 우미코와 마이의 대화를 지킨다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 14화 〈보이지 않는 노력〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-15">15화. 별빛을 잇는 집</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>시미즈가를 방문해 별빛의 계승과 우미코의 가정사를 듣는다. 가문이 정한 역할 밖의 미래를 찾으려는 우미코를 친구로 지지한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 15화 〈별빛을 잇는 집〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-16">16화. 아이들만 있다면</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>보육원에서 아이들과 어린 우미코를 보호한다. 우미코가 전투에 참여할 수 없게 된 상황에서 히나와 함께 나이 역행 공격을 버틴다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 16화 〈아이들만 있다면〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-17">17화. 작은 우미코</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>나이 역행의 제한 시간 속에서 방어와 구조를 이어 간다. 우미코와 히나가 당사자의 마음에 접근할 시간을 확보한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 17화 〈작은 우미코〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-18">18화. 내가 바라는 내일</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>지팡이의 리본과 방어막으로 민간인들을 지킨다. 어린 우미코가 읽어 낸 공격의 전조를 받아 대응하며 정화를 돕고, 사건 뒤 스스로의 미래를 찾으려는
+                                        우미코에게 소원 종이를 건넨다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 18화 〈내가 바라는 내일〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-19">19화. 별빛축제의 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>치요·유우나와 유카타를 입고 별빛축제를 즐기며 내년의 약속을 나눈다. 교단의 습격에 로제트로 싸우다가 치요를 몸으로 구한 아포크라의 외피가 깨지는
+                                        순간 유우나의 얼굴을 알아본다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 19화 〈별빛축제의 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-20">20화. 별빛 아래 드러난 얼굴</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>유우나를 붙잡고 싶은 마음보다 치요와 아이의 대피를 먼저 택한다. 동료들에게 아포크라의 정체와 구조 행동을 알리고, 함께한 시간이 전부
+                                        거짓이었다고 단정하지 않겠다고 한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 20화 〈별빛 아래 드러난 얼굴〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-3">
+                                <summary>3권 · 믿음의 보랏빛 광채 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-21">21화. 오로라 책방</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>전학 처리된 유우나에게 연락이 닿지 않는 상황을 겪는다. 어머니가 모은 사고 자료와 브로치의 내력을 듣고 오로라 책방을 찾아, 자신의 사랑의 힘이
+                                        누구의 대역도 아닌 자신의 선택임을 배운다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 21화 〈오로라 책방〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-22">22화. 8년 전의 관측자</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>연락을 피하는 연구원의 거절권을 존중하며 조사에 동행한다. 히나에게 과거와 현재의 시즈키가 모두 같은 사람의 진실일 수 있다고 말하고, 연구원이
+                                        남긴 증언과 사고 영역을 마주한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 22화 〈8년 전의 관측자〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-23">23화. 기록되지 않은 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>사고를 재현한 영역에서 동료들과 연구원을 구하고 기록을 확보한다. 사건 뒤에는 원본 자료와 저장 매체의 보존, 여러 곳에 사본을 남기는 후속
+                                        조치에 참여한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 23화 〈기록되지 않은 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-24">24화. 네뷸라의 이름</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>시즈키를 충분히 모르는 자신이 섣불리 말하기보다 히나의 대화와 기다림을 지지한다. 친구를 되찾는 과정에도 당사자가 판단할 여지가 필요함을 보여
+                                        준다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 24화 〈네뷸라의 이름〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-25">25화. 길을 잃은 북극성</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>연구소 장치에 개입해 동료들과 게이트의 확장을 억제한다. 분홍빛으로 흔들리는 고리를 모아 새로운 어둠이 넘어오는 틈을 막는다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 25화 〈길을 잃은 북극성〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-26">26화. 복수라는 이름의 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>벽과 천장에 별빛 표식을 남겨 방향이 뒤틀린 공간의 이동을 돕는다. 우미코와 로스트 폴라리스를 붙잡으며 히나와 시즈키의 대화를 지킨다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 26화 〈복수라는 이름의 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-27">27화. 믿음의 보랏빛 광채</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>새로 합류한 네뷸라를 동료로 맞고 암흑태생 생명체의 처리를 맡는다. 네 사람의 첫 공동 전투를 시작한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 27화 〈믿음의 보랏빛 광채〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-28">28화. 아빠가 남긴 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>네 사람의 연계로 로스트 폴라리스와 게이트를 정화한다. 아버지를 잃은 시즈키 곁에 머물며 억지로 괜찮다고 결론짓지 않는다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 28화 〈아빠가 남긴 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-29">29화. 별빛연구소의 진실</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>자료에서 교단이 피해자의 실제 상처를 이용했음을 확인한다. 세 사람과 카즈키의 중앙 수렴실로 향한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 29화 〈별빛연구소의 진실〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-30">30화. 복수보다 내일</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>사랑이 원하는 결말을 보장하지 않아도 사랑했던 사실은 남는다고 카즈키에게 맞선다. 수렴 장치의 연결부를 끊고 전투 뒤 나타난 아포크라를 유우나로
+                                        부른다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 30화 〈복수보다 내일〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-4">
+                                <summary>4권 · 태양은 가려져도 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-31">31화. 네 개의 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>합류한 시즈키와 점심을 먹고 네 사람의 소개 동작과 사진을 준비한다. 소문과 책임을 구별하며 새 동료가 일상의 자리를 갖도록 다가간다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 31화 〈네 개의 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-32">32화. 내가 선택한 어둠</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>동료들과 천문대 잔류 균열에 대응하며 네뷸라의 구조 활동을 지원한다. 과거의 잘못을 지우지 않으면서 현재의 구조 선택을 함께 지킨다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 32화 〈내가 선택한 어둠〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-34">34화. 에테르녹스</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>시간 정지와 그림자 분신이 결합된 에테르녹스와 싸운다. 우미코가 내부에 접근할 수 있도록 히나·네뷸라와 외부 전투를 맡는다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 34화 〈에테르녹스〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-35">35화. 언니가 바란 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>두 자매의 분리와 정화에 힘을 보탠다. 사건 뒤 살아남았으니 다행이라는 말로 결론짓지 않고 카오리가 상실을 받아들일 시간을 지킨다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 35화 〈언니가 바란 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-36">36화. 꿈이었던 선생님</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>히나에게 음식과 휴식을 챙기며 요루를 존경했던 감정까지 잘못이라고 여기지 말라고 한다. 진로희망서의 답은 히나가 쓰는 것이라며 동행한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 36화 〈꿈이었던 선생님〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-37">37화. 서른 해 전의 월식</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>요루가 스승을 구할 수 있는데도 실험을 위해 방치한 선택에 분노한다. 네 사람과 이클리시아의 흑월 전투에 들어간다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 37화 〈서른 해 전의 월식〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-38">38화. 태양을 가리는 검은 달</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>빛이 약해지는 상황에서도 동료들을 도우며 히나의 선택을 대신 규정하지 않으려 한다. 요루의 영향이 있었다는 이유로 히나의 행동까지 빼앗을 수
+                                        없다고 맞선다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 38화 〈태양을 가리는 검은 달〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-39">39화. 내가 되고 싶은 선생님</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>회복한 솔라리스의 돌진을 뒤쫓는 촉수를 분홍빛으로 붙잡는다. 전투 뒤 다친 동료들과 함께 천문대를 나선다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 39화 〈내가 되고 싶은 선생님〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-40">40화. 흑성교단의 끝</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>교단의 끝이 곧 유우나의 구출을 뜻하지 않음을 듣는다. 유우나가 남긴 자리와 축제 사진을 기억하며 단순히 적의 간부로 정리하지 않는다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 40화 〈흑성교단의 끝〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-5">
+                                <summary>5권 · 빛이여, 마을의 천사들에게 닿아라 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-41">41화. 돌아오지 않는 전학생</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>돌아오지 않는 유우나의 자리를 지키며 치요와 마음을 나눈다. 카오리에게 유우나의 과거를 듣고 피해자나 그릇으로만 보지 않기로 한다. 놀이공원의
+                                        반응을 따라 이번에는 유우나의 이야기부터 듣겠다고 출발한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 41화 〈돌아오지 않는 전학생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-42">42화. 머물고 싶었던 장소</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>놀이공원에서 변신 전 모습으로 유우나와 먼저 대화한다. 정체 추적과 보고 지연의 이유를 직접 듣고, 잘못을 묻는 일과 친구로 남고 싶은 마음을
+                                        함께 밝힌다. 돌아올 장소를 지우려는 마지막 임무와 맞선다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 42화 〈머물고 싶었던 장소〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-43">43화. 아포크라의 마지막 임무</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>관리인과 치요를 보호한 유우나의 행동을 보며 잘못한 채로도 돌아와 사과하고 방법을 찾자고 말한다. 그러나 네메시스가 사랑이 모든 사람을 구할 수
+                                        있느냐고 묻자 답을 잃고 별빛이 꺼진다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 43화 〈아포크라의 마지막 임무〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-44">44화. 사랑의 스펙트럼</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>스펙트라와 대화하며 곁에 있기·기다리기·존중하기·떠나보내기도 사랑임을 깨닫는다. 돌아오지 못하더라도 유우나였던 시간을 지우지 않겠다고 말하고
+                                        스펙트라가 나눈 힘을 받아 로제트 스펙트럼으로 강화된다. 유우나 자신의 선택에 손을 뻗는다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 44화 〈사랑의 스펙트럼〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-45">45화. 단 하루의 전학생</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>밤새 유우나 곁을 지키고 학교와 카페에서 다시 친구로 맞는다. 좋은 선택이 잘못을 지우지도, 잘못이 함께 웃은 시간을 모두 지우지도 않는다고
+                                        말한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 45화 〈단 하루의 전학생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-46">46화. 어둠이 태어나는 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>유우나를 따라가 애착을 악용한 책임은 네메시스에게 있다고 말한다. 돌아갈 장소를 원한 마음과 가해자의 이용을 구별하며 의식의 분리를 시도하지만
+                                        현현을 막지 못한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 46화 〈어둠이 태어나는 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-47">47화. 호시노미야 암흑현현</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>마을 전체가 영역이 되자 네 사람의 구조 동선을 나누고 본체 공략으로 전환한다. 스펙트럼으로 유우나의 빛에 닿지만 역류 공격에 밀려 각자의 두려움
+                                        속에 고립된다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 47화 〈호시노미야 암흑현현〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-48">48화. 별빛이 꺼진 뒤에도</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>구하지 못할 사람을 사랑한 책임을 묻는 환영에 무너져 변신이 풀린다. 주민들이 되돌려 주는 목소리와 빛이 닿으며 완전히 혼자는 아니라는 연결을
+                                        되찾기 시작한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 48화 〈별빛이 꺼진 뒤에도〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-49">49화. 빛이여, 마을의 천사들에게 닿아라!</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>마을이 되돌려 준 별빛으로 두려움 속에서 다시 일어나 루미너스 변형에 이른다. 스펙트럼으로 유우나의 의식을 잇고, 함께 돌아가고 싶은 바람과
+                                        유우나가 택한 마지막 결말을 구분하며 작별한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 49화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-50">50화. 별빛은 계속된다</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>어머니와 재회하고 학교 복구를 돕는다. 치요와 유우나의 빈 책상을 바라보며 친구를 기억한다. 졸업식 뒤 우미코의 이름을 부르고, 소풍에서 여섯
+                                        사람의 사진을 남기며 일상을 잇는다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 50화 〈별빛은 계속된다〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                        </section>
+                        <section class="section" id="quotes">
+                            <h2><span class="section-number">9.</span>어록</h2>
+                            <div class="prose">
+                                <p>원작의 실제 발화를 대조했다. 아래 문장은 본인의 대사이며, 환영의 발언이나 편지·책의 문장을 섞지 않는다.</p>
+                                <blockquote>
+                                    <p>네가 돌아오지 못한다고 해도, 네가 유우나였던 시간까지 없었던 일로 만들지 않을 거야.</p>
+                                </blockquote>
+                                <p>— 원작 5권 44화. 원하는 생환을 약속할 수 없어도 친구의 삶을 지우지 않겠다는 말.</p>
+                                <blockquote>
+                                    <p>나는 네가 잘못하지 않았다고 말해 주려는 게 아니야. 잘못한 채로도 돌아오라고 하는 거야. 돌아와서 사과하고, 혼나고, 같이 방법을 찾자고 하는
+                                        거야!</p>
+                                </blockquote>
+                                <p>— 원작 5권 43화. 사과와 책임을 회피시키지 않으면서 유우나에게 손을 내민다.</p>
+                                <blockquote>
+                                    <p>네가 우리를 속였던 것도 기억할 거야. 치요를 위험하게 한 것도, 우리와 싸운 것도 전부 기억할 거야.</p>
+                                </blockquote>
+                                <p>— 원작 5권 44화. 기억하는 사랑이 잘못을 지우는 일이 아님을 밝힌다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="trivia">
+                            <h2><span class="section-number">10.</span>기타</h2>
+                            <div class="prose">
+                                <ul>
+                                    <li>이름 <code>로제트</code>와 상징 모티브는 장미꽃 형태로 보이는 로제트 성운에서 유래했다.</li>
+                                    <li>루미너스의 네 힘 가운데 <code>사랑</code>을 계승한다. 작품에서 사랑은 상대를 자신의 바람대로 바꾸는 힘이 아니라 끝까지 한 사람으로
+                                        바라보는 마음으로 정의된다.</li>
+                                    <li>1권 첫 변신 당시 자신의 입에서 자연스럽게 나온 나노리를 외친 뒤, 본인도 방금 무슨 말을 했는지 당황한다. 이후에는 누구보다 단체 포즈와
+                                        자기소개를 진지하게 즐긴다.</li>
+                                    <li>스타라이트 페어리즈의 캐치프레이즈와 단체 포즈를 먼저 제안한 인물이다. 우미코는 불필요하다며 반대하지만 가장 세밀하게 자세를 교정하고, 히나는
+                                        처음부터 적극적으로 찬성한다.</li>
+                                    <li>아카리에게 정체를 들킨 뒤 로제트의 모습으로 무심코 <code>엄마</code>라고 부르고 급히 <code>아카리 씨</code>라고 정정하려
+                                        한다. 그러나 아카리는 이미 딸이라는 사실을 한눈에 알아본다.</li>
+                                    <li>팀 내에서 가장 먼저 자신의 정체를 타인에게 자발적으로 공개했다. 치요를 구하기 위해 별빛의 베일을 걷고 본명을 밝힌 행동은 우미코가 동료를
+                                        신뢰하는 방식에도 큰 영향을 준다.</li>
+                                    <li>아카리의 촬영회에 적극적으로 참여한다. 로제트와 솔라리스는 신이 나서 변신과 해제를 반복하고, 아쿠아리우스는 불평하면서도 모든 촬영 요청에
+                                        응한다.</li>
+                                    <li>딸기 계열 음료를 자주 마신다. 원작소설에서는 딸기라테, 딸기소다, 딸기우유 등이 등장한다.</li>
+                                    <li>우미코와는 성격과 생활 습관이 정반대지만, 서로의 부족한 부분을 가장 자연스럽게 보완한다. 최종화에서 우미코가 요비스테를 푼 뒤에는 공식적으로
+                                        서로 이름을 부르는 사이가 된다.</li>
+                                    <li>시즈키가 합류한 뒤 시민들 앞에서 다크니스 네뷸라를 동료라고 선언한다. 과거를 지워주거나 용서를 대신 선언한 것이 아니라, 시즈키가 현재 선택한
+                                        행동을 믿어준 것이다.</li>
+                                    <li>페어리 로제트 스펙트럼은 화력 중심의 전형적인 주인공 강화형태와 달리 <code>연결</code>에 특화되어 있다. 여러 사람의 빛을 모모카의
+                                        색으로 바꾸지 않고 각자의 색으로 유지한다는 점이 특징이다.</li>
+                                    <li>최종전에서 마을 사람들이 캐치프레이즈를 페어리즈에게 돌려주는 구조는, 늘 사람들에게 빛을 보냈던 모모카가 자신이 구했던 사람들로부터 다시 빛을
+                                        받는 장면이다.</li>
+                                    <li>네메시스를 쓰러뜨렸지만 유우나를 생환시키지 못했다. 이는 모모카의 사랑이 만능의 기적이 되지 않으면서도, 유우나의 마지막 선택과 삶의 의미를
+                                        지켜냈다는 결말이다.</li>
+                                    <li>최종화의 붉은 보석 반지를 낀 소녀는 여섯 사람의 사진을 찍어 모모카에게 건넨다. 본편에서는 이름을 밝히지 않는다. 후속작 《크리스탈
+                                        페어리즈》와의 바톤터치는 기존 제공 캐릭터 문서의 별도 확장 설정으로 보존하며, 본편에서 확인한 정체와 구분한다.</li>
+                                </ul>
+                                <h3>원작 대조와 별도 설정</h3>
+                                <p>2026.09.06 제공된 원작소설 1~5권 DOCX를 기준으로 개요·특징·활동·관계·주요 행적·발화를 대조했다. 기본 프로필의 사용자 제작 수치·생일과
+                                    기존 테마곡·외전 메모는 별도 설정으로 보존한다. 위 기타 항목의 어원·디자인 해설·확장 설정은 소설 속 발화와 구분한다. 미확인 외형·가족·게임
+                                    수치는 임의로 보충하지 않는다. 기준 판본과 정정 사항은 자료·편집 안내의 원작 대조 기록을 참조한다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="source">
+                            <h2><span class="section-number">자료.</span>출처·게임화 메모</h2>
+                            <p><a
+                                    href="../sources/%EC%82%AC%EC%BF%A0%EB%9D%BC%EC%9D%B4_%EB%AA%A8%EB%AA%A8%EC%B9%B4_%ED%8E%98%EC%96%B4%EB%A6%AC_%EB%A1%9C%EC%A0%9C%ED%8A%B8_%EC%9C%84%ED%82%A4.md">사쿠라이_모모카_페어리_로제트_위키.md
+                                    열기 ↗</a></p>
+                            <p>사용자가 제공한 원작소설 1~5권 DOCX의 주요 장면을 직접 대조했습니다. 다른 캐릭터 문서를 사실 확인의 근거로 대체하지 않습니다. 기본 프로필의 사용자
+                                제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존합니다. <a href="../guide.html#novel-audit">기준 판본·정정
+                                    내용·재확인 지점 →</a></p>
+                            <div class="notice"><strong>게임화</strong>
+                                <p>원작과 게임의 기본 스토리는 동일합니다. 전체 구성은 게임 기획서 v1과 사용자 전투 보완을 따릅니다. 장면별 변경·축소·확장 사유와 ADV·전투 배치는
+                                    각색 시 기록합니다. <a href="../systems.html#battle">공통 전투 규칙 →</a></p>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">대응 게임 챕터</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">축소·확장·변경 내역</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변경 사유·담당자·승인일</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <div class="notice"><strong>모모카 문서 보강 이력</strong>
+                            <p>2026.09.06 · 원작소설 1~5권 직접 대조로 개요·특징·관계·행적·어록을 다시 정리했습니다. 기존 수치·생일·별도 제작 설정은 보존했습니다. <a
+                                    href="../sources/archive/%EC%82%AC%EC%BF%A0%EB%9D%BC%EC%9D%B4_%EB%AA%A8%EB%AA%A8%EC%B9%B4_%ED%8E%98%EC%96%B4%EB%A6%AC_%EB%A1%9C%EC%A0%9C%ED%8A%B8_%EC%9C%84%ED%82%A4_%EB%B3%B4%EA%B0%95%EC%A0%84_2026-09-06.md">보강
+                                    전 제공 MD 열기 →</a></p>
+                        </div>
+                    </div>
+                    <aside class="toc" aria-label="이 문서의 목차"><strong>이 문서의 목차</strong><a class="" href="#profile">1. 기본
+                            프로필</a><a class="" href="#production">2. 제작용 프로필</a><a class="" href="#artwork">설정화·바디</a><a
+                            class="" href="#overview">3. 개요</a><a class="" href="#traits">4. 특징</a><a class=""
+                            href="#abilities">5. 능력</a><a class="" href="#family">6. 가족관계</a><a class=""
+                            href="#relationships">7. 인간관계</a><a class="" href="#story">8. 작중 행적</a><a class="sub"
+                            href="#volume-1">1권</a><a class="sub" href="#volume-2">2권</a><a class="sub"
+                            href="#volume-3">3권</a><a class="sub" href="#volume-4">4권</a><a class="sub"
+                            href="#volume-5">5권</a><a class="" href="#quotes">9. 어록</a><a class="" href="#trivia">10.
+                            기타</a><a class="" href="#source">출처·게임화 메모</a><a href="../resources.html">리소스 제작 기준 ↗</a>
+                    </aside>
+                </div>
+            </article>
+            <footer class="footer"><span>Blossom Games · STARLIGHT FAIRIES DEVELOPMENT WIKI</span><span>설정 미확정 항목은 TBD로
+                    표기합니다.</span></footer>
+        </main>
+    </div><a class="top-link" href="#top" aria-label="문서 맨 위로">↑</a>
+</body>
+
+</html>

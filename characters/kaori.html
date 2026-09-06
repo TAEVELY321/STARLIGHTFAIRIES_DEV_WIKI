@@ -1,211 +1,782 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="히이라기 카오리 — 스타라이트 페어리즈 내부 개발용 위키. 원작소설 1~5권 설정과 2D ADV·3D 턴제 전투 제작 자료."><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#ab2867"><title>히이라기 카오리 | 스타라이트 페어리즈 개발 위키</title><link rel="icon" href="../sources/branding/StarlightFairiesLogo.png"><link rel="stylesheet" href="../assets/style.css"><script defer src="../assets/app.js"></script></head>
-<body id="top"><a class="skip" href="#content">본문으로 건너뛰기</a><header class="topbar"><div class="topbar-inner"><button class="menu-button" type="button" aria-label="문서 메뉴 열기" aria-controls="sidebar" aria-expanded="false">☰</button><a class="brand" href="../index.html"><img class="header-logo" src="../sources/branding/StarlightFairiesLogo.png" alt="스타라이트 페어리즈"><span class="brand-caption">DEV WIKI</span></a><form class="search" action="../characters.html" role="search"><label class="sr-only" for="global-search">캐릭터 문서 검색</label><input id="global-search" name="q" type="search" placeholder="캐릭터·변신명·설정 검색" autocomplete="off"><button type="submit">검색</button></form><span class="internal-label">INTERNAL DOCUMENTS</span><button class="theme-button" type="button" aria-label="어두운 테마로 변경" aria-pressed="false">◐</button></div></header>
-<div class="layout"><aside class="sidebar" id="sidebar"><nav aria-label="주요 문서"><p class="nav-heading">프로젝트</p><a class="nav-link "  href="../index.html"><span class="nav-symbol" aria-hidden="true">⌂</span>대문</a><a class="nav-link active" aria-current="page" href="../characters.html"><span class="nav-symbol" aria-hidden="true">♧</span>등장인물</a><p class="nav-heading">원작과 게임</p><a class="nav-link "  href="../world.html"><span class="nav-symbol" aria-hidden="true">◇</span>세계관·용어</a><a class="nav-link "  href="../story.html"><span class="nav-symbol" aria-hidden="true">▤</span>원작 1~5권</a><a class="nav-link "  href="../systems.html"><span class="nav-symbol" aria-hidden="true">▣</span>게임 기획</a><p class="nav-heading">개발 자료</p><a class="nav-link "  href="../artwork.html"><span class="nav-symbol" aria-hidden="true">▧</span>캐릭터 설정화</a><a class="nav-link "  href="../resources.html"><span class="nav-symbol" aria-hidden="true">▦</span>리소스 제작 기준</a><a class="nav-link "  href="../adv-guide.html"><span class="nav-symbol" aria-hidden="true">▧</span>ADV·2D 제작 가이드</a><a class="nav-link "  href="../modeling-guide.html"><span class="nav-symbol" aria-hidden="true">◇</span>3D 모델링 가이드</a><a class="nav-link "  href="../guide.html"><span class="nav-symbol" aria-hidden="true">≡</span>자료·편집 안내</a><p class="nav-heading">스타라이트 페어리즈</p><a class="nav-link" href="../characters/momoka.html"><span class="nav-symbol" aria-hidden="true" style="color:#bc3976">✦</span>사쿠라이 모모카</a><a class="nav-link" href="../characters/umiko.html"><span class="nav-symbol" aria-hidden="true" style="color:#236ca5">✦</span>시미즈 우미코</a><a class="nav-link" href="../characters/hina.html"><span class="nav-symbol" aria-hidden="true" style="color:#a56b16">✦</span>미츠하라 히나</a><a class="nav-link" href="../characters/shizuki.html"><span class="nav-symbol" aria-hidden="true" style="color:#7952b0">✦</span>호시조라 시즈키</a></nav><div class="sidebar-brand"><img src="../sources/branding/BlossomGamesLogo.png" alt="Blossom Games"><span>원작 1–5권 · 게임 개발 자료</span></div></aside><div class="scrim" aria-hidden="true"></div>
-<main class="main" id="content"><nav class="breadcrumbs" aria-label="현재 위치"><a href="../index.html">스타라이트 페어리즈</a><span>›</span><a href="../characters.html">등장인물</a><span>›</span><span>히이라기 카오리</span></nav><article class="article"><header class="article-heading"><span class="eyebrow">CHARACTER DOCUMENT · KAORI</span><h1>히이라기 카오리</h1><p class="subtitle">녹타라</p><div class="meta"><span>기준 · 원작소설 1~5권</span><span>게임 · 2D ADV + 3D 턴제 전투</span><span>정리 · 2026.09.06</span></div></header><div class="article-layout"><div class="article-body"><div class="notice"><strong>스포일러 안내</strong><p>원작소설 1~5권의 정체·결말을 포함합니다. 작중 행적은 원작 기준이며, 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있습니다.</p></div><div class="character-top" style="--character:#536879"><div><div class="summary-copy"><p>흑성교단의 녹타라로 활동한 히이라기 나츠미의 쌍둥이 동생. 마이의 ‘언제나 두 번째’라는 상처에 자신의 삶을 겹쳐 보고 우미코를 가진 자로 적대한다.</p>
-</div><div class="tag-row"><span class="badge pink">원작소설 직접 대조</span><span class="badge ">신장·체중 반영</span><span class="badge ">가상 캐스팅 ≠ 확정 성우</span></div><p class="source-ref">출처: 원작소설 1~5권 · 권·화 근거는 본문 참조</p></div><aside class="infobox" aria-label="캐릭터 기본 정보"><div class="box-title">히이라기 카오리</div><div class="portrait-switch" data-portrait-switch><div class="portrait-tabs" role="tablist" aria-label="히이라기 카오리 모습 선택"><button type="button" role="tab" id="kaori-tab-0" aria-selected="true" aria-controls="kaori-portrait-0" tabindex="0" data-portrait-tab>인간 형태</button><button type="button" role="tab" id="kaori-tab-1" aria-selected="false" aria-controls="kaori-portrait-1" tabindex="-1" data-portrait-tab>절광체 형태</button></div><div class="portrait-panel" id="kaori-portrait-0" role="tabpanel" aria-labelledby="kaori-tab-0" tabindex="0" ><div class="portrait-placeholder"><b>CHARACTER VISUAL</b><span>TBD</span><small>이미지 준비 중</small></div><p class="portrait-caption">인간 형태 · 이미지 TBD</p></div><div class="portrait-panel" id="kaori-portrait-1" role="tabpanel" aria-labelledby="kaori-tab-1" tabindex="0" hidden><div class="portrait-placeholder"><b>CHARACTER VISUAL</b><span>TBD</span><small>이미지 준비 중</small></div><p class="portrait-caption">절광체 형태 · 이미지 TBD</p></div><a class="artwork-shortcut" href="../artwork.html#kaori">설정화·바디 시트 보기 →</a></div><dl class="kv"><dt>이름</dt><dd>히이라기 카오리</dd><dt>변신·이명</dt><dd>녹타라</dd><dt>연령</dt><dd>실제 연령 미공개 / 열다섯 살 무렵 절광체가 되어 노화 정지, 정화 후 인간으로 회귀</dd><dt>신장</dt><dd>159.9 cm</dd><dt>체중</dt><dd>44.9 kg</dd><dt>상징</dt><dd>밤 · 그림자</dd><dt>구분</dt><dd>흑성교단</dd><dt>첫 등장</dt><dd>원작소설 2권 12화 〈언제나 두 번째〉</dd></dl></aside></div><section class="section" id="profile"><h2><span class="section-number">1.</span>기본 프로필</h2><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">문서 ID</th><td><code>kaori</code></td></tr><tr><th class="label" scope="row">이름</th><td>히이라기 카오리</td></tr><tr><th class="label" scope="row">성별</th><td>여성</td></tr><tr><th class="label" scope="row">연령</th><td>실제 연령 미공개 / 열다섯 살 무렵 절광체가 되어 노화 정지, 정화 후 인간으로 회귀</td></tr><tr><th class="label" scope="row">신장</th><td>159.9 cm</td></tr><tr><th class="label" scope="row">체중</th><td>44.9 kg</td></tr><tr><th class="label" scope="row">신체정보 출처</th><td>사용자 제공 제작 설정 · 2026.09.06</td></tr><tr><th class="label" scope="row">생일</th><td>미공개 (본편·외전 공개 전)</td></tr><tr><th class="label" scope="row">가족</th><td>부모(이름 미공개, 결별), 히이라기 나츠미(쌍둥이 언니)</td></tr><tr><th class="label" scope="row">상징 모티브</th><td>밤, 그림자, 깨진 달, 같음과 다름</td></tr><tr><th class="label" scope="row">대표 색채</th><td>검은색, 짙은 회색, 녹색</td></tr><tr><th class="label" scope="row">소속</th><td>흑성교단(과거), 오로라 책방(현재)</td></tr><tr><th class="label" scope="row">조직 내 서열</th><td>전 흑성교단 간부 서열 3위</td></tr><tr><th class="label" scope="row">주요 출연작</th><td>《스타라이트 페어리즈》</td></tr><tr><th class="label" scope="row">인물 유형</th><td>주요 악역, 비극적 적대자, 조력자, 생존자</td></tr><tr><th class="label" scope="row">변신체</th><td>녹타라, 에테르녹스</td></tr><tr><th class="label" scope="row">변신 타입</th><td>자아보존형 절광체 → 인간</td></tr><tr><th class="label" scope="row">주요 능력</th><td>그림자 분신, 그림자 이동·구속, 검은 깃털, 냉기의 어둠, 내면 간섭</td></tr><tr><th class="label" scope="row">좋아하는 것</th><td>나츠미, 녹색, 스스로 고른 물건과 일상, 평범하게 함께 있는 시간</td></tr><tr><th class="label" scope="row">싫어하는 것</th><td>나츠미의 동생으로만 불리는 것, 자신의 선택을 대신 결정당하는 것, 역할로만 평가받는 것</td></tr><tr><th class="label" scope="row">첫 등장</th><td>원작소설 2권 12화 〈언제나 두 번째〉</td></tr><tr><th class="label" scope="row">인간 모습 본격 공개</th><td>원작소설 4권 32화 〈내가 선택한 어둠〉</td></tr><tr><th class="label" scope="row">인간으로 회귀</th><td>원작소설 4권 35화 〈언니가 바란 별빛〉</td></tr><tr><th class="label" scope="row">현재 상태</th><td>생존 / 오로라 책방의 조수</td></tr><tr><th class="label" scope="row">성우(가상 캐스팅)</th><td>마츠다 사츠미(가상 캐스팅)</td></tr><tr><th class="label" scope="row">게임 확정 성우</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">컬러 팔레트</th><td><div class="palette" aria-label="히이라기 카오리 5색 참고 팔레트"><div class="palette-chip"><span class="swatch" style="background:#DADADA" aria-hidden="true"></span><code>TBD</code></div><div class="palette-chip"><span class="swatch" style="background:#BEBEBE" aria-hidden="true"></span><code>TBD</code></div><div class="palette-chip"><span class="swatch" style="background:#A0A0A0" aria-hidden="true"></span><code>TBD</code></div><div class="palette-chip"><span class="swatch" style="background:#828282" aria-hidden="true"></span><code>TBD</code></div><div class="palette-chip"><span class="swatch" style="background:#646464" aria-hidden="true"></span><code>TBD</code></div></div><p class="palette-note">이미지 미제공 · 회색은 TBD 자리 표시입니다.</p></td></tr></tbody></table></div></section><section class="section" id="production"><h2><span class="section-number">2.</span>리소스 제작용 프로필</h2><p class="muted small">신체 수치는 기본 프로필의 사용자 제공 제작 설정을 따르며, 기재하지 않은 항목은 추정하지 않습니다. 성격·모에요소는 원문 묘사를 바탕으로 묶은 제작용 분류이며, 추가 공식 설정을 의미하지 않습니다.</p><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">신장</th><td>159.9 cm</td></tr><tr><th class="label" scope="row">체중</th><td>44.9 kg</td></tr><tr><th class="label" scope="row">쓰리사이즈 (B / W / H)</th><td><span class="badge tbd">TBD</span> <span class="muted">cm</span></td></tr><tr><th class="label" scope="row">혈액형</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">체형·등신·상대 스케일</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">헤어</th><td>어린 시절 검은 머리 / 현재 세부 색상 TBD</td></tr><tr><th class="label" scope="row">눈동자</th><td>일상 TBD / 에테르녹스는 흰색·검붉은색</td></tr><tr><th class="label" scope="row">성격 키워드</th><td>과묵함 · 냉소 · 자존심 · 독립과 자기 선택 <span class="badge ">원문 기반 요약</span></td></tr><tr><th class="label" scope="row">모에요소·캐릭터 속성</th><td>쌍둥이 여동생 · 까칠하지만 세심함 · 책방 조수 <span class="badge ">제작용 분류</span></td></tr><tr><th class="label" scope="row">무기·주요 소품</th><td>그림자 분신·구속 · 검은 깃털 · 검은 손톱</td></tr><tr><th class="label" scope="row">색상 수치·소재 규격</th><td><span class="badge tbd">TBD</span> <span class="muted">원문 색상명은 기본 프로필·특징 참조</span></td></tr><tr><th class="label" scope="row">게임 리소스 경로·담당자</th><td><span class="badge tbd">TBD</span></td></tr></tbody></table></div><h3>형태·의상 구분</h3><p class="muted small">원작에 등장하는 형태를 정리했습니다. 게임에서 필요한 모델·스탠딩·차분의 범위는 TBD입니다.</p><div class="form-line"><span>인간 모습</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>녹타라</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>에테르녹스(합성체)</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>정화 후 책방 조수</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="notice"><strong>디자인 메모</strong><p>검은 목도리와 스스로 고른 녹색 소품을 유지한다. 녹색은 캐릭터 고유 설정이며 위키 공통색과 별개다. 정화 후 인간으로 회귀.</p></div><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">ADV</th><td>공통 규격·추천 수량: <a href="../adv-guide.html#standing">ADV·2D 제작 가이드</a>. 캐릭터별 발주·완료 상태: <span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">3D 전투</th><td><a href="../modeling-guide.html">파츠 분리·전체 바디・Shape Key 가이드</a>. 리깅・VFX・소켓・성능 예산: <span class="badge tbd">TBD</span></td></tr></tbody></table></div></section><section class="section" id="artwork"><h2><span class="section-number">자료.</span>설정화</h2><details class="character-artwork"><summary>캐릭터 시트 펼치기 <span class="badge">형태별·바디</span></summary><div class="character-artwork-content"><details class="sheet-group"><summary>인간 형태<span class="badge">TBD</span></summary><div class="sheet-content"><div class="sheet-tbd"><strong>TBD</strong><p>인간 형태 설정화 미제공</p></div></div></details><details class="sheet-group"><summary>절광체 형태<span class="badge">TBD</span></summary><div class="sheet-content"><div class="sheet-tbd"><strong>TBD</strong><p>절광체 형태 설정화 미제공</p></div></div></details><details class="sheet-group"><summary>바디<span class="badge">TBD</span></summary><div class="sheet-content"><div class="sheet-tbd"><strong>TBD</strong><p>모델링 체형 참고 시트 미제공</p></div></div></details><p class="small"><a href="../artwork.html#kaori">설정화 모음 페이지에서 보기 →</a></p></div></details></section><section class="section" id="overview"><h2><span class="section-number">3.</span>개요</h2><div class="prose"><p>흑성교단의 녹타라로 활동한 히이라기 나츠미의 쌍둥이 동생. 마이의 ‘언제나 두 번째’라는 상처에 자신의 삶을 겹쳐 보고 우미코를 가진 자로 적대한다.</p>
-<p>원한 것은 언니의 부재가 아니라 언니 옆에서도 자기 이름과 선택이 지워지지 않는 삶이었다. 에테르녹스에서 나츠미를 잃고 인간으로 돌아온 뒤에는 기억과 책임을 가진 채 오로라 책방에서 생활한다. 구출 이후의 슬픔·노동·관계까지 이어지는 인물이다. [2권 12<del>20화, 4권 33</del>35·40화, 5권 41~50화]</p>
-</div></section><section class="section" id="traits"><h2><span class="section-number">4.</span>특징</h2><div class="prose"><h3>4.1. 열등감과 자기 목소리</h3>
-<p>까칠한 말과 비꼼으로 방어하지만 가장 가까운 사람에게 원하는 것을 말하기 어려워한다. 언니가 자신을 모른다고 느끼면서도 언니가 떠나지 않으리라는 기대에 의존했다. 다른 취향을 말하면 관계가 끊긴다는 두려움이 독립을 막았다. [4권 33~35화]</p>
-<h3>4.2. 확인된 취향·소품</h3>
-<p>초록색을 좋아하며 코코아도 완전히 싫어진 것은 아니라고 뒤늦게 말한다. 검은 목도리는 언니와 같아서 좋아했던 마음과 스스로 느슨하게 매는 선택이 함께 담긴 유품이다. 이 소품을 정화와 함께 사라지는 마법 의상으로 처리하지 않는다. [4권 34~35화]</p>
-<h3>4.3. 살아남은 이후</h3>
-<p>별빛정화 뒤 기억이 남아 언니의 잘못과 사랑을 모두 기억한다. 책방에서 무거운 일을 맡고 유우나를 부축하는 무심한 돌봄이 생긴다. 웃는 것이 언니를 배신하는 일이라는 환영을 거부하고 자기 삶을 택한다. [4권 35·40화, 5권 45·48·50화]</p>
-<h3>4.4. 외형·제작 설정 보존</h3>
-<p>아래는 기존 개별 캐릭터 문서의 상세 외형 설정을 보존한 제작 참고다. 원작의 사건·발화 근거와 구분하며, 최종 형태와 정확한 색상·치수는 사용자 설정 및 제공 시트를 따른다.</p>
-<p>인간 모습의 카오리는 나츠미와 같은 얼굴과 비슷한 체격을 지닌 쌍둥이다. 머리 모양에는 조금 차이가 있으나 검은색과 짙은 회색 계열의 비슷한 옷을 입어 한눈에 자매라는 사실을 알 수 있다. 어린 시절에는 검은 머리카락과 같은 원피스를 한 모습으로 묘사된다.</p>
-<p>나츠미와 같은 옷을 입는 모습은 단순한 쌍둥이 연출이 아니라 카오리의 갈등을 시각화한다. 같은 것을 싫어하는 것이 아니라, 무엇을 같게 하고 무엇을 다르게 할지 자신이 정할 수 없다는 점이 문제다. 34화에서는 나츠미가 고른 검은 목도리를 버리지 않고 대신 끝을 느슨하게 매며, 같은 물건을 자기 방식으로 사용하는 선택을 한다.</p>
-<p>녹타라의 모습에서는 검은 깃털로 뒤덮인 긴 드레스를 입고, 한쪽이 깨진 달 모양 가면으로 얼굴을 가린다. 드레스 끝에서 떨어진 깃털은 바닥에 닿기 전에 그림자로 변해 흩어지며, 길고 가느다란 손가락 끝에서는 어둠이 흘러내린다. 가까운 거리에서는 검은 손톱을 무기로 사용한다.</p>
-<p>깨진 달 가면은 완전한 하나로 묶이지 못한 자아와 나츠미의 그림자에서 분리되고 싶은 욕망을 상징한다. 전투와 감정의 동요가 심해질수록 가면의 균열이 커지고, 아쿠아리우스가 본명을 부르며 정체성을 묻는 과정에서 가면은 점차 카오리의 얼굴을 감추지 못한다.</p>
-<p>에테르녹스는 에테르나의 반투명한 긴 드레스 위에 녹타라의 검은 깃털이 겹겹이 덮인 거대한 완전 절광체다. 머리 뒤에는 빛나는 고리와 깨진 달이 포개져 일식 같은 형상을 만들며, 한쪽 눈은 흰색이고 다른 한쪽 눈은 검붉은색이다. 네 개의 팔 끝에서는 빛처럼 번뜩이는 어둠과 얼어붙은 그림자가 동시에 흐른다.</p>
-<p>인간으로 돌아온 뒤에는 검은 목도리를 계속 착용한다. 5권 45화에서는 옅은 회색 스웨터와 검은 치마를 입은 평범한 모습으로 유우나를 간호한다. 오로라 책방에서는 앞치마를 두르고 책을 정리하며, 검은 목도리 옆에 자신이 고른 초록색 천이나 손수건을 놓는다. 검은색을 버리지 않으면서 녹색을 더하는 변화가 과거와 새로운 삶의 공존을 보여 준다.</p>
-</div></section><section class="section" id="abilities"><h2><span class="section-number">5.</span>능력</h2><div class="prose"><p>녹타라는 그림자 분신과 검은 깃털, 내면의 불안과 열등감을 이용해 싸운다. 피해자의 영역을 통해 성적·역할·나이 등 상처의 상징을 공격에 결합하므로 모든 영역 효과를 카오리 개인의 자유로운 변신 능력으로 동일시하지 않는다. [2권 12~20화]</p>
-<p>에테르녹스의 형체 안에서도 의식이 남아 우미코와 대화한다. 인간 회귀는 나츠미가 자신의 어둠까지 떠안아 정화의 길을 열었기 때문에 가능한 사례다. 정화 후 전투용 녹타라의 힘을 계속 보유한다고 확정하지 않으며, 경험과 기억으로 유우나의 몸에 남은 이상을 알아차린다. [4권 34<del>35화, 5권 44</del>46화]</p>
-</div></section><section class="section" id="family"><h2><span class="section-number">6.</span>가족관계</h2><div class="prose"><p>나츠미는 쌍둥이 언니이며 부모는 두 사람이 열다섯 살일 때 이혼과 분리 양육을 논의했다. 카오리는 언니와 함께 있고 싶었지만 똑같이 살고 싶은 것은 아니었다. 가출 뒤 요루에게 독립된 이름과 힘을 약속받아 자발적으로 어둠을 선택했다. 본편의 생일 비공개와 외전용 11월 28일 설정은 기존 내부 메모를 보존한다. [4권 33~35화]</p>
-</div></section><section class="section" id="relationships"><h2><span class="section-number">7.</span>인간관계</h2><div class="prose"><div class="table-wrap"><table>
-<thead>
-<tr>
-<th>인물</th>
-<th>관계와 변화</th>
-<th>원작 근거</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>나츠미</td>
-<td>답답함과 사랑이 공존하는 언니. 마지막에 각자의 소망을 말하지만 함께할 내일은 잃는다. 살아남은 뒤에도 잘못과 사랑을 함께 기억한다.</td>
-<td>4권 33~35화, 5권 48화</td>
-</tr>
-<tr>
-<td>우미코</td>
-<td>특권만 가진 사람이라고 적대했으나 자기 역할 밖에서 미래를 고른 사람임을 알게 된다. 에테르녹스 안에서 자신의 목소리를 찾도록 도움받는다.</td>
-<td>2권 12<del>20화, 4권 34</del>35화</td>
-</tr>
-<tr>
-<td>마이</td>
-<td>자기 열등감을 투영해 몰아간 피해자. 공통된 감정은 카오리의 가해를 정당화하지 않는다.</td>
-<td>2권 12~14화</td>
-</tr>
-<tr>
-<td>스펙트라</td>
-<td>책방의 생활과 일을 제안한 점주. 자신의 선택을 허용받고, 이후 쇠약한 스펙트라를 부축하고 일을 나눠 맡는다.</td>
-<td>4권 40화, 5권 45~46·50화</td>
-</tr>
-<tr>
-<td>유우나</td>
-<td>같은 교단의 동료였으나 당시에는 사정을 깊이 묻지 않았다. 뒤늦게 과거를 전하고 불완전한 정화를 알아차리며 회복을 돕는다.</td>
-<td>5권 41·44~46화</td>
-</tr>
-</tbody></table></div>
-</div></section><section class="section" id="story"><h2><span class="section-number">8.</span>작중 행적</h2><div class="notice"><strong>기준</strong><p>원작소설 1~5권 기준. 아래 권·화 번호는 게임 챕터 번호나 전투 스테이지 번호가 아닙니다.</p></div><div class="prose"><p>사용자가 제공한 원작소설 1~5권 DOCX를 직접 대조한 주요 행적이다. 실제 등장·회상·언급을 구분하고 해당 근거가 있는 화만 수록한다. 모든 이름 언급을 빠짐없이 나열한 전수 출연표는 아니다. 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있다.</p>
-</div><div class="volume-actions"><button type="button" data-volumes="open">전체 권 펼치기</button><button type="button" data-volumes="close">전체 권 접기</button></div><details class="volume" id="volume-2"><summary>2권 · 푸른 별빛이 비추는 내일 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-12">12화. 언제나 두 번째</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>마이의 열등감에 언니 뒤에 선 자신의 경험을 겹쳐 본다. 첫 번째가 되고 싶지 않느냐는 질문으로 마이의 상처를 자극하며 다음 암흑게이트를 준비한다.</p>
-<p class="source-ref">근거: 원작소설 2권 12화 〈언제나 두 번째〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-13">13화. 누구의 그림자</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>마이의 마지막 저항을 꺾어 끝없이 순위를 매기는 교실의 암흑영역을 만든다. 우미코의 특권을 공격하며 마이와 자신의 상처를 한 결론으로 몰아간다.</p>
-<p class="source-ref">근거: 원작소설 2권 13화 〈누구의 그림자〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-14">14화. 보이지 않는 노력</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>마이의 정화와 우미코의 말에 자신의 자매 관계를 되돌아보게 된다. 다친 어깨를 치료하려는 나츠미를 밀어내지만, 언니를 없애고 싶은지 자기 이름으로 곁에 서고 싶은지 흔들리기 시작한다.</p>
-<p class="source-ref">근거: 원작소설 2권 14화 〈보이지 않는 노력〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-15">15화. 별빛을 잇는 집</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>폐원을 앞둔 보육원 교사의 상실을 포착한다. 아이들이 더 있었다면 끝나지 않았을 것이라는 생각을 검은 깃털로 자극한다.</p>
-<p class="source-ref">근거: 원작소설 2권 15화 〈별빛을 잇는 집〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-16">16화. 아이들만 있다면</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>보육원의 상처를 이용해 나이 역행 영역을 유지한다. 어린 우미코의 경직된 태도를 보며 모든 것을 가진 사람이라는 자신의 해석만으로 설명되지 않는 면을 접한다.</p>
-<p class="source-ref">근거: 원작소설 2권 16화 〈아이들만 있다면〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-17">17화. 작은 우미코</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>렌지의 탄생과 끝난 후계 교육을 보여 주어 우미코를 무너뜨리려 한다. 그러나 우미코가 자기 존재를 역할과 구분하고 자매 관계를 되묻자 흔들린다.</p>
-<p class="source-ref">근거: 원작소설 2권 17화 〈작은 우미코〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-18">18화. 내가 바라는 내일</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>분신과 나이 역행 공격으로 방해하지만 우미코가 원래 모습을 되찾고 교사가 미래를 선택하면서 영역이 정화된다. 타인을 규정해 온 자신의 결론에도 의문을 남긴 채 물러난다.</p>
-<p class="source-ref">근거: 원작소설 2권 18화 〈내가 바라는 내일〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-19">19화. 별빛축제의 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>축제에서 아쿠아리우스와 교전한다. 그림자 분신과 근접 공격으로 압박하며 우미코와의 대립을 이어 간다.</p>
-<p class="source-ref">근거: 원작소설 2권 19화 〈별빛축제의 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-20">20화. 별빛 아래 드러난 얼굴</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>언니를 없애고 싶은 것이 아니라 자기 이름으로 곁에 서고 싶은 것 아니냐는 우미코의 말에 격앙된다. 싸움에서 밀린 뒤 에테르나에게 구출된다.</p>
-<p class="source-ref">근거: 원작소설 2권 20화 〈별빛 아래 드러난 얼굴〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-4"><summary>4권 · 태양은 가려져도 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-32">32화. 내가 선택한 어둠</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>빛과 어둠을 함께 쓰며 같은 선에 선 네 페어리즈를 본다. 언니의 강한 손을 마주 잡지 못한 채 합성체 계획을 맞는다.</p>
-<p class="source-ref">근거: 원작소설 4권 32화 〈내가 선택한 어둠〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-33">33화. 언니와 동생</h4>
-<p><strong>구분: 직접 등장·과거 회상</strong></p>
-<p>좋아하는 색과 머리 길이까지 언니에게 맞추며 목소리를 숨겨 온 과거가 드러난다. 독립된 이름과 힘을 약속받아 녹타라가 되었어도 관계는 바뀌지 않았다. 에테르녹스의 핵이 되어 자아를 잃는 것은 자신이 사라지는 일이라며 반발한다.</p>
-<p class="source-ref">근거: 원작소설 4권 33화 〈언니와 동생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-34">34화. 에테르녹스</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>언니가 준 검은 목도리를 자기 방식으로 느슨하게 매고 돌아온다. 언니를 혼자 보내지 않겠다고 합성에 참여하지만 역할 변경을 뒤늦게 안다. 우미코의 도움으로 자신의 삶에 언니가 없기를 바란 적은 없다고 말한다.</p>
-<p class="source-ref">근거: 원작소설 4권 34화 〈에테르녹스〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-35">35화. 언니가 바란 별빛</h4>
-<p><strong>구분: 직접 등장·인간 회귀</strong></p>
-<p>언니에게 화낼 일과 함께하고 싶은 미래를 말하며 죽지 말라고 붙잡는다. 그럼에도 자신은 살고 싶다고 선택하고 나츠미의 도움과 별빛정화로 인간으로 돌아온다. 기억은 지워지지 않으며 검은 목도리도 남는다.</p>
-<p class="source-ref">근거: 원작소설 4권 35화 〈언니가 바란 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-36">36화. 꿈이었던 선생님</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>검은 목도리를 두르고 혼자 있고 싶다고 말한 뒤 자신의 발로 광장을 떠난다. 페어리즈는 그 선택을 곧바로 통제하지 않는다.</p>
-<p class="source-ref">근거: 원작소설 4권 36화 〈꿈이었던 선생님〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-40">40화. 흑성교단의 끝</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>나츠미를 잃고 남은 책임과 삶을 스펙트라와 이야기한다. 오로라 책방에서 점원으로 일하며 손님에게 책을 안내하고 자기 이름으로 하루를 시작한다.</p>
-<p class="source-ref">근거: 원작소설 4권 40화 〈흑성교단의 끝〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-5"><summary>5권 · 빛이여, 마을의 천사들에게 닿아라 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-41">41화. 돌아오지 않는 전학생</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>요루의 기록과 유우나에게 들은 이야기를 구분해 과거를 전한다. 이용당한 피해만 보지 말고 스스로 어둠을 택하고 남을 해친 선택도 보아야 한다고 말하며, 아무 역할 없이도 머물 수 있다는 느낌이 필요하다고 조언한다.</p>
-<p class="source-ref">근거: 원작소설 5권 41화 〈돌아오지 않는 전학생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-42">42화. 머물고 싶었던 장소</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>유우나의 자발적 선택을 부정하지 말라고 조언하고 후방에 남는다. 자신이 전할 말은 다른 사람에게 대신 맡기지 않는다.</p>
-<p class="source-ref">근거: 원작소설 5권 42화 〈머물고 싶었던 장소〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-43">43화. 아포크라의 마지막 임무</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>후방에서 전투와 유우나의 선택을 지켜본다. 나츠미의 마지막 선택과 눈앞의 구출 가능성을 함께 생각하며 섣부른 약속을 경계한다.</p>
-<p class="source-ref">근거: 원작소설 5권 43화 〈아포크라의 마지막 임무〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-44">44화. 사랑의 스펙트럼</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>유우나의 숨과 맥박은 인간 같지만 절광체가 정화만으로 이 상태가 된 점을 의심한다. 자신은 나츠미가 어둠을 떠안아 살아났다는 차이를 설명하고 유우나 안에 네메시스의 어둠이 숨어 있음을 발견한다.</p>
-<p class="source-ref">근거: 원작소설 5권 44화 〈사랑의 스펙트럼〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-45">45화. 단 하루의 전학생</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>깨어난 유우나를 부축하고 좋은 일만 선택해 자기 과거로 남길 수는 없다고 말한다. 밤에는 유우나를 지켜보지만 네메시스의 검은 안개에 붙잡힌다.</p>
-<p class="source-ref">근거: 원작소설 5권 45화 〈단 하루의 전학생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-46">46화. 어둠이 태어나는 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>스펙트라를 부축해 현장에 도착한다. 절광체의 몸과 어둠에 관한 자신의 경험으로 유우나의 상태를 함께 살핀다.</p>
-<p class="source-ref">근거: 원작소설 5권 46화 〈어둠이 태어나는 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-47">47화. 호시노미야 암흑현현</h4>
-<p><strong>구분: 직접 등장·환영에 갇힘</strong></p>
-<p>나츠미의 모습을 한 어둠이 살아남은 자신을 부르는 환영에 갇힌다. 언니를 다시 보고 싶은 마음과 자신의 삶을 택한 결심이 충돌한다.</p>
-<p class="source-ref">근거: 원작소설 5권 47화 〈호시노미야 암흑현현〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-48">48화. 별빛이 꺼진 뒤에도</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>언니의 환영이 행복을 배신이라고 몰아가자 실제 나츠미가 남긴 부탁을 떠올린다. 잘못과 사랑을 모두 기억한 채 살아가겠다고 선택하고 되찾은 빛을 페어리즈에게 돌려준다.</p>
-<p class="source-ref">근거: 원작소설 5권 48화 〈별빛이 꺼진 뒤에도〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-49">49화. 빛이여, 마을의 천사들에게 닿아라!</h4>
-<p><strong>구분: 직접 등장·별빛의 연결</strong></p>
-<p>살아가겠다는 선택의 빛이 마을의 응원에 합류한다. 언니를 잃은 삶에서 되찾은 별빛으로 다른 사람들을 지탱한다.</p>
-<p class="source-ref">근거: 원작소설 5권 49화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-50">50화. 별빛은 계속된다</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>책방에서 무거운 책을 옮기고 창고를 정리하며 치요의 출간본을 맞는다. 졸업 뒤 소풍에서 자기 방식으로 먹고 웃고 사진에 남는 평범한 삶을 계속한다.</p>
-<p class="source-ref">근거: 원작소설 5권 50화 〈별빛은 계속된다〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details></section><section class="section" id="quotes"><h2><span class="section-number">9.</span>어록</h2><div class="prose"><p>원작의 실제 발화를 대조했다. 아래 문장은 본인의 대사이며, 환영의 발언이나 편지·책의 문장을 섞지 않는다.</p>
-<blockquote>
-<p>내가 웃는 건 언니를 잊는 게 아니야.</p>
-</blockquote>
-<p>— 원작 5권 48화. 나츠미를 흉내 내는 환영에 맞서 자기 삶을 선택한다.</p>
-<blockquote>
-<p>언니가 시켜서가 아니야. 언니를 혼자 보내고 싶지 않아서 내가 정한 거야.</p>
-</blockquote>
-<p>— 원작 4권 34화. 합성 참여의 선택을 자신의 말로 밝힌다. 핵의 역할 변경까지 알고 동의한 것은 아니다.</p>
-<blockquote>
-<p>이번에는 내가 누군가에게 돌려줄게.</p>
-</blockquote>
-<p>— 원작 5권 48화. 언니가 되찾아 준 별빛을 페어리즈에게 보낸다.</p>
-</div></section><section class="section" id="trivia"><h2><span class="section-number">10.</span>기타</h2><div class="prose"><ul>
-<li>카오리는 나츠미보다 몇 분 늦게 태어난 쌍둥이 여동생이다.</li>
-<li>현재의 정확한 연령과 생일은 공개되지 않았다. 열다섯 살 무렵 절광체가 됐고 4권에서 인간으로 돌아왔다는 사실만 확정돼 있다.</li>
-<li>이름 ‘녹타라’와 깨진 달·검은 깃털·그림자 능력은 밤과 분리된 자아를 상징한다.</li>
-<li>나츠미와 함께 최초의 다인 자아보존형 절광체 사례다.</li>
-<li>흑성교단 간부 서열은 3위다. 서열 2위인 나츠미 다음이라는 구조가 인간 시절의 ‘언제나 두 번째’와 반복된다.</li>
-<li>첫 등장은 2권 12화이며, 본명 ‘히이라기 카오리’도 같은 화에서 공개된다.</li>
-<li>인간 모습은 4권 32화부터 본격적으로 등장하고, 자매의 과거는 33화에서 공개된다.</li>
-<li>아쿠아리우스의 핵심 라이벌이다. 두 사람 모두 역할 속에서 자기 이름을 잃었지만 관계를 끊는 것과 관계 속에서 선택하는 것의 차이를 보여 준다.</li>
-<li>녹타라는 일반 암흑잠식체가 아니므로 20화에서 아쿠아리우스에게 패배해도 정화되지 않는다.</li>
-<li>카오리는 피해자인 동시에 가해자다. 요루와 가족에게 이용당한 과거가 마이와 어린이집 교사에게 저지른 일을 없애지 않는다.</li>
-<li>녹타라라는 이름은 카오리가 원한 독립의 상징이지만 동시에 요루가 부여한 흑성교단의 역할이기도 하다.</li>
-<li>카오리가 원한 것은 나츠미와의 결별이 아니라 서로 다른 선택을 한 채 나란히 있는 관계다.</li>
-<li>에테르녹스 합성에는 카오리 자신도 동의하지만, 나츠미가 형체와 핵의 역할을 몰래 바꾼 사실은 동의하지 않았다.</li>
-<li>에테르녹스의 외부 형체와 전투 의식은 카오리가, 내부 핵과 두 사람의 어둠은 나츠미가 담당한다.</li>
-<li>카오리의 인간 회귀는 일반적인 정화 사례가 아니다. 나츠미가 카오리의 어둠을 모두 가져가고 남은 별빛을 정화의 길로 밀어 넣었기 때문에 가능했다.</li>
-<li>살아남는 선택은 나츠미의 명령이 아니다. 카오리가 “내가 살고 싶어서”라고 스스로 결정한 뒤 정화가 진행된다.</li>
-<li>나츠미가 소멸한 뒤에도 카오리는 정화 이전과 마지막 순간의 기억을 모두 유지한다.</li>
-<li>검은 목도리는 나츠미가 골랐지만 카오리가 자기 방식으로 맨 물건이다. 과거를 버리지 않으면서 자기 선택을 더하는 상징이다.</li>
-<li>녹색은 카오리가 스스로 바라보고 고른 색으로 반복된다. 녹색 목도리, 초록색 차 통과 천은 나츠미와 구분되는 취향이자 선택의 표지다.</li>
-<li>오로라 책방에서 처음 고른 차는 초록색 통의 차다. 맛이 조금 쓰다고 느끼지만 직접 고른 선택을 바꾸지 않는다.</li>
-<li>스펙트라는 카오리를 용서받은 사람으로 규정하지 않고, 과거를 갚는 일과 별개로 살아갈 수 있는 장소를 제공한다.</li>
-<li>정화 뒤에도 절광체의 경험에서 비롯된 어둠 감지 능력이 일부 남아 유우나 안의 네메시스를 발견한다.</li>
-<li>5권의 검은 나츠미는 실제 나츠미의 부활이 아니라 카오리의 죄책감을 이용한 환영이다.</li>
-<li>카오리는 환영을 부정하면서 나츠미가 잘못한 것과 자신을 사랑한 것을 모두 기억하겠다고 선언한다.</li>
-<li>48화에서 일반인 신분으로 “빛이여! 마을의 천사들에게 닿아라!”를 외쳐 자신의 별빛을 페어리즈에게 보낸다.</li>
-<li>50화에서는 오로라 책방 직원으로 남고, 페어리즈 네 사람·스펙트라와 함께 피크닉과 단체사진에 참여한다.</li>
-<li>최종결전 뒤에도 녹타라로 재변신하거나 페어리즈가 되지는 않는다. 카오리의 결말은 새로운 전투 역할을 얻는 것이 아니라 역할 없이도 자기 이름으로 살아가는 것이다.</li>
-<li>부모의 이름과 직업, 정확한 출생일, 현재 실제 연령, 가상 성우는 정본에서 확정되지 않았으므로 임의 설정 없이 미공개 또는 미정으로 표기한다.</li>
-</ul>
-<h3>생일·외전 공개 계획 (내부 설정)</h3>
-<p><strong>본편·외전 공개 전:</strong> 자매의 생일은 공식적으로 발표하지 않는다. 본편 프로필에는 미공개로 표기한다.</p>
-<p><strong>11월 28일의 의미:</strong> 절광체가 된 이후 자매는 생일을 의미 있게 여기지 않아 기억하지 않고 있었다. 본편 엔딩 이후, 카오리는 나츠미가 소멸하고 자신이 정화된 날인 11월 28일을 언니의 기일이자 자신의 새로운 생일로 정한다. 이 날짜는 카오리가 새로 정한 생일이며, 자매의 실제 출생일을 확정하는 표기가 아니다.</p>
-<p><strong>외전 계획:</strong> 이 생일 관련 설정은 외전에서 다룰 예정이다. 외전 제작 여부는 본편 출시 이후 결정하며, 현재 제작이 확정된 것은 아니다.</p>
-<p><strong>특전 일러스트 공개:</strong> 외전 공개 전까지는 생일기념 특전 일러스트도 생일기념으로 발표하지 않고 다른 기념으로 공개한다.</p>
-<p><strong>설정 출처:</strong> 2026.09.06 사용자 제공 내부 개발 설정. 원작 1~5권의 기존 화별 행적과 별도로 관리한다.</p>
-<h3>원작 대조와 별도 설정</h3>
-<p>2026.09.06 제공된 원작소설 1~5권 DOCX를 기준으로 개요·특징·활동·관계·주요 행적·발화를 대조했다. 기본 프로필의 사용자 제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존한다. 위 기타 항목의 어원·디자인 해설·확장 설정은 소설 속 발화와 구분한다. 미확인 외형·가족·게임 수치는 임의로 보충하지 않는다. 기준 판본과 정정 사항은 자료·편집 안내의 원작 대조 기록을 참조한다.</p>
-</div></section><section class="section" id="source"><h2><span class="section-number">자료.</span>출처·게임화 메모</h2><p><a href="../sources/%ED%9E%88%EC%9D%B4%EB%9D%BC%EA%B8%B0_%EC%B9%B4%EC%98%A4%EB%A6%AC_%EB%85%B9%ED%83%80%EB%9D%BC_%EC%9C%84%ED%82%A4.md">히이라기_카오리_녹타라_위키.md 열기 ↗</a></p><p>사용자가 제공한 원작소설 1~5권 DOCX의 주요 장면을 직접 대조했습니다. 다른 캐릭터 문서를 사실 확인의 근거로 대체하지 않습니다. 기본 프로필의 사용자 제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존합니다. <a href="../guide.html#novel-audit">기준 판본·정정 내용·재확인 지점 →</a></p><div class="notice"><strong>게임화</strong><p>원작과 게임의 기본 스토리는 동일합니다. 전체 구성은 게임 기획서 v1과 사용자 전투 보완을 따릅니다. 장면별 변경·축소·확장 사유와 ADV·전투 배치는 각색 시 기록합니다. <a href="../systems.html#battle">공통 전투 규칙 →</a></p></div><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">대응 게임 챕터</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">축소·확장·변경 내역</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">변경 사유·담당자·승인일</th><td><span class="badge tbd">TBD</span></td></tr></tbody></table></div></section></div><aside class="toc" aria-label="이 문서의 목차"><strong>이 문서의 목차</strong><a class="" href="#profile">1. 기본 프로필</a><a class="" href="#production">2. 제작용 프로필</a><a class="" href="#artwork">설정화·바디</a><a class="" href="#overview">3. 개요</a><a class="" href="#traits">4. 특징</a><a class="" href="#abilities">5. 능력</a><a class="" href="#family">6. 가족관계</a><a class="" href="#relationships">7. 인간관계</a><a class="" href="#story">8. 작중 행적</a><a class="sub" href="#volume-2">2권</a><a class="sub" href="#volume-4">4권</a><a class="sub" href="#volume-5">5권</a><a class="" href="#quotes">9. 어록</a><a class="" href="#trivia">10. 기타</a><a class="" href="#source">출처·게임화 메모</a><a href="../resources.html">리소스 제작 기준 ↗</a></aside></div></article><footer class="footer"><span>Blossom Games · STARLIGHT FAIRIES DEVELOPMENT WIKI</span><span>설정 미확정 항목은 TBD로 표기합니다.</span></footer></main></div><a class="top-link" href="#top" aria-label="문서 맨 위로">↑</a></body></html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="히이라기 카오리 — 스타라이트 페어리즈 내부 개발용 위키. 원작소설 1~5권 설정과 2D ADV·3D 턴제 전투 제작 자료.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#ab2867">
+    <title>히이라기 카오리 | 스타라이트 페어리즈 개발 위키</title>
+    <link rel="icon" href="../sources/branding/StarlightFairiesLogo.png">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script defer src="../assets/app.js"></script>
+</head>
+
+<body id="top"><a class="skip" href="#content">본문으로 건너뛰기</a>
+    <header class="topbar">
+        <div class="topbar-inner"><button class="menu-button" type="button" aria-label="문서 메뉴 열기"
+                aria-controls="sidebar" aria-expanded="false">☰</button><a class="brand" href="../index.html"><img
+                    class="header-logo" src="../sources/branding/StarlightFairiesLogo.png" alt="스타라이트 페어리즈"><span
+                    class="brand-caption">DEV WIKI</span></a>
+            <form class="search" action="../characters.html" role="search"><label class="sr-only"
+                    for="global-search">캐릭터 문서 검색</label><input id="global-search" name="q" type="search"
+                    placeholder="캐릭터·변신명·설정 검색" autocomplete="off"><button type="submit">검색</button></form><span
+                class="internal-label">INTERNAL DOCUMENTS</span><button class="theme-button" type="button"
+                aria-label="어두운 테마로 변경" aria-pressed="false">◐</button>
+        </div>
+    </header>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <nav aria-label="주요 문서">
+                <p class="nav-heading">프로젝트</p><a class="nav-link " href="../index.html"><span class="nav-symbol"
+                        aria-hidden="true">⌂</span>대문</a><a class="nav-link active" aria-current="page"
+                    href="../characters.html"><span class="nav-symbol" aria-hidden="true">♧</span>등장인물</a>
+                <p class="nav-heading">원작과 게임</p><a class="nav-link " href="../world.html"><span class="nav-symbol"
+                        aria-hidden="true">◇</span>세계관·용어</a><a class="nav-link " href="../story.html"><span
+                        class="nav-symbol" aria-hidden="true">▤</span>원작 1~5권</a><a class="nav-link "
+                    href="../systems.html"><span class="nav-symbol" aria-hidden="true">▣</span>게임 기획</a>
+                <p class="nav-heading">개발 자료</p><a class="nav-link " href="../artwork.html"><span class="nav-symbol"
+                        aria-hidden="true">▧</span>캐릭터 설정화</a><a class="nav-link " href="../resources.html"><span
+                        class="nav-symbol" aria-hidden="true">▦</span>리소스 제작 기준</a><a class="nav-link "
+                    href="../adv-guide.html"><span class="nav-symbol" aria-hidden="true">▧</span>ADV·2D 제작 가이드</a><a
+                    class="nav-link " href="../modeling-guide.html"><span class="nav-symbol"
+                        aria-hidden="true">◇</span>3D 모델링 가이드</a><a class="nav-link " href="../guide.html"><span
+                        class="nav-symbol" aria-hidden="true">≡</span>자료·편집 안내</a>
+                <p class="nav-heading">스타라이트 페어리즈</p><a class="nav-link" href="../characters/momoka.html"><span
+                        class="nav-symbol" aria-hidden="true" style="color:#bc3976">✦</span>사쿠라이 모모카</a><a
+                    class="nav-link" href="../characters/umiko.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#236ca5">✦</span>시미즈 우미코</a><a class="nav-link"
+                    href="../characters/hina.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#a56b16">✦</span>미츠하라 히나</a><a class="nav-link"
+                    href="../characters/shizuki.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#7952b0">✦</span>호시조라 시즈키</a>
+            </nav>
+            <div class="sidebar-brand"><img src="../sources/branding/BlossomGamesLogo.png" alt="Blossom Games"><span>원작
+                    1–5권 · 게임 개발 자료</span></div>
+        </aside>
+        <div class="scrim" aria-hidden="true"></div>
+        <main class="main" id="content">
+            <nav class="breadcrumbs" aria-label="현재 위치"><a href="../index.html">스타라이트 페어리즈</a><span>›</span><a
+                    href="../characters.html">등장인물</a><span>›</span><span>히이라기 카오리</span></nav>
+            <article class="article">
+                <header class="article-heading"><span class="eyebrow">CHARACTER DOCUMENT · KAORI</span>
+                    <h1>히이라기 카오리</h1>
+                    <p class="subtitle">녹타라</p>
+                    <div class="meta"><span>기준 · 원작소설 1~5권</span><span>게임 · 2D ADV + 3D 턴제 전투</span><span>정리 ·
+                            2026.09.06</span></div>
+                </header>
+                <div class="article-layout">
+                    <div class="article-body">
+                        <div class="notice"><strong>스포일러 안내</strong>
+                            <p>원작소설 1~5권의 정체·결말을 포함합니다. 작중 행적은 원작 기준이며, 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있습니다.</p>
+                        </div>
+                        <div class="character-top" style="--character:#536879">
+                            <div>
+                                <div class="summary-copy">
+                                    <p>흑성교단의 녹타라로 활동한 히이라기 나츠미의 쌍둥이 동생. 마이의 ‘언제나 두 번째’라는 상처에 자신의 삶을 겹쳐 보고 우미코를 가진 자로
+                                        적대한다.</p>
+                                </div>
+                                <div class="tag-row"><span class="badge pink">원작소설 직접 대조</span><span
+                                        class="badge ">신장·체중 반영</span><span class="badge ">가상 캐스팅 ≠ 확정 성우</span></div>
+                                <p class="source-ref">출처: 원작소설 1~5권 · 권·화 근거는 본문 참조</p>
+                            </div>
+                            <aside class="infobox" aria-label="캐릭터 기본 정보">
+                                <div class="box-title">히이라기 카오리</div>
+                                <div class="portrait-switch" data-portrait-switch>
+                                    <div class="portrait-tabs" role="tablist" aria-label="히이라기 카오리 모습 선택"><button
+                                            type="button" role="tab" id="kaori-tab-0" aria-selected="true"
+                                            aria-controls="kaori-portrait-0" tabindex="0" data-portrait-tab>인간
+                                            형태</button><button type="button" role="tab" id="kaori-tab-1"
+                                            aria-selected="false" aria-controls="kaori-portrait-1" tabindex="-1"
+                                            data-portrait-tab>절광체 형태</button></div>
+                                    <div class="portrait-panel" id="kaori-portrait-0" role="tabpanel"
+                                        aria-labelledby="kaori-tab-0" tabindex="0">
+                                        <div class="portrait-placeholder"><b>CHARACTER
+                                                VISUAL</b><span>TBD</span><small>이미지 준비 중</small></div>
+                                        <p class="portrait-caption">인간 형태 · 이미지 TBD</p>
+                                    </div>
+                                    <div class="portrait-panel" id="kaori-portrait-1" role="tabpanel"
+                                        aria-labelledby="kaori-tab-1" tabindex="0" hidden>
+                                        <div class="portrait-placeholder"><b>CHARACTER
+                                                VISUAL</b><span>TBD</span><small>이미지 준비 중</small></div>
+                                        <p class="portrait-caption">절광체 형태 · 이미지 TBD</p>
+                                    </div><a class="artwork-shortcut" href="../artwork.html#kaori">설정화·바디 시트 보기 →</a>
+                                </div>
+                                <dl class="kv">
+                                    <dt>이름</dt>
+                                    <dd>히이라기 카오리</dd>
+                                    <dt>변신·이명</dt>
+                                    <dd>녹타라</dd>
+                                    <dt>연령</dt>
+                                    <dd>실제 연령 미공개 / 열다섯 살 무렵 절광체가 되어 노화 정지, 정화 후 인간으로 회귀</dd>
+                                    <dt>신장</dt>
+                                    <dd>159.9 cm</dd>
+                                    <dt>체중</dt>
+                                    <dd>44.9 kg</dd>
+                                    <dt>상징</dt>
+                                    <dd>밤 · 그림자</dd>
+                                    <dt>구분</dt>
+                                    <dd>흑성교단</dd>
+                                    <dt>첫 등장</dt>
+                                    <dd>원작소설 2권 12화 〈언제나 두 번째〉</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                        <section class="section" id="profile">
+                            <h2><span class="section-number">1.</span>기본 프로필</h2>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">문서 ID</th>
+                                            <td><code>kaori</code></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">이름</th>
+                                            <td>히이라기 카오리</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성별</th>
+                                            <td>여성</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">연령</th>
+                                            <td>실제 연령 미공개 / 열다섯 살 무렵 절광체가 되어 노화 정지, 정화 후 인간으로 회귀</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">신장</th>
+                                            <td>159.9 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체중</th>
+                                            <td>44.9 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">쓰리사이즈 (B / W / H)</th>
+                                            <td>86(C) / 58 / 87 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">신체정보 출처</th>
+                                            <td>사용자 제공 제작 설정 · 2026.09.06</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">생일</th>
+                                            <td>미공개 (본편·외전 공개 전)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">가족</th>
+                                            <td>부모(이름 미공개, 결별), 히이라기 나츠미(쌍둥이 언니)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">상징 모티브</th>
+                                            <td>밤, 그림자, 깨진 달, 같음과 다름</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">대표 색채</th>
+                                            <td>검은색, 짙은 회색, 녹색</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">소속</th>
+                                            <td>흑성교단(과거), 오로라 책방(현재)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">조직 내 서열</th>
+                                            <td>전 흑성교단 간부 서열 3위</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">주요 출연작</th>
+                                            <td>《스타라이트 페어리즈》</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">인물 유형</th>
+                                            <td>주요 악역, 비극적 적대자, 조력자, 생존자</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변신체</th>
+                                            <td>녹타라, 에테르녹스</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변신 타입</th>
+                                            <td>자아보존형 절광체 → 인간</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">주요 능력</th>
+                                            <td>그림자 분신, 그림자 이동·구속, 검은 깃털, 냉기의 어둠, 내면 간섭</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">좋아하는 것</th>
+                                            <td>나츠미, 녹색, 스스로 고른 물건과 일상, 평범하게 함께 있는 시간</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">싫어하는 것</th>
+                                            <td>나츠미의 동생으로만 불리는 것, 자신의 선택을 대신 결정당하는 것, 역할로만 평가받는 것</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">첫 등장</th>
+                                            <td>원작소설 2권 12화 〈언제나 두 번째〉</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">인간 모습 본격 공개</th>
+                                            <td>원작소설 4권 32화 〈내가 선택한 어둠〉</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">인간으로 회귀</th>
+                                            <td>원작소설 4권 35화 〈언니가 바란 별빛〉</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">현재 상태</th>
+                                            <td>생존 / 오로라 책방의 조수</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성우(가상 캐스팅)</th>
+                                            <td>마츠다 사츠미(가상 캐스팅)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">게임 확정 성우</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">컬러 팔레트</th>
+                                            <td>
+                                                <div class="palette" aria-label="히이라기 카오리 5색 참고 팔레트">
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#DADADA"
+                                                            aria-hidden="true"></span><code>TBD</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#BEBEBE"
+                                                            aria-hidden="true"></span><code>TBD</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#A0A0A0"
+                                                            aria-hidden="true"></span><code>TBD</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#828282"
+                                                            aria-hidden="true"></span><code>TBD</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#646464"
+                                                            aria-hidden="true"></span><code>TBD</code></div>
+                                                </div>
+                                                <p class="palette-note">이미지 미제공 · 회색은 TBD 자리 표시입니다.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section" id="production">
+                            <h2><span class="section-number">2.</span>리소스 제작용 프로필</h2>
+                            <p class="muted small">신체 수치는 기본 프로필의 사용자 제공 제작 설정을 따르며, 기재하지 않은 항목은 추정하지 않습니다. 성격·모에요소는 원문
+                                묘사를 바탕으로 묶은 제작용 분류이며, 추가 공식 설정을 의미하지 않습니다.</p>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">신장</th>
+                                            <td>159.9 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체중</th>
+                                            <td>44.9 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">쓰리사이즈 (B / W / H)</th>
+                                            <td>86(C) / 58 / 87 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">혈액형</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체형·등신·상대 스케일</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">헤어</th>
+                                            <td>어린 시절 검은 머리 / 현재 세부 색상 TBD</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">눈동자</th>
+                                            <td>일상 TBD / 에테르녹스는 흰색·검붉은색</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성격 키워드</th>
+                                            <td>과묵함 · 냉소 · 자존심 · 독립과 자기 선택 <span class="badge ">원문 기반 요약</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">모에요소·캐릭터 속성</th>
+                                            <td>쌍둥이 여동생 · 까칠하지만 세심함 · 책방 조수 <span class="badge ">제작용 분류</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">무기·주요 소품</th>
+                                            <td>그림자 분신·구속 · 검은 깃털 · 검은 손톱</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">색상 수치·소재 규격</th>
+                                            <td><span class="badge tbd">TBD</span> <span class="muted">원문 색상명은 기본 프로필·특징
+                                                    참조</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">게임 리소스 경로·담당자</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>형태·의상 구분</h3>
+                            <p class="muted small">원작에 등장하는 형태를 정리했습니다. 게임에서 필요한 모델·스탠딩·차분의 범위는 TBD입니다.</p>
+                            <div class="form-line"><span>인간 모습</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>녹타라</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>에테르녹스(합성체)</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>정화 후 책방 조수</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="notice"><strong>디자인 메모</strong>
+                                <p>검은 목도리와 스스로 고른 녹색 소품을 유지한다. 녹색은 캐릭터 고유 설정이며 위키 공통색과 별개다. 정화 후 인간으로 회귀.</p>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">ADV</th>
+                                            <td>공통 규격·추천 수량: <a href="../adv-guide.html#standing">ADV·2D 제작 가이드</a>.
+                                                캐릭터별 발주·완료 상태: <span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">3D 전투</th>
+                                            <td><a href="../modeling-guide.html">파츠 분리·전체 바디・Shape Key 가이드</a>.
+                                                리깅・VFX・소켓・성능 예산: <span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section" id="artwork">
+                            <h2><span class="section-number">자료.</span>설정화</h2>
+                            <details class="character-artwork">
+                                <summary>캐릭터 시트 펼치기 <span class="badge">형태별·바디</span></summary>
+                                <div class="character-artwork-content">
+                                    <details class="sheet-group">
+                                        <summary>인간 형태<span class="badge">TBD</span></summary>
+                                        <div class="sheet-content">
+                                            <div class="sheet-tbd"><strong>TBD</strong>
+                                                <p>인간 형태 설정화 미제공</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="sheet-group">
+                                        <summary>절광체 형태<span class="badge">TBD</span></summary>
+                                        <div class="sheet-content">
+                                            <div class="sheet-tbd"><strong>TBD</strong>
+                                                <p>절광체 형태 설정화 미제공</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <details class="sheet-group">
+                                        <summary>바디<span class="badge">TBD</span></summary>
+                                        <div class="sheet-content">
+                                            <div class="sheet-tbd"><strong>TBD</strong>
+                                                <p>모델링 체형 참고 시트 미제공</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <p class="small"><a href="../artwork.html#kaori">설정화 모음 페이지에서 보기 →</a></p>
+                                </div>
+                            </details>
+                        </section>
+                        <section class="section" id="overview">
+                            <h2><span class="section-number">3.</span>개요</h2>
+                            <div class="prose">
+                                <p>흑성교단의 녹타라로 활동한 히이라기 나츠미의 쌍둥이 동생. 마이의 ‘언제나 두 번째’라는 상처에 자신의 삶을 겹쳐 보고 우미코를 가진 자로 적대한다.
+                                </p>
+                                <p>원한 것은 언니의 부재가 아니라 언니 옆에서도 자기 이름과 선택이 지워지지 않는 삶이었다. 에테르녹스에서 나츠미를 잃고 인간으로 돌아온 뒤에는 기억과
+                                    책임을 가진 채 오로라 책방에서 생활한다. 구출 이후의 슬픔·노동·관계까지 이어지는 인물이다. [2권 12<del>20화, 4권
+                                        33</del>35·40화, 5권 41~50화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="traits">
+                            <h2><span class="section-number">4.</span>특징</h2>
+                            <div class="prose">
+                                <h3>4.1. 열등감과 자기 목소리</h3>
+                                <p>까칠한 말과 비꼼으로 방어하지만 가장 가까운 사람에게 원하는 것을 말하기 어려워한다. 언니가 자신을 모른다고 느끼면서도 언니가 떠나지 않으리라는 기대에
+                                    의존했다. 다른 취향을 말하면 관계가 끊긴다는 두려움이 독립을 막았다. [4권 33~35화]</p>
+                                <h3>4.2. 확인된 취향·소품</h3>
+                                <p>초록색을 좋아하며 코코아도 완전히 싫어진 것은 아니라고 뒤늦게 말한다. 검은 목도리는 언니와 같아서 좋아했던 마음과 스스로 느슨하게 매는 선택이 함께
+                                    담긴 유품이다. 이 소품을 정화와 함께 사라지는 마법 의상으로 처리하지 않는다. [4권 34~35화]</p>
+                                <h3>4.3. 살아남은 이후</h3>
+                                <p>별빛정화 뒤 기억이 남아 언니의 잘못과 사랑을 모두 기억한다. 책방에서 무거운 일을 맡고 유우나를 부축하는 무심한 돌봄이 생긴다. 웃는 것이 언니를
+                                    배신하는 일이라는 환영을 거부하고 자기 삶을 택한다. [4권 35·40화, 5권 45·48·50화]</p>
+                                <h3>4.4. 외형·제작 설정 보존</h3>
+                                <p>아래는 기존 개별 캐릭터 문서의 상세 외형 설정을 보존한 제작 참고다. 원작의 사건·발화 근거와 구분하며, 최종 형태와 정확한 색상·치수는 사용자 설정
+                                    및 제공 시트를 따른다.</p>
+                                <p>인간 모습의 카오리는 나츠미와 같은 얼굴과 비슷한 체격을 지닌 쌍둥이다. 머리 모양에는 조금 차이가 있으나 검은색과 짙은 회색 계열의 비슷한 옷을 입어
+                                    한눈에 자매라는 사실을 알 수 있다. 어린 시절에는 검은 머리카락과 같은 원피스를 한 모습으로 묘사된다.</p>
+                                <p>나츠미와 같은 옷을 입는 모습은 단순한 쌍둥이 연출이 아니라 카오리의 갈등을 시각화한다. 같은 것을 싫어하는 것이 아니라, 무엇을 같게 하고 무엇을
+                                    다르게 할지 자신이 정할 수 없다는 점이 문제다. 34화에서는 나츠미가 고른 검은 목도리를 버리지 않고 대신 끝을 느슨하게 매며, 같은 물건을 자기
+                                    방식으로 사용하는 선택을 한다.</p>
+                                <p>녹타라의 모습에서는 검은 깃털로 뒤덮인 긴 드레스를 입고, 한쪽이 깨진 달 모양 가면으로 얼굴을 가린다. 드레스 끝에서 떨어진 깃털은 바닥에 닿기 전에
+                                    그림자로 변해 흩어지며, 길고 가느다란 손가락 끝에서는 어둠이 흘러내린다. 가까운 거리에서는 검은 손톱을 무기로 사용한다.</p>
+                                <p>깨진 달 가면은 완전한 하나로 묶이지 못한 자아와 나츠미의 그림자에서 분리되고 싶은 욕망을 상징한다. 전투와 감정의 동요가 심해질수록 가면의 균열이
+                                    커지고, 아쿠아리우스가 본명을 부르며 정체성을 묻는 과정에서 가면은 점차 카오리의 얼굴을 감추지 못한다.</p>
+                                <p>에테르녹스는 에테르나의 반투명한 긴 드레스 위에 녹타라의 검은 깃털이 겹겹이 덮인 거대한 완전 절광체다. 머리 뒤에는 빛나는 고리와 깨진 달이 포개져
+                                    일식 같은 형상을 만들며, 한쪽 눈은 흰색이고 다른 한쪽 눈은 검붉은색이다. 네 개의 팔 끝에서는 빛처럼 번뜩이는 어둠과 얼어붙은 그림자가 동시에
+                                    흐른다.</p>
+                                <p>인간으로 돌아온 뒤에는 검은 목도리를 계속 착용한다. 5권 45화에서는 옅은 회색 스웨터와 검은 치마를 입은 평범한 모습으로 유우나를 간호한다. 오로라
+                                    책방에서는 앞치마를 두르고 책을 정리하며, 검은 목도리 옆에 자신이 고른 초록색 천이나 손수건을 놓는다. 검은색을 버리지 않으면서 녹색을 더하는 변화가
+                                    과거와 새로운 삶의 공존을 보여 준다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="abilities">
+                            <h2><span class="section-number">5.</span>능력</h2>
+                            <div class="prose">
+                                <p>녹타라는 그림자 분신과 검은 깃털, 내면의 불안과 열등감을 이용해 싸운다. 피해자의 영역을 통해 성적·역할·나이 등 상처의 상징을 공격에 결합하므로 모든
+                                    영역 효과를 카오리 개인의 자유로운 변신 능력으로 동일시하지 않는다. [2권 12~20화]</p>
+                                <p>에테르녹스의 형체 안에서도 의식이 남아 우미코와 대화한다. 인간 회귀는 나츠미가 자신의 어둠까지 떠안아 정화의 길을 열었기 때문에 가능한 사례다. 정화
+                                    후 전투용 녹타라의 힘을 계속 보유한다고 확정하지 않으며, 경험과 기억으로 유우나의 몸에 남은 이상을 알아차린다. [4권 34<del>35화, 5권
+                                        44</del>46화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="family">
+                            <h2><span class="section-number">6.</span>가족관계</h2>
+                            <div class="prose">
+                                <p>나츠미는 쌍둥이 언니이며 부모는 두 사람이 열다섯 살일 때 이혼과 분리 양육을 논의했다. 카오리는 언니와 함께 있고 싶었지만 똑같이 살고 싶은 것은
+                                    아니었다. 가출 뒤 요루에게 독립된 이름과 힘을 약속받아 자발적으로 어둠을 선택했다. 본편의 생일 비공개와 외전용 11월 28일 설정은 기존 내부
+                                    메모를 보존한다. [4권 33~35화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="relationships">
+                            <h2><span class="section-number">7.</span>인간관계</h2>
+                            <div class="prose">
+                                <div class="table-wrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>인물</th>
+                                                <th>관계와 변화</th>
+                                                <th>원작 근거</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>나츠미</td>
+                                                <td>답답함과 사랑이 공존하는 언니. 마지막에 각자의 소망을 말하지만 함께할 내일은 잃는다. 살아남은 뒤에도 잘못과 사랑을 함께
+                                                    기억한다.</td>
+                                                <td>4권 33~35화, 5권 48화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>우미코</td>
+                                                <td>특권만 가진 사람이라고 적대했으나 자기 역할 밖에서 미래를 고른 사람임을 알게 된다. 에테르녹스 안에서 자신의 목소리를
+                                                    찾도록 도움받는다.</td>
+                                                <td>2권 12<del>20화, 4권 34</del>35화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>마이</td>
+                                                <td>자기 열등감을 투영해 몰아간 피해자. 공통된 감정은 카오리의 가해를 정당화하지 않는다.</td>
+                                                <td>2권 12~14화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>스펙트라</td>
+                                                <td>책방의 생활과 일을 제안한 점주. 자신의 선택을 허용받고, 이후 쇠약한 스펙트라를 부축하고 일을 나눠 맡는다.</td>
+                                                <td>4권 40화, 5권 45~46·50화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>유우나</td>
+                                                <td>같은 교단의 동료였으나 당시에는 사정을 깊이 묻지 않았다. 뒤늦게 과거를 전하고 불완전한 정화를 알아차리며 회복을 돕는다.
+                                                </td>
+                                                <td>5권 41·44~46화</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="story">
+                            <h2><span class="section-number">8.</span>작중 행적</h2>
+                            <div class="notice"><strong>기준</strong>
+                                <p>원작소설 1~5권 기준. 아래 권·화 번호는 게임 챕터 번호나 전투 스테이지 번호가 아닙니다.</p>
+                            </div>
+                            <div class="prose">
+                                <p>사용자가 제공한 원작소설 1~5권 DOCX를 직접 대조한 주요 행적이다. 실제 등장·회상·언급을 구분하고 해당 근거가 있는 화만 수록한다. 모든 이름
+                                    언급을 빠짐없이 나열한 전수 출연표는 아니다. 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있다.</p>
+                            </div>
+                            <div class="volume-actions"><button type="button" data-volumes="open">전체 권
+                                    펼치기</button><button type="button" data-volumes="close">전체 권 접기</button></div>
+                            <details class="volume" id="volume-2">
+                                <summary>2권 · 푸른 별빛이 비추는 내일 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-12">12화. 언제나 두 번째</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>마이의 열등감에 언니 뒤에 선 자신의 경험을 겹쳐 본다. 첫 번째가 되고 싶지 않느냐는 질문으로 마이의 상처를 자극하며 다음 암흑게이트를
+                                        준비한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 12화 〈언제나 두 번째〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-13">13화. 누구의 그림자</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>마이의 마지막 저항을 꺾어 끝없이 순위를 매기는 교실의 암흑영역을 만든다. 우미코의 특권을 공격하며 마이와 자신의 상처를 한 결론으로 몰아간다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 2권 13화 〈누구의 그림자〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-14">14화. 보이지 않는 노력</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>마이의 정화와 우미코의 말에 자신의 자매 관계를 되돌아보게 된다. 다친 어깨를 치료하려는 나츠미를 밀어내지만, 언니를 없애고 싶은지 자기 이름으로
+                                        곁에 서고 싶은지 흔들리기 시작한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 14화 〈보이지 않는 노력〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-15">15화. 별빛을 잇는 집</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>폐원을 앞둔 보육원 교사의 상실을 포착한다. 아이들이 더 있었다면 끝나지 않았을 것이라는 생각을 검은 깃털로 자극한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 15화 〈별빛을 잇는 집〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-16">16화. 아이들만 있다면</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>보육원의 상처를 이용해 나이 역행 영역을 유지한다. 어린 우미코의 경직된 태도를 보며 모든 것을 가진 사람이라는 자신의 해석만으로 설명되지 않는
+                                        면을 접한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 16화 〈아이들만 있다면〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-17">17화. 작은 우미코</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>렌지의 탄생과 끝난 후계 교육을 보여 주어 우미코를 무너뜨리려 한다. 그러나 우미코가 자기 존재를 역할과 구분하고 자매 관계를 되묻자 흔들린다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 2권 17화 〈작은 우미코〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-18">18화. 내가 바라는 내일</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>분신과 나이 역행 공격으로 방해하지만 우미코가 원래 모습을 되찾고 교사가 미래를 선택하면서 영역이 정화된다. 타인을 규정해 온 자신의 결론에도
+                                        의문을 남긴 채 물러난다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 18화 〈내가 바라는 내일〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-19">19화. 별빛축제의 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>축제에서 아쿠아리우스와 교전한다. 그림자 분신과 근접 공격으로 압박하며 우미코와의 대립을 이어 간다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 19화 〈별빛축제의 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-20">20화. 별빛 아래 드러난 얼굴</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>언니를 없애고 싶은 것이 아니라 자기 이름으로 곁에 서고 싶은 것 아니냐는 우미코의 말에 격앙된다. 싸움에서 밀린 뒤 에테르나에게 구출된다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 2권 20화 〈별빛 아래 드러난 얼굴〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-4">
+                                <summary>4권 · 태양은 가려져도 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-32">32화. 내가 선택한 어둠</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>빛과 어둠을 함께 쓰며 같은 선에 선 네 페어리즈를 본다. 언니의 강한 손을 마주 잡지 못한 채 합성체 계획을 맞는다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 32화 〈내가 선택한 어둠〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-33">33화. 언니와 동생</h4>
+                                    <p><strong>구분: 직접 등장·과거 회상</strong></p>
+                                    <p>좋아하는 색과 머리 길이까지 언니에게 맞추며 목소리를 숨겨 온 과거가 드러난다. 독립된 이름과 힘을 약속받아 녹타라가 되었어도 관계는 바뀌지
+                                        않았다. 에테르녹스의 핵이 되어 자아를 잃는 것은 자신이 사라지는 일이라며 반발한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 33화 〈언니와 동생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-34">34화. 에테르녹스</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>언니가 준 검은 목도리를 자기 방식으로 느슨하게 매고 돌아온다. 언니를 혼자 보내지 않겠다고 합성에 참여하지만 역할 변경을 뒤늦게 안다. 우미코의
+                                        도움으로 자신의 삶에 언니가 없기를 바란 적은 없다고 말한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 34화 〈에테르녹스〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-35">35화. 언니가 바란 별빛</h4>
+                                    <p><strong>구분: 직접 등장·인간 회귀</strong></p>
+                                    <p>언니에게 화낼 일과 함께하고 싶은 미래를 말하며 죽지 말라고 붙잡는다. 그럼에도 자신은 살고 싶다고 선택하고 나츠미의 도움과 별빛정화로 인간으로
+                                        돌아온다. 기억은 지워지지 않으며 검은 목도리도 남는다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 35화 〈언니가 바란 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-36">36화. 꿈이었던 선생님</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>검은 목도리를 두르고 혼자 있고 싶다고 말한 뒤 자신의 발로 광장을 떠난다. 페어리즈는 그 선택을 곧바로 통제하지 않는다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 36화 〈꿈이었던 선생님〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-40">40화. 흑성교단의 끝</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>나츠미를 잃고 남은 책임과 삶을 스펙트라와 이야기한다. 오로라 책방에서 점원으로 일하며 손님에게 책을 안내하고 자기 이름으로 하루를 시작한다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 4권 40화 〈흑성교단의 끝〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-5">
+                                <summary>5권 · 빛이여, 마을의 천사들에게 닿아라 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-41">41화. 돌아오지 않는 전학생</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>요루의 기록과 유우나에게 들은 이야기를 구분해 과거를 전한다. 이용당한 피해만 보지 말고 스스로 어둠을 택하고 남을 해친 선택도 보아야 한다고
+                                        말하며, 아무 역할 없이도 머물 수 있다는 느낌이 필요하다고 조언한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 41화 〈돌아오지 않는 전학생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-42">42화. 머물고 싶었던 장소</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>유우나의 자발적 선택을 부정하지 말라고 조언하고 후방에 남는다. 자신이 전할 말은 다른 사람에게 대신 맡기지 않는다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 42화 〈머물고 싶었던 장소〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-43">43화. 아포크라의 마지막 임무</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>후방에서 전투와 유우나의 선택을 지켜본다. 나츠미의 마지막 선택과 눈앞의 구출 가능성을 함께 생각하며 섣부른 약속을 경계한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 43화 〈아포크라의 마지막 임무〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-44">44화. 사랑의 스펙트럼</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>유우나의 숨과 맥박은 인간 같지만 절광체가 정화만으로 이 상태가 된 점을 의심한다. 자신은 나츠미가 어둠을 떠안아 살아났다는 차이를 설명하고
+                                        유우나 안에 네메시스의 어둠이 숨어 있음을 발견한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 44화 〈사랑의 스펙트럼〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-45">45화. 단 하루의 전학생</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>깨어난 유우나를 부축하고 좋은 일만 선택해 자기 과거로 남길 수는 없다고 말한다. 밤에는 유우나를 지켜보지만 네메시스의 검은 안개에 붙잡힌다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 5권 45화 〈단 하루의 전학생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-46">46화. 어둠이 태어나는 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>스펙트라를 부축해 현장에 도착한다. 절광체의 몸과 어둠에 관한 자신의 경험으로 유우나의 상태를 함께 살핀다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 46화 〈어둠이 태어나는 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-47">47화. 호시노미야 암흑현현</h4>
+                                    <p><strong>구분: 직접 등장·환영에 갇힘</strong></p>
+                                    <p>나츠미의 모습을 한 어둠이 살아남은 자신을 부르는 환영에 갇힌다. 언니를 다시 보고 싶은 마음과 자신의 삶을 택한 결심이 충돌한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 47화 〈호시노미야 암흑현현〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-48">48화. 별빛이 꺼진 뒤에도</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>언니의 환영이 행복을 배신이라고 몰아가자 실제 나츠미가 남긴 부탁을 떠올린다. 잘못과 사랑을 모두 기억한 채 살아가겠다고 선택하고 되찾은 빛을
+                                        페어리즈에게 돌려준다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 48화 〈별빛이 꺼진 뒤에도〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-49">49화. 빛이여, 마을의 천사들에게 닿아라!</h4>
+                                    <p><strong>구분: 직접 등장·별빛의 연결</strong></p>
+                                    <p>살아가겠다는 선택의 빛이 마을의 응원에 합류한다. 언니를 잃은 삶에서 되찾은 별빛으로 다른 사람들을 지탱한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 49화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-50">50화. 별빛은 계속된다</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>책방에서 무거운 책을 옮기고 창고를 정리하며 치요의 출간본을 맞는다. 졸업 뒤 소풍에서 자기 방식으로 먹고 웃고 사진에 남는 평범한 삶을
+                                        계속한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 50화 〈별빛은 계속된다〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                        </section>
+                        <section class="section" id="quotes">
+                            <h2><span class="section-number">9.</span>어록</h2>
+                            <div class="prose">
+                                <p>원작의 실제 발화를 대조했다. 아래 문장은 본인의 대사이며, 환영의 발언이나 편지·책의 문장을 섞지 않는다.</p>
+                                <blockquote>
+                                    <p>내가 웃는 건 언니를 잊는 게 아니야.</p>
+                                </blockquote>
+                                <p>— 원작 5권 48화. 나츠미를 흉내 내는 환영에 맞서 자기 삶을 선택한다.</p>
+                                <blockquote>
+                                    <p>언니가 시켜서가 아니야. 언니를 혼자 보내고 싶지 않아서 내가 정한 거야.</p>
+                                </blockquote>
+                                <p>— 원작 4권 34화. 합성 참여의 선택을 자신의 말로 밝힌다. 핵의 역할 변경까지 알고 동의한 것은 아니다.</p>
+                                <blockquote>
+                                    <p>이번에는 내가 누군가에게 돌려줄게.</p>
+                                </blockquote>
+                                <p>— 원작 5권 48화. 언니가 되찾아 준 별빛을 페어리즈에게 보낸다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="trivia">
+                            <h2><span class="section-number">10.</span>기타</h2>
+                            <div class="prose">
+                                <ul>
+                                    <li>카오리는 나츠미보다 몇 분 늦게 태어난 쌍둥이 여동생이다.</li>
+                                    <li>현재의 정확한 연령과 생일은 공개되지 않았다. 열다섯 살 무렵 절광체가 됐고 4권에서 인간으로 돌아왔다는 사실만 확정돼 있다.</li>
+                                    <li>이름 ‘녹타라’와 깨진 달·검은 깃털·그림자 능력은 밤과 분리된 자아를 상징한다.</li>
+                                    <li>나츠미와 함께 최초의 다인 자아보존형 절광체 사례다.</li>
+                                    <li>흑성교단 간부 서열은 3위다. 서열 2위인 나츠미 다음이라는 구조가 인간 시절의 ‘언제나 두 번째’와 반복된다.</li>
+                                    <li>첫 등장은 2권 12화이며, 본명 ‘히이라기 카오리’도 같은 화에서 공개된다.</li>
+                                    <li>인간 모습은 4권 32화부터 본격적으로 등장하고, 자매의 과거는 33화에서 공개된다.</li>
+                                    <li>아쿠아리우스의 핵심 라이벌이다. 두 사람 모두 역할 속에서 자기 이름을 잃었지만 관계를 끊는 것과 관계 속에서 선택하는 것의 차이를 보여 준다.
+                                    </li>
+                                    <li>녹타라는 일반 암흑잠식체가 아니므로 20화에서 아쿠아리우스에게 패배해도 정화되지 않는다.</li>
+                                    <li>카오리는 피해자인 동시에 가해자다. 요루와 가족에게 이용당한 과거가 마이와 어린이집 교사에게 저지른 일을 없애지 않는다.</li>
+                                    <li>녹타라라는 이름은 카오리가 원한 독립의 상징이지만 동시에 요루가 부여한 흑성교단의 역할이기도 하다.</li>
+                                    <li>카오리가 원한 것은 나츠미와의 결별이 아니라 서로 다른 선택을 한 채 나란히 있는 관계다.</li>
+                                    <li>에테르녹스 합성에는 카오리 자신도 동의하지만, 나츠미가 형체와 핵의 역할을 몰래 바꾼 사실은 동의하지 않았다.</li>
+                                    <li>에테르녹스의 외부 형체와 전투 의식은 카오리가, 내부 핵과 두 사람의 어둠은 나츠미가 담당한다.</li>
+                                    <li>카오리의 인간 회귀는 일반적인 정화 사례가 아니다. 나츠미가 카오리의 어둠을 모두 가져가고 남은 별빛을 정화의 길로 밀어 넣었기 때문에
+                                        가능했다.</li>
+                                    <li>살아남는 선택은 나츠미의 명령이 아니다. 카오리가 “내가 살고 싶어서”라고 스스로 결정한 뒤 정화가 진행된다.</li>
+                                    <li>나츠미가 소멸한 뒤에도 카오리는 정화 이전과 마지막 순간의 기억을 모두 유지한다.</li>
+                                    <li>검은 목도리는 나츠미가 골랐지만 카오리가 자기 방식으로 맨 물건이다. 과거를 버리지 않으면서 자기 선택을 더하는 상징이다.</li>
+                                    <li>녹색은 카오리가 스스로 바라보고 고른 색으로 반복된다. 녹색 목도리, 초록색 차 통과 천은 나츠미와 구분되는 취향이자 선택의 표지다.</li>
+                                    <li>오로라 책방에서 처음 고른 차는 초록색 통의 차다. 맛이 조금 쓰다고 느끼지만 직접 고른 선택을 바꾸지 않는다.</li>
+                                    <li>스펙트라는 카오리를 용서받은 사람으로 규정하지 않고, 과거를 갚는 일과 별개로 살아갈 수 있는 장소를 제공한다.</li>
+                                    <li>정화 뒤에도 절광체의 경험에서 비롯된 어둠 감지 능력이 일부 남아 유우나 안의 네메시스를 발견한다.</li>
+                                    <li>5권의 검은 나츠미는 실제 나츠미의 부활이 아니라 카오리의 죄책감을 이용한 환영이다.</li>
+                                    <li>카오리는 환영을 부정하면서 나츠미가 잘못한 것과 자신을 사랑한 것을 모두 기억하겠다고 선언한다.</li>
+                                    <li>48화에서 일반인 신분으로 “빛이여! 마을의 천사들에게 닿아라!”를 외쳐 자신의 별빛을 페어리즈에게 보낸다.</li>
+                                    <li>50화에서는 오로라 책방 직원으로 남고, 페어리즈 네 사람·스펙트라와 함께 피크닉과 단체사진에 참여한다.</li>
+                                    <li>최종결전 뒤에도 녹타라로 재변신하거나 페어리즈가 되지는 않는다. 카오리의 결말은 새로운 전투 역할을 얻는 것이 아니라 역할 없이도 자기 이름으로
+                                        살아가는 것이다.</li>
+                                    <li>부모의 이름과 직업, 정확한 출생일, 현재 실제 연령, 가상 성우는 정본에서 확정되지 않았으므로 임의 설정 없이 미공개 또는 미정으로 표기한다.
+                                    </li>
+                                </ul>
+                                <h3>생일·외전 공개 계획 (내부 설정)</h3>
+                                <p><strong>본편·외전 공개 전:</strong> 자매의 생일은 공식적으로 발표하지 않는다. 본편 프로필에는 미공개로 표기한다.</p>
+                                <p><strong>11월 28일의 의미:</strong> 절광체가 된 이후 자매는 생일을 의미 있게 여기지 않아 기억하지 않고 있었다. 본편 엔딩 이후,
+                                    카오리는 나츠미가 소멸하고 자신이 정화된 날인 11월 28일을 언니의 기일이자 자신의 새로운 생일로 정한다. 이 날짜는 카오리가 새로 정한 생일이며,
+                                    자매의 실제 출생일을 확정하는 표기가 아니다.</p>
+                                <p><strong>외전 계획:</strong> 이 생일 관련 설정은 외전에서 다룰 예정이다. 외전 제작 여부는 본편 출시 이후 결정하며, 현재 제작이 확정된
+                                    것은 아니다.</p>
+                                <p><strong>특전 일러스트 공개:</strong> 외전 공개 전까지는 생일기념 특전 일러스트도 생일기념으로 발표하지 않고 다른 기념으로 공개한다.
+                                </p>
+                                <p><strong>설정 출처:</strong> 2026.09.06 사용자 제공 내부 개발 설정. 원작 1~5권의 기존 화별 행적과 별도로 관리한다.</p>
+                                <h3>원작 대조와 별도 설정</h3>
+                                <p>2026.09.06 제공된 원작소설 1~5권 DOCX를 기준으로 개요·특징·활동·관계·주요 행적·발화를 대조했다. 기본 프로필의 사용자 제작 수치·생일과
+                                    기존 테마곡·외전 메모는 별도 설정으로 보존한다. 위 기타 항목의 어원·디자인 해설·확장 설정은 소설 속 발화와 구분한다. 미확인 외형·가족·게임
+                                    수치는 임의로 보충하지 않는다. 기준 판본과 정정 사항은 자료·편집 안내의 원작 대조 기록을 참조한다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="source">
+                            <h2><span class="section-number">자료.</span>출처·게임화 메모</h2>
+                            <p><a
+                                    href="../sources/%ED%9E%88%EC%9D%B4%EB%9D%BC%EA%B8%B0_%EC%B9%B4%EC%98%A4%EB%A6%AC_%EB%85%B9%ED%83%80%EB%9D%BC_%EC%9C%84%ED%82%A4.md">히이라기_카오리_녹타라_위키.md
+                                    열기 ↗</a></p>
+                            <p>사용자가 제공한 원작소설 1~5권 DOCX의 주요 장면을 직접 대조했습니다. 다른 캐릭터 문서를 사실 확인의 근거로 대체하지 않습니다. 기본 프로필의 사용자
+                                제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존합니다. <a href="../guide.html#novel-audit">기준 판본·정정
+                                    내용·재확인 지점 →</a></p>
+                            <div class="notice"><strong>게임화</strong>
+                                <p>원작과 게임의 기본 스토리는 동일합니다. 전체 구성은 게임 기획서 v1과 사용자 전투 보완을 따릅니다. 장면별 변경·축소·확장 사유와 ADV·전투 배치는
+                                    각색 시 기록합니다. <a href="../systems.html#battle">공통 전투 규칙 →</a></p>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">대응 게임 챕터</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">축소·확장·변경 내역</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변경 사유·담당자·승인일</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="toc" aria-label="이 문서의 목차"><strong>이 문서의 목차</strong><a class="" href="#profile">1. 기본
+                            프로필</a><a class="" href="#production">2. 제작용 프로필</a><a class="" href="#artwork">설정화·바디</a><a
+                            class="" href="#overview">3. 개요</a><a class="" href="#traits">4. 특징</a><a class=""
+                            href="#abilities">5. 능력</a><a class="" href="#family">6. 가족관계</a><a class=""
+                            href="#relationships">7. 인간관계</a><a class="" href="#story">8. 작중 행적</a><a class="sub"
+                            href="#volume-2">2권</a><a class="sub" href="#volume-4">4권</a><a class="sub"
+                            href="#volume-5">5권</a><a class="" href="#quotes">9. 어록</a><a class="" href="#trivia">10.
+                            기타</a><a class="" href="#source">출처·게임화 메모</a><a href="../resources.html">리소스 제작 기준 ↗</a>
+                    </aside>
+                </div>
+            </article>
+            <footer class="footer"><span>Blossom Games · STARLIGHT FAIRIES DEVELOPMENT WIKI</span><span>설정 미확정 항목은 TBD로
+                    표기합니다.</span></footer>
+        </main>
+    </div><a class="top-link" href="#top" aria-label="문서 맨 위로">↑</a>
+</body>
+
+</html>

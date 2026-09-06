@@ -1,286 +1,950 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="시미즈 우미코 — 스타라이트 페어리즈 내부 개발용 위키. 원작소설 1~5권 설정과 2D ADV·3D 턴제 전투 제작 자료."><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#ab2867"><title>시미즈 우미코 | 스타라이트 페어리즈 개발 위키</title><link rel="icon" href="../sources/branding/StarlightFairiesLogo.png"><link rel="stylesheet" href="../assets/style.css"><script defer src="../assets/app.js"></script></head>
-<body id="top"><a class="skip" href="#content">본문으로 건너뛰기</a><header class="topbar"><div class="topbar-inner"><button class="menu-button" type="button" aria-label="문서 메뉴 열기" aria-controls="sidebar" aria-expanded="false">☰</button><a class="brand" href="../index.html"><img class="header-logo" src="../sources/branding/StarlightFairiesLogo.png" alt="스타라이트 페어리즈"><span class="brand-caption">DEV WIKI</span></a><form class="search" action="../characters.html" role="search"><label class="sr-only" for="global-search">캐릭터 문서 검색</label><input id="global-search" name="q" type="search" placeholder="캐릭터·변신명·설정 검색" autocomplete="off"><button type="submit">검색</button></form><span class="internal-label">INTERNAL DOCUMENTS</span><button class="theme-button" type="button" aria-label="어두운 테마로 변경" aria-pressed="false">◐</button></div></header>
-<div class="layout"><aside class="sidebar" id="sidebar"><nav aria-label="주요 문서"><p class="nav-heading">프로젝트</p><a class="nav-link "  href="../index.html"><span class="nav-symbol" aria-hidden="true">⌂</span>대문</a><a class="nav-link active" aria-current="page" href="../characters.html"><span class="nav-symbol" aria-hidden="true">♧</span>등장인물</a><p class="nav-heading">원작과 게임</p><a class="nav-link "  href="../world.html"><span class="nav-symbol" aria-hidden="true">◇</span>세계관·용어</a><a class="nav-link "  href="../story.html"><span class="nav-symbol" aria-hidden="true">▤</span>원작 1~5권</a><a class="nav-link "  href="../systems.html"><span class="nav-symbol" aria-hidden="true">▣</span>게임 기획</a><p class="nav-heading">개발 자료</p><a class="nav-link "  href="../artwork.html"><span class="nav-symbol" aria-hidden="true">▧</span>캐릭터 설정화</a><a class="nav-link "  href="../resources.html"><span class="nav-symbol" aria-hidden="true">▦</span>리소스 제작 기준</a><a class="nav-link "  href="../adv-guide.html"><span class="nav-symbol" aria-hidden="true">▧</span>ADV·2D 제작 가이드</a><a class="nav-link "  href="../modeling-guide.html"><span class="nav-symbol" aria-hidden="true">◇</span>3D 모델링 가이드</a><a class="nav-link "  href="../guide.html"><span class="nav-symbol" aria-hidden="true">≡</span>자료·편집 안내</a><p class="nav-heading">스타라이트 페어리즈</p><a class="nav-link" href="../characters/momoka.html"><span class="nav-symbol" aria-hidden="true" style="color:#bc3976">✦</span>사쿠라이 모모카</a><a class="nav-link" href="../characters/umiko.html"><span class="nav-symbol" aria-hidden="true" style="color:#236ca5">✦</span>시미즈 우미코</a><a class="nav-link" href="../characters/hina.html"><span class="nav-symbol" aria-hidden="true" style="color:#a56b16">✦</span>미츠하라 히나</a><a class="nav-link" href="../characters/shizuki.html"><span class="nav-symbol" aria-hidden="true" style="color:#7952b0">✦</span>호시조라 시즈키</a></nav><div class="sidebar-brand"><img src="../sources/branding/BlossomGamesLogo.png" alt="Blossom Games"><span>원작 1–5권 · 게임 개발 자료</span></div></aside><div class="scrim" aria-hidden="true"></div>
-<main class="main" id="content"><nav class="breadcrumbs" aria-label="현재 위치"><a href="../index.html">스타라이트 페어리즈</a><span>›</span><a href="../characters.html">등장인물</a><span>›</span><span>시미즈 우미코</span></nav><article class="article"><header class="article-heading"><span class="eyebrow">CHARACTER DOCUMENT · UMIKO</span><h1>시미즈 우미코</h1><p class="subtitle">페어리 아쿠아리우스</p><div class="meta"><span>기준 · 원작소설 1~5권</span><span>게임 · 2D ADV + 3D 턴제 전투</span><span>정리 · 2026.09.06</span></div></header><div class="article-layout"><div class="article-body"><div class="notice"><strong>스포일러 안내</strong><p>원작소설 1~5권의 정체·결말을 포함합니다. 작중 행적은 원작 기준이며, 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있습니다.</p></div><div class="character-top" style="--character:#236ca5"><div><div class="summary-copy"><p>호시노미야 여학원 학생회장이자 희망의 페어리 아쿠아리우스. 본편 이전부터 활동해 온 경험자로서 전투 기록, 정체 보호, 동선과 정밀 사격을 맡는다. 첫 화에는 미나미의 정화가 끝난 뒤 등장하며 로제트와의 첫 공동 전투는 2화다.</p>
-</div><div class="tag-row"><span class="badge pink">원작소설 직접 대조</span><span class="badge ">신장·체중 반영</span><span class="badge ">가상 캐스팅 ≠ 확정 성우</span></div><p class="source-ref">출처: 원작소설 1~5권 · 권·화 근거는 본문 참조</p></div><aside class="infobox" aria-label="캐릭터 기본 정보"><div class="box-title">시미즈 우미코</div><div class="portrait-switch" data-portrait-switch><div class="portrait-tabs" role="tablist" aria-label="시미즈 우미코 모습 선택"><button type="button" role="tab" id="umiko-tab-0" aria-selected="true" aria-controls="umiko-portrait-0" tabindex="0" data-portrait-tab>변신 전</button><button type="button" role="tab" id="umiko-tab-1" aria-selected="false" aria-controls="umiko-portrait-1" tabindex="-1" data-portrait-tab>변신 후</button></div><div class="portrait-panel" id="umiko-portrait-0" role="tabpanel" aria-labelledby="umiko-tab-0" tabindex="0" ><div class="front-frame"><svg class="front-illustration" viewBox="115 78 605 1080" role="img" aria-label="시미즈 우미코 · 동복 정면" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="umiko-clip-0"><polygon points="275,78 555,78 555,360 720,545 720,610 580,610 580,1158 115,1158 115,410 275,300"/></clipPath></defs><image href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" width="2048" height="1174.8726860596903" clip-path="url(#umiko-clip-0)"/></svg></div><p class="portrait-caption">시미즈 우미코 · 동복</p></div><div class="portrait-panel" id="umiko-portrait-1" role="tabpanel" aria-labelledby="umiko-tab-1" tabindex="0" hidden><div class="front-frame"><svg class="front-illustration" viewBox="520 20 405 775" role="img" aria-label="페어리 아쿠아리우스 · 망토 착용 정면" xmlns="http://www.w3.org/2000/svg"><image href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4%20%EC%8B%9C%ED%8A%B8.png" width="2048" height="806.50622406639"/></svg></div><p class="portrait-caption">페어리 아쿠아리우스 · 망토 착용</p></div><a class="artwork-shortcut" href="../artwork.html#umiko">설정화·바디 시트 보기 →</a></div><dl class="kv"><dt>이름</dt><dd>시미즈 우미코</dd><dt>변신·이명</dt><dd>페어리 아쿠아리우스</dd><dt>연령</dt><dd>17세(호시노미야 여학원 2학년)</dd><dt>신장</dt><dd>158 cm</dd><dt>체중</dt><dd>42 kg</dd><dt>상징</dt><dd>희망</dd><dt>구분</dt><dd>페어리즈</dd><dt>첫 등장</dt><dd>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</dd></dl></aside></div><section class="section" id="profile"><h2><span class="section-number">1.</span>기본 프로필</h2><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">문서 ID</th><td><code>umiko</code></td></tr><tr><th class="label" scope="row">이름</th><td>시미즈 우미코</td></tr><tr><th class="label" scope="row">성별</th><td>여성</td></tr><tr><th class="label" scope="row">연령</th><td>17세(호시노미야 여학원 2학년)</td></tr><tr><th class="label" scope="row">신장</th><td>158 cm</td></tr><tr><th class="label" scope="row">체중</th><td>42 kg</td></tr><tr><th class="label" scope="row">신체정보 출처</th><td>사용자 제공 제작 설정 · 2026.09.06</td></tr><tr><th class="label" scope="row">생일</th><td>7월 20일</td></tr><tr><th class="label" scope="row">가족</th><td>아버지(시미즈 가문 현 당주), 어머니, 시미즈 렌지(남동생)</td></tr><tr><th class="label" scope="row">소속</th><td>호시노미야 여학원 학생회</td></tr><tr><th class="label" scope="row">직책</th><td>학생회장</td></tr><tr><th class="label" scope="row">상징 모티브</th><td>물병자리</td></tr><tr><th class="label" scope="row">상징색</th><td>푸른색</td></tr><tr><th class="label" scope="row">계승한 힘</th><td>희망</td></tr><tr><th class="label" scope="row">주요 출연작</th><td>《스타라이트 페어리즈》</td></tr><tr><th class="label" scope="row">인물 유형</th><td>주연, 주인공 일행</td></tr><tr><th class="label" scope="row">변신체</th><td>페어리 아쿠아리우스, 루미너스 변형</td></tr><tr><th class="label" scope="row">변신 타입</th><td>페어리즈</td></tr><tr><th class="label" scope="row">좋아하는 것</th><td>로맨스 만화, 계획대로 일이 진행되는 것, 스타라이트 페어리즈 구성원</td></tr><tr><th class="label" scope="row">싫어하는 것</th><td>노력을 재능으로만 치부하는 시선, 타인의 선택을 대신 정하는 일, 무계획한 돌진</td></tr><tr><th class="label" scope="row">첫 등장</th><td>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</td></tr><tr><th class="label" scope="row">성우(가상 캐스팅)</th><td><span class="badge tbd">TBD</span> <span class="muted">원문: 미정</span></td></tr><tr><th class="label" scope="row">게임 확정 성우</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">컬러 팔레트</th><td><div class="palette" aria-label="시미즈 우미코 5색 참고 팔레트"><div class="palette-chip"><span class="swatch" style="background:#617597" aria-hidden="true"></span><code>#617597</code></div><div class="palette-chip"><span class="swatch" style="background:#9ED7EF" aria-hidden="true"></span><code>#9ED7EF</code></div><div class="palette-chip"><span class="swatch" style="background:#29447C" aria-hidden="true"></span><code>#29447C</code></div><div class="palette-chip"><span class="swatch" style="background:#D8CDE0" aria-hidden="true"></span><code>#D8CDE0</code></div><div class="palette-chip"><span class="swatch" style="background:#F8F4EE" aria-hidden="true"></span><code>#F8F4EE</code></div></div><p class="palette-note">이미지 기반 추정 · 교복·아쿠아리우스 시트의 머리, 하늘색 의상, 짙은 파랑, 머리 끝, 흰 의상에서 추정. 확정 색상 규격은 TBD.</p></td></tr></tbody></table></div></section><section class="section" id="production"><h2><span class="section-number">2.</span>리소스 제작용 프로필</h2><p class="muted small">신체 수치는 기본 프로필의 사용자 제공 제작 설정을 따르며, 기재하지 않은 항목은 추정하지 않습니다. 성격·모에요소는 원문 묘사를 바탕으로 묶은 제작용 분류이며, 추가 공식 설정을 의미하지 않습니다.</p><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">신장</th><td>158 cm</td></tr><tr><th class="label" scope="row">체중</th><td>42 kg</td></tr><tr><th class="label" scope="row">쓰리사이즈 (B / W / H)</th><td><span class="badge tbd">TBD</span> <span class="muted">cm</span></td></tr><tr><th class="label" scope="row">혈액형</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">체형·등신·상대 스케일</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">헤어</th><td>허리 아래까지 내려오는 긴 푸른 머리</td></tr><tr><th class="label" scope="row">눈동자</th><td>푸른색</td></tr><tr><th class="label" scope="row">성격 키워드</th><td>완벽주의 · 계획적 · 자존심 · 행동으로 표현하는 배려 <span class="badge ">원문 기반 요약</span></td></tr><tr><th class="label" scope="row">모에요소·캐릭터 속성</th><td>학생회장 · 우등생 · 츤데레 · 로맨스 만화 애호 <span class="badge ">제작용 분류</span></td></tr><tr><th class="label" scope="row">무기·주요 소품</th><td>별빛의 활과 화살 · 희망의 브로치</td></tr><tr><th class="label" scope="row">색상 수치·소재 규격</th><td><span class="badge tbd">TBD</span> <span class="muted">원문 색상명은 기본 프로필·특징 참조</span></td></tr><tr><th class="label" scope="row">게임 리소스 경로·담당자</th><td><span class="badge tbd">TBD</span></td></tr></tbody></table></div><h3>형태·의상 구분</h3><p class="muted small">원작에 등장하는 형태를 정리했습니다. 게임에서 필요한 모델·스탠딩·차분의 범위는 TBD입니다.</p><div class="form-line"><span>일상·교복</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>페어리 아쿠아리우스</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>일곱 살 모습</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="form-line"><span>루미너스 변형</span><span><span class="badge tbd">TBD</span> <span class="muted small">구현·규격</span></span></div><div class="notice"><strong>디자인 메모</strong><p>학생회장 완장과 단정한 자세. 변신체에는 별무늬 망토와 투명한 왕관 장식. 루미너스 변형은 기존 의상 위 발광 연출.</p></div><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">ADV</th><td>공통 규격·추천 수량: <a href="../adv-guide.html#standing">ADV·2D 제작 가이드</a>. 캐릭터별 발주·완료 상태: <span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">3D 전투</th><td><a href="../modeling-guide.html">파츠 분리·전체 바디・Shape Key 가이드</a>. 리깅・VFX・소켓・성능 예산: <span class="badge tbd">TBD</span></td></tr></tbody></table></div></section><section class="section" id="artwork"><h2><span class="section-number">자료.</span>설정화</h2><details class="character-artwork"><summary>캐릭터 시트 펼치기 <span class="badge">형태별·바디</span></summary><div class="character-artwork-content"><details class="sheet-group"><summary>변신 전<span class="badge">2개 시트</span></summary><div class="sheet-content"><figure class="sheet-figure"><a href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer" aria-label="동복 원본 크기로 열기"><img class="sheet-image" src="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" alt="동복 전체 설정화" loading="lazy" decoding="async"></a><figcaption>동복 <a href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a></figcaption></figure><figure class="sheet-figure"><a href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer" aria-label="하복 원본 크기로 열기"><img class="sheet-image" src="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" alt="하복 전체 설정화" loading="lazy" decoding="async"></a><figcaption>하복 <a href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png" target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a></figcaption></figure></div></details><details class="sheet-group"><summary>변신 후<span class="badge">1개 시트</span></summary><div class="sheet-content"><figure class="sheet-figure"><div class="sheet-svg-wrap"><svg class="sheet-image" viewBox="0 0 2048 806.50622406639" role="img" aria-label="페어리 아쿠아리우스 · 의상 도면" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="local-umiko-sheet-1-0"><path clip-rule="evenodd" d="M0 0H2048V806.50622406639H0Z M1647 0H1787V291H1647Z"/></clipPath></defs><image href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4%20%EC%8B%9C%ED%8A%B8.png" width="2048" height="806.50622406639" clip-path="url(#local-umiko-sheet-1-0)"/></svg></div><figcaption>페어리 아쿠아리우스 · 의상 도면 · 의복을 착용한 도면만 표시</figcaption></figure></div></details><details class="sheet-group"><summary>바디<span class="badge">TBD</span></summary><div class="sheet-content"><div class="sheet-tbd"><strong>TBD</strong><p>의복을 착용한 체형 참고 시트 TBD</p></div></div></details><p class="small"><a href="../artwork.html#umiko">설정화 모음 페이지에서 보기 →</a></p></div></details></section><section class="section" id="overview"><h2><span class="section-number">3.</span>개요</h2><div class="prose"><p>호시노미야 여학원 학생회장이자 희망의 페어리 아쿠아리우스. 본편 이전부터 활동해 온 경험자로서 전투 기록, 정체 보호, 동선과 정밀 사격을 맡는다. 첫 화에는 미나미의 정화가 끝난 뒤 등장하며 로제트와의 첫 공동 전투는 2화다.</p>
-<p>시미즈가의 장녀로 후계 교육을 받았지만 남동생 렌지가 태어난 뒤 그 역할이 끝났다. 가문으로부터 받은 것과 스스로 이루려 노력한 것을 함께 인정하고, 정해진 역할 대신 자신이 바라는 내일을 선택하는 것이 주요 서사다. 마이·카오리와의 관계는 이 갈등을 경쟁과 가족이라는 서로 다른 방향에서 비춘다. [1권 1<del>2화, 2권 12</del>20화, 4권 34~35화]</p>
-</div></section><section class="section" id="traits"><h2><span class="section-number">4.</span>특징</h2><div class="prose"><h3>4.1. 계획과 배려</h3>
-<p>규칙과 준비를 중시하고 허점을 직설적으로 지적한다. 기록·자료 복제·대피 경로 확보처럼 눈에 잘 띄지 않는 일을 꾸준히 맡는다. 말은 냉정해도 붕대와 공부 자료를 준비하고 친구를 기다리는 행동으로 마음을 표현한다. 도움을 주는 사람으로만 완벽하게 남으려는 부담도 있다. [1권 2~6화, 3권 29화, 5권 45·48화]</p>
-<h3>4.2. 성취와 가족의 역할</h3>
-<p>좋은 환경과 가문의 힘을 받았다는 사실을 부정하지 않는다. 그렇다고 성적과 전투 능력을 노력 없는 재능으로만 설명할 수도 없다. 렌지를 미워하는 대신, 교육을 시작하고 끝낼 때 자신의 생각을 묻지 않은 방식에 문제를 제기한다. 일곱 살 모습에서는 울거나 도움을 청하면 안 된다는 압박이 선명해진다. [2권 13~18화]</p>
-<h3>4.3. 일상·표현</h3>
-<p>소개 동작을 불필요하다고 하면서도 자세와 배치를 세심히 조정한다. 로맨스 만화를 읽는 이야기를 듣고 당황하는 장면은 공적 역할 밖의 취향을 드러낸다. 마지막의 요비스테 허용은 역할과 성씨 뒤에 감춘 자신에게 친구들이 가까이 오게 하는 선택이다. [2권 11화, 3권 21화, 4권 31화, 5권 50화]</p>
-<h3>4.4. 외형·제작 설정 보존</h3>
-<p>아래는 기존 개별 캐릭터 문서의 상세 외형 설정을 보존한 제작 참고다. 원작의 사건·발화 근거와 구분하며, 최종 형태와 정확한 색상·치수는 사용자 설정 및 제공 시트를 따른다.</p>
-<p>허리 아래까지 내려오는 긴 푸른 머리카락과 푸른 눈동자를 지녔다. 교복은 주름이나 리본 하나 흐트러지지 않도록 단정하게 착용하며, 학생회장 완장을 차고 다닌다. 자세와 걸음걸이에도 어린 시절부터 받은 예법 교육이 배어 있어 가만히 서 있기만 해도 엄격하고 빈틈없는 인상을 준다.</p>
-<p>페어리 아쿠아리우스로 변신하면 푸른색과 흰색을 중심으로 한 드레스를 입고, 별이 수놓인 망토와 투명한 왕관 장식이 나타난다. 길게 펼쳐진 푸른 머리카락과 치맛자락은 흐르는 물결을 연상시킨다. 손끝의 푸른빛은 마법으로 이루어진 활과 화살로 변하며, 화살이 날아간 자리에는 잔잔한 물결 같은 궤적이 남는다.</p>
-<p>전투 자세는 활을 세운 뒤 한 손을 허리 뒤로 돌리고 다른 손을 가슴 앞으로 펼치는 형태다. 본인은 실전 효율을 위한 자세라고 주장하지만, 실제로는 각성 후 아무도 없는 방에서 거울을 보며 손목 각도와 몸의 기울기까지 반복해서 연습했다.</p>
-<p>최종전의 루미너스 변형에서는 별도의 새 의상으로 바뀌지 않는다. 기존 아쿠아리우스의 모습 그대로 피부와 머리카락, 눈동자, 의상과 활 전체가 푸른빛과 루미너스의 순백색 빛으로 강하게 발광한다.</p>
-</div></section><section class="section" id="abilities"><h2><span class="section-number">5.</span>능력</h2><div class="prose"><p>가문이 보관한 희망의 브로치를 받았지만 각성은 우미코 자신의 선택으로 이루어졌다. 활과 화살로 연결부를 정확히 끊거나 고정하고, 물결·방벽·사슬을 이용해 공격과 이동을 통제한다. 여러 인장을 동시에 끊는 작전과 자료 보존에도 강하다. [1권 2·10화, 3권 21·29~30화]</p>
-<p>보육원 영역에서 나이가 일곱 살로 돌아가자 정신과 기억도 해당 시기로 돌아가며, 열일곱 살에 생성된 팩트는 존재할 수 없어 사라진다. 이 모습은 임의로 전환하는 전투 폼이 아니다. 원래 나이를 되찾는 계기는 스스로 미래를 선택하려는 마음이며 가문의 후계자로 복귀하는 결말이 아니다. [2권 16~18화]</p>
-<p>최종전에는 실패 가능한 미래 속에서 다시 길을 선택한다. 원작의 정밀 사격·전술 역할을 게임의 속도 수치나 고정 지원 스킬로 곧바로 확정하지 않는다. [5권 48~49화]</p>
-</div></section><section class="section" id="family"><h2><span class="section-number">6.</span>가족관계</h2><div class="prose"><p>아버지는 시미즈가의 현 당주이며 어머니와 남동생 시미즈 렌지가 있다. 렌지는 보육원 사건 당시 다섯 살이다. 우미코는 동생을 아끼지만 ‘장녀·임시 후계자·누군가의 앞뒤’로만 자기 삶을 정하고 싶지는 않다. 부모도 딸을 자유롭게 해 주었다고 생각했으나 그 자유를 어떻게 살아야 하는지 묻고 가르치지 못했다. 가족과의 대화 뒤 아버지는 렌지에게도 당주가 되고 싶은지 묻기 시작한다. 부모의 실명은 TBD다. [2권 13·15~18화]</p>
-</div></section><section class="section" id="relationships"><h2><span class="section-number">7.</span>인간관계</h2><div class="prose"><div class="table-wrap"><table>
-<thead>
-<tr>
-<th>인물</th>
-<th>관계와 변화</th>
-<th>원작 근거</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>모모카</td>
-<td>준비와 즉흥성이 충돌하지만 서로의 빈틈을 보완한다. 치요 사건의 정체 공개로 신뢰가 깊어지고, 마지막에는 이름으로 부를 수 있게 된다.</td>
-<td>1권 2~6화, 5권 50화</td>
-</tr>
-<tr>
-<td>마이</td>
-<td>노력과 성적을 두고 겨루는 경쟁자다. 상대의 열등감을 한마디로 해결하지 못하지만 서로의 노력을 인정하는 경쟁으로 바뀐다.</td>
-<td>2권 12~14화, 5권 48·50화</td>
-</tr>
-<tr>
-<td>카오리</td>
-<td>자신을 가진 자로만 보는 적이었다. 가족의 역할 밖에서 자기 이름을 찾는 공통점을 통해 질문을 주고받고 에테르녹스 내부에서 독립된 선택을 돕는다.</td>
-<td>2권 14<del>20화, 4권 34</del>35화</td>
-</tr>
-<tr>
-<td>히나</td>
-<td>어린 모습이 되었을 때 도움을 구해도 된다는 경험을 준 선배다. 훗날 히나의 꿈이 흔들릴 때도 대신 답하지 않고 지지한다.</td>
-<td>2권 16<del>18화, 4권 36</del>39화</td>
-</tr>
-<tr>
-<td>시즈키</td>
-<td>조사 중에는 증거 없는 단정을 경계하며, 합류 뒤에는 책임과 소문을 구별한다. 학생과 이사장이라는 관계도 나누어 대한다.</td>
-<td>3권 21화, 4권 31·40화</td>
-</tr>
-<tr>
-<td>유우나</td>
-<td>잠입의 피해자이지만 복귀한 유우나에게 수업 자료와 자리를 마련한다. 신뢰와 상태 확인을 함께 이어 간다.</td>
-<td>5권 41·45화</td>
-</tr>
-</tbody></table></div>
-</div></section><section class="section" id="story"><h2><span class="section-number">8.</span>작중 행적</h2><div class="notice"><strong>기준</strong><p>원작소설 1~5권 기준. 아래 권·화 번호는 게임 챕터 번호나 전투 스테이지 번호가 아닙니다.</p></div><div class="prose"><p>사용자가 제공한 원작소설 1~5권 DOCX를 직접 대조한 주요 행적이다. 실제 등장·회상·언급을 구분하고 해당 근거가 있는 화만 수록한다. 모든 이름 언급을 빠짐없이 나열한 전수 출연표는 아니다. 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있다.</p>
-</div><div class="volume-actions"><button type="button" data-volumes="open">전체 권 펼치기</button><button type="button" data-volumes="close">전체 권 접기</button></div><details class="volume" id="volume-1"><summary>1권 · 운명이 소녀를 부를 때 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-1">1화. 운명이 소녀를 부를 때</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>미나미의 정화가 끝난 뒤 남은 암흑태생을 푸른 화살로 제거하며 아쿠아리우스로 첫 등장한다. 로제트의 퇴로 확인과 경계 부족을 지적한 뒤 첫 정화는 나쁘지 않았다고 인정한다. 브로큰 스완과의 첫 정화를 함께 수행한 것으로 기록하지 않는다.</p>
-<p class="source-ref">근거: 원작소설 1권 1화 〈운명이 소녀를 부를 때〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-2">2화. 이름을 모르는 동료</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>학생회장으로 모모카를 지도하고, 방과 후에는 아쿠아리우스로 잔류 균열의 핵과 암흑태생을 분석한다. 네 연결을 화살로 고정해 로제트와 제거하고, 별빛의 베일과 정화의 조건을 설명한다. 집의 전투 기록에 로제트를 신뢰하기로 적지만 지각자 모모카와 같은 인물인지는 알아보지 못한다.</p>
-<p class="source-ref">근거: 원작소설 1권 2화 〈이름을 모르는 동료〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-3">3화. 작은 별빛의 이야기</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>발표 뒤 바닥에 흩어진 치요의 원고를 말없이 모아 정리하고 자신의 클립을 건넨다. 내용을 억지로 읽거나 평가하지 않는 배려가 모모카의 성급한 격려와 함께 놓인다.</p>
-<p class="source-ref">근거: 원작소설 1권 3화 〈작은 별빛의 이야기〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-4">4화. 비에 젖은 원고</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>종이인형의 몸과 그것을 움직이는 검은 문장을 구별해 공격한다. 정체를 영역에 새기면 게이트를 연 자에게 가족과 학교까지 알려질 수 있다며 로제트를 말린다. 치요가 잠식체가 되고 출구가 닫히는 상황에서도 퇴로와 일상 보호를 중시한다.</p>
-<p class="source-ref">근거: 원작소설 1권 4화 〈비에 젖은 원고〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-5">5화. 가면 너머의 이름</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>검은 문장을 고정하고 종이 가면을 공략해 치요의 내면에 닿게 돕는다. 모모카의 정체를 알게 된 뒤 자신만 베일 뒤에 남아 동료의 일상을 맡은 불균형을 고민하며, 재진입 직전 스스로 이름을 밝히려 한다.</p>
-<p class="source-ref">근거: 원작소설 1권 5화 〈가면 너머의 이름〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-6">6화. 별빛을 맡긴다는 것</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>가문의 비밀 규율보다 눈앞의 동료에게 자기 일상을 맡기는 선택을 하고 이름을 밝힌다. 로제트가 대화에 집중하도록 원고를 밟지 않으며 종이인형과 실을 막고 공동 정화를 완성한다. 현실에서는 치요를 함께 부축하고 한 줄이면 충분한 날도 있다고 말한다.</p>
-<p class="source-ref">근거: 원작소설 1권 6화 〈별빛을 맡긴다는 것〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-7">7화. 막이 오르지 않는 무대</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>학생회실에서 모모카와 동시에 강당을 가리키는 게이트 반응을 감지한다.</p>
-<p class="source-ref">근거: 원작소설 1권 7화 〈막이 오르지 않는 무대〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-8">8화. 닫힌 막, 열린 어둠</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>정체를 공유한 모모카를 학생회 업무를 이유로 불러 함께 출동한다. 리코의 영역에서 검은 실을 고정하며 접근로를 만들지만 흑성의 인장과 네뷸라의 방해로 민간인 대피와 정화를 동시에 해야 하는 상황에 놓인다.</p>
-<p class="source-ref">근거: 원작소설 1권 8화 〈닫힌 막, 열린 어둠〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-9">9화. 용기의 황금빛 광채</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>화살로 방어막과 지형 고정을 만들며 네뷸라의 공격을 버틴다. 솔라리스가 홀로 깊이 들어가지 않도록 양옆의 지원과 역할을 제안하고 새 동료의 근접전을 뒷받침한다.</p>
-<p class="source-ref">근거: 원작소설 1권 9화 〈용기의 황금빛 광채〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-10">10화. 빛이여, 마을의 천사들에게 닿아라!</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>전장과 퇴로를 통제하고 돌아온 부원들의 대본·사진을 연결한다. 흑성의 인장이 뻗은 여섯 지점 중 세 곳을 맡아 솔라리스와 동시에 끊는 작전을 수행한다. 전투 후 세 사람의 비밀 공유와 학교의 후속 수습을 돕는다.</p>
-<p class="source-ref">근거: 원작소설 1권 10화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-2"><summary>2권 · 푸른 별빛이 비추는 내일 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-11">11화. 스타라이트 페어리즈, 비밀회의!</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>미나미·치요·리코 사건을 정리하고 정체 보호와 훈련을 논의한다. 소개 동작에는 난색을 보이면서도 배치를 구체적으로 조정하고, 아카리가 찍은 사진의 비밀 보관을 요구한다.</p>
-<p class="source-ref">근거: 원작소설 2권 11화 〈스타라이트 페어리즈, 비밀회의!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-12">12화. 언제나 두 번째</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>공부와 학교 업무를 수행하며 유우나·친구들과 만난다. 자신을 피하는 마이와의 거리를 아직 충분히 이해하지 못한다.</p>
-<p class="source-ref">근거: 원작소설 2권 12화 〈언제나 두 번째〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-13">13화. 누구의 그림자</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>아침 기록과 훈련, 동생 렌지와의 일상을 통해 후계 교육의 흔적을 드러낸다. 교실 안전 문제의 수리 안내로 마이를 만났다가 암흑영역에 들어간다. 자신이 받은 기회를 인정하지만 마이의 고통을 이해할 말을 곧바로 찾지 못한다.</p>
-<p class="source-ref">근거: 원작소설 2권 13화 〈누구의 그림자〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-14">14화. 보이지 않는 노력</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>자신도 노력해 왔다는 사실과 마이가 노력했다는 사실을 함께 인정한다. 활을 내려놓고 마이에게 다가가, 자신을 이기고 싶다는 마음을 자신을 없애고 싶다는 결론과 분리하도록 돕고 정화한다.</p>
-<p class="source-ref">근거: 원작소설 2권 14화 〈보이지 않는 노력〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-15">15화. 별빛을 잇는 집</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>친구들의 동의를 구해 부모에게 정체를 알리고 시미즈가의 별빛 기록을 함께 확인한다. 렌지의 출생으로 후계 교육이 끝났지만 주어진 자유를 어떻게 살아야 할지는 배우지 못했다고 부모에게 말한다. 동생을 미워하는 문제와 자신의 역할 상실을 구분한다.</p>
-<p class="source-ref">근거: 원작소설 2권 15화 〈별빛을 잇는 집〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-16">16화. 아이들만 있다면</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>보육원의 마지막 날 렌지를 데리러 갔다가 나이를 되돌리는 영역에 휘말린다. 신체와 정신이 일곱 살로 돌아가 아직 태어나지 않은 렌지를 기억하지 못하며, 열일곱 살에 생긴 팩트도 사라진다. 가문의 장녀로서 흐트러지면 안 된다는 교육이 어린 말과 행동에 남아 있다.</p>
-<p class="source-ref">근거: 원작소설 2권 16화 〈아이들만 있다면〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-17">17화. 작은 우미코</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>일곱 살의 모습으로 도움을 청하면 후계자 자격을 잃는다고 두려워한다. 히나의 지지 속에서 두렵다고 말하고 도움을 구한다. 녹타라가 보여 준 미래 앞에서 당주가 아니면 자신이 없어지는지, 언니의 동생이 아니면 카오리가 없어지는지 되묻는다.</p>
-<p class="source-ref">근거: 원작소설 2권 17화 〈작은 우미코〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-18">18화. 내가 바라는 내일</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>어린 상태에서도 나이 역행 공격의 전조를 파악한다. 자신의 미래를 선택하려는 마음으로 원래 나이를 되찾고 정화에 합류한다. 이후 가족에게 남이 정한 답으로 돌아가지 않겠다고 말하고, 소원 종이에 자신이 바라는 내일을 찾고 싶다고 적는다.</p>
-<p class="source-ref">근거: 원작소설 2권 18화 〈내가 바라는 내일〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-19">19화. 별빛축제의 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>신사의 축제 안내를 맡고 자신의 소원을 건다. 습격 뒤 아쿠아리우스로 녹타라와 교전하며 시민들의 축제를 지킨다.</p>
-<p class="source-ref">근거: 원작소설 2권 19화 〈별빛축제의 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-20">20화. 별빛 아래 드러난 얼굴</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>녹타라에게 받은 기회와 자신의 선택을 함께 인정하며, 언니의 뒤가 아니라 곁에 서고 싶었던 것인지 묻는다. 교전 뒤 동료들과 세 인장을 끊어 축제의 암흑영역 확장을 막고 유우나 문제를 함께 확인하기로 한다.</p>
-<p class="source-ref">근거: 원작소설 2권 20화 〈별빛 아래 드러난 얼굴〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-3"><summary>3권 · 믿음의 보랏빛 광채 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-21">21화. 오로라 책방</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>팬던트만으로 시즈키의 정체를 단정하지 않도록 경계하며 사고 자료와 증언을 조사한다. 스펙트라에게 가문이 브로치를 전했어도 아쿠아리우스로 각성한 선택은 자신의 것이라는 설명을 듣는다.</p>
-<p class="source-ref">근거: 원작소설 3권 21화 〈오로라 책방〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-22">22화. 8년 전의 관측자</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>신원을 제한적으로 밝힌 편지로 면담을 요청하고 사고 자료를 관리한다. 생존 연구원의 관측일지에서 카즈키의 가동과 세이이치의 중단 요구를 확인할 단서를 얻는다.</p>
-<p class="source-ref">근거: 원작소설 3권 22화 〈8년 전의 관측자〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-23">23화. 기록되지 않은 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>관측일지와 출력물, 손상된 기록장치의 보존 상태를 확인한다. 시미즈가와 오로라 책방에도 사본을 보관해 단일 자료가 사라져 진실이 끊기는 일을 막으려 한다.</p>
-<p class="source-ref">근거: 원작소설 3권 23화 〈기록되지 않은 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-25">25화. 길을 잃은 북극성</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>게이트를 임시로 고정한 뒤 함께 추적하자고 판단한다. 붕괴하는 통제실에서 푸른 방벽으로 동료들을 보호한다.</p>
-<p class="source-ref">근거: 원작소설 3권 25화 〈길을 잃은 북극성〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-26">26화. 복수라는 이름의 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>길과 방향 감각이 뒤집히는 공격을 분석한다. 로제트에게 별빛 표식을, 솔라리스에게 진동 확인을 맡겨 실제 파괴 경로를 찾고 로스트 폴라리스를 저지한다.</p>
-<p class="source-ref">근거: 원작소설 3권 26화 〈복수라는 이름의 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-27">27화. 믿음의 보랏빛 광채</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>탐색용 별빛으로 제2 관측동이 무인 상태이며 카즈키의 음성과 신호만 남은 미끼임을 확인한다. 로스트 폴라리스를 게이트의 핵으로 만들려는 장치를 경고하고 공격 방향을 맡는다.</p>
-<p class="source-ref">근거: 원작소설 3권 27화 〈믿음의 보랏빛 광채〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-28">28화. 아빠가 남긴 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>로스트 폴라리스의 몸이 현실과 어둠세계의 연결점이라는 구조를 분석하고 정화를 지원한다. 사건 뒤 열린 기록에서 요루의 암흑 전환 기술 제공과 카즈키의 승인을 확인한다.</p>
-<p class="source-ref">근거: 원작소설 3권 28화 〈아빠가 남긴 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-29">29화. 별빛연구소의 진실</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>자동삭제에 대비해 자료를 복제하고 시미즈가에도 보관한다. 재단 감사·수사·법률 지원과 가문의 시설 통제를 요청해 카즈키의 권력 및 은폐 수단을 제한한다.</p>
-<p class="source-ref">근거: 원작소설 3권 29화 〈별빛연구소의 진실〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-30">30화. 복수보다 내일</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>흡수 흐름을 역전시키고 저장 에너지를 분산해 카즈키를 약화시킨다. 패배한 카즈키를 구속하지만 아포크라의 개입으로 신병을 확보하지 못한다.</p>
-<p class="source-ref">근거: 원작소설 3권 30화 〈복수보다 내일〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-4"><summary>4권 · 태양은 가려져도 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-31">31화. 네 개의 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>시즈키 자신의 책임과 카즈키의 범죄를 구분해야 한다고 말한다. 히나가 보이지 않을 때마다 확인하는 시즈키에게 안정감을 주려 하며 네 사람의 소개 동작을 구체화한다.</p>
-<p class="source-ref">근거: 원작소설 4권 31화 〈네 개의 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-32">32화. 내가 선택한 어둠</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>시민이 네뷸라를 두려워하는 이유를 부정하지 않고 현재의 구조 행동을 설명한다. 동료들과 잔류 장치와 균열에 대응한다.</p>
-<p class="source-ref">근거: 원작소설 4권 32화 〈내가 선택한 어둠〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-34">34화. 에테르녹스</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>회수되는 그림자 분신의 통로로 에테르녹스 내부에 들어가 카오리와 대화한다. 원하는 삶을 말하는 것은 상대를 버리는 일이 아니며, 피해자의 용서를 당연시할 수도 없다고 분명히 한다.</p>
-<p class="source-ref">근거: 원작소설 4권 34화 〈에테르녹스〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-35">35화. 언니가 바란 별빛</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>카오리가 저지른 피해와 살아갈 책임을 구분해 말하며 선택을 돕는다. 나츠미를 되살릴 수 있다고 거짓 약속하지 않고 동료들과 정화를 수행한다.</p>
-<p class="source-ref">근거: 원작소설 4권 35화 〈언니가 바란 별빛〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-36">36화. 꿈이었던 선생님</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>지친 히나의 식사와 휴식을 챙기고 요루와의 대면에 동행한다. 교사가 되려는 꿈에 요루의 허락이 필요하지 않다고 지지한다.</p>
-<p class="source-ref">근거: 원작소설 4권 36화 〈꿈이었던 선생님〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-37">37화. 서른 해 전의 월식</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>스승을 구할 확증이 없었다는 요루의 말을 실험을 중단하고 싶지 않았던 것이라고 지적한다. 흑월의 별빛 차단에 대응한다.</p>
-<p class="source-ref">근거: 원작소설 4권 37화 〈서른 해 전의 월식〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-38">38화. 태양을 가리는 검은 달</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>학교로 확산하는 어둠과 흑월의 공격에 대응한다. 동료들과 히나를 지지하되 반대편에서 또 하나의 정답을 강요하지 않도록 경계한다.</p>
-<p class="source-ref">근거: 원작소설 4권 38화 〈태양을 가리는 검은 달〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-39">39화. 내가 되고 싶은 선생님</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>촉수의 연결부를 화살로 꿰뚫어 솔라리스의 공격로를 확보한다. 동료들과 이클리시아의 흑월을 무너뜨린다.</p>
-<p class="source-ref">근거: 원작소설 4권 39화 〈내가 되고 싶은 선생님〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-40">40화. 흑성교단의 끝</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>사후 현장과 교단 시설을 조사하고 학교 집회에서 시즈키의 취임을 맞는다. 학생 관계와 업무상의 이사장 관계를 구분해 부르겠다고 한다.</p>
-<p class="source-ref">근거: 원작소설 4권 40화 〈흑성교단의 끝〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details><details class="volume" id="volume-5"><summary>5권 · 빛이여, 마을의 천사들에게 닿아라 <span class="badge">원작</span></summary><div class="volume-content prose"><h4 id="chapter-41">41화. 돌아오지 않는 전학생</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>전학 절차가 끝날 때까지 유우나의 책상을 옮기지 않도록 요청한다. 모모카·치요와 유우나의 선택 및 돌아올 자리의 의미를 이야기한다.</p>
-<p class="source-ref">근거: 원작소설 5권 41화 〈돌아오지 않는 전학생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-42">42화. 머물고 싶었던 장소</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>유우나의 동기화와 영역 변화를 확인하며 일행과 놀이공원으로 간다. 유우나가 추적 표식으로 자신의 정체를 좁혀 왔다는 설명을 듣고 아포크라의 전투에 대비한다.</p>
-<p class="source-ref">근거: 원작소설 5권 42화 〈머물고 싶었던 장소〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-43">43화. 아포크라의 마지막 임무</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>아포크라의 복합된 힘과 놀이공원의 공격에 대응한다. 네메시스의 개입 뒤 동료들과 검은 별자리의 선에 붙잡힌다.</p>
-<p class="source-ref">근거: 원작소설 5권 43화 〈아포크라의 마지막 임무〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-44">44화. 사랑의 스펙트럼</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>누군가 한 사람을 구했다고 모두가 안전해지는 것은 아니어도 포기할 이유는 아니라고 맞선다. 동료들과 스펙트럼의 정화와 구조를 지원한다.</p>
-<p class="source-ref">근거: 원작소설 5권 44화 〈사랑의 스펙트럼〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-45">45화. 단 하루의 전학생</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>복귀한 유우나에게 밀린 수업 자료를 준비하고 쏟아지는 질문을 막아 준다. 수업의 필기를 보여 주며 카페에도 합류하고 상태가 달라지면 즉시 알리라고 당부한다.</p>
-<p class="source-ref">근거: 원작소설 5권 45화 〈단 하루의 전학생〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-46">46화. 어둠이 태어나는 밤</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>유우나의 기억마다 좌표가 생겨 하나를 끊어도 길이 남는 구조를 확인한다. 게이트와 마을에서 몰려오는 에너지를 동시에 막으려 동료들과 대응한다.</p>
-<p class="source-ref">근거: 원작소설 5권 46화 〈어둠이 태어나는 밤〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-47">47화. 호시노미야 암흑현현</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>학교로 가 마이와 학생들을 구하려 한다. 한 명씩 구조하는 속도로는 영역 확장을 따라잡을 수 없음을 확인하고 네메시스 공략에 합류한다.</p>
-<p class="source-ref">근거: 원작소설 5권 47화 〈호시노미야 암흑현현〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-48">48화. 별빛이 꺼진 뒤에도</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>어떤 선택도 실패하는 미래와 완벽해서 아무도 걱정하지 않는 삶의 환영에 무너진다. 주민들의 빛이 닿지만 즉시 변신이 돌아오지는 않는다.</p>
-<p class="source-ref">근거: 원작소설 5권 48화 〈별빛이 꺼진 뒤에도〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-49">49화. 빛이여, 마을의 천사들에게 닿아라!</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>실패 가능성이 남아도 동료 쪽으로 걸어가며 루미너스 변형에 합류한다. 네 색의 연계로 본체와 게이트를 함께 정화한다.</p>
-<p class="source-ref">근거: 원작소설 5권 49화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-<h4 id="chapter-50">50화. 별빛은 계속된다</h4>
-<p><strong>구분: 직접 등장</strong></p>
-<p>렌지와 재회하고 학교 복구와 친구들을 챙긴다. 마이와 두 점 차이의 시험 결과를 두고 다음 경쟁을 약속한다. 졸업식 뒤 친구들에게 시미즈 대신 우미코라고 불러도 된다고 말한다.</p>
-<p class="source-ref">근거: 원작소설 5권 50화 〈별빛은 계속된다〉. <a href="../guide.html#novel-audit">판본·대조 기록</a></p>
-</div></details></section><section class="section" id="quotes"><h2><span class="section-number">9.</span>어록</h2><div class="prose"><p>원작의 실제 발화를 대조했다. 아래 문장은 본인의 대사이며, 환영의 발언이나 편지·책의 문장을 섞지 않는다.</p>
-<blockquote>
-<p>모른다는 이유로 다른 사람이 정해 준 답을 다시 살지는 않겠습니다.</p>
-</blockquote>
-<p>— 원작 2권 18화. 자신의 미래를 가족에게 말하는 장면.</p>
-<blockquote>
-<p>하지만 받은 것이 제 내일까지 대신 정하도록 두지도 않을 겁니다.</p>
-</blockquote>
-<p>— 원작 2권 20화. 받은 기회를 인정하면서 자기 선택을 주장한다.</p>
-<blockquote>
-<p>희망은 정답을 아는 게 아니라, 정답이 없어도 내일을 선택하는 마음이니까요.</p>
-</blockquote>
-<p>— 원작 3권 30화. 카즈키와의 전투에서 희망의 의미를 말한다.</p>
-</div></section><section class="section" id="trivia"><h2><span class="section-number">10.</span>기타</h2><div class="prose"><ul>
-<li>네 명의 페어리즈 가운데 가장 먼저 각성했으며, 본편 시작 전부터 두 달 동안 단독으로 암흑게이트를 조사했다.</li>
-<li>페어리즈 중 전술 지휘와 정밀 사격을 담당한다. 최종전에서 맡은 역할도 ‘승리의 길을 찾는 것’이다.</li>
-<li>성과 대부분이 타고난 재능처럼 보이지만, 실제로는 어린 시절부터 반복한 훈련과 공부의 결과다. 2권의 마이 에피소드가 이를 직접 다룬다.</li>
-<li>변신 포즈를 불필요하다고 주장하면서 집에서는 혼자 거울을 보며 연습했다. 각도와 손가락 간격까지 맞춰 두었으며, 들키면 실전 효율을 위한 점검이었다고 변명한다.</li>
-<li>아카리의 페어리즈 촬영회에서 가장 내키지 않는 표정을 지으면서도 요청받은 포즈를 하나도 거절하지 않았다.</li>
-<li>로맨스 만화를 몰래 좋아한다. 공적인 역할과 무관한 자신의 취향을 잘 말하지 못하는 우미코의 성격을 드러내는 설정이다.</li>
-<li>변신 상태에서는 로제트에게 반말을 쓴다. 솔라리스와 네뷸라에게는 존댓말을 쓰지만 익명성 규칙에 따라 ‘선배’를 붙이지 않는다.</li>
-<li>카오리와는 모두 가족 안에서 다른 사람과의 관계로 역할이 정해졌다는 공통점이 있다. 우미코는 자신의 미래를 다시 선택했고, 카오리가 같은 선택을 할 수 있도록 계속 질문을 남긴다.</li>
-<li>렌지의 출생으로 후계자 자리를 잃었지만 렌지를 미워한 적은 없다. 갈등의 대상은 남동생이 아니라 두 사람의 미래를 당사자에게 묻지 않고 정한 가문의 방식이다.</li>
-<li>부모와의 갈등은 가문을 떠나거나 후계자 자리를 되찾는 방식으로 끝나지 않는다. 가족과 연결된 채 자신의 희망을 분리해 내는 것이 우미코 서사의 핵심이다.</li>
-<li>최종전에서 네메시스에게 보여진 최악의 미래는 ‘어떤 선택을 해도 실패한다’는 형태다. 이는 미래를 선택하는 힘인 희망을 가장 직접적으로 공격하는 환영이다.</li>
-<li>최종화의 이름 부르기는 우미코 개인 서사의 마지막 사건이다. ‘시미즈’, ‘학생회장’, ‘아쿠아리우스’가 아닌 우미코 자신으로 불리기를 선택한다.</li>
-<li>생일은 7월 20일로 설정되었다. 부모의 이름과 가상 성우는 원작소설 및 집필 기준서에서 확정되지 않았다. 별도 설정이 정해지기 전까지 임의로 추가하지 않는 것이 정본 관리에 적합하다.</li>
-</ul>
-<h3>원작 대조와 별도 설정</h3>
-<p>2026.09.06 제공된 원작소설 1~5권 DOCX를 기준으로 개요·특징·활동·관계·주요 행적·발화를 대조했다. 기본 프로필의 사용자 제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존한다. 위 기타 항목의 어원·디자인 해설·확장 설정은 소설 속 발화와 구분한다. 미확인 외형·가족·게임 수치는 임의로 보충하지 않는다. 기준 판본과 정정 사항은 자료·편집 안내의 원작 대조 기록을 참조한다.</p>
-</div></section><section class="section" id="source"><h2><span class="section-number">자료.</span>출처·게임화 메모</h2><p><a href="../sources/%EC%8B%9C%EB%AF%B8%EC%A6%88_%EC%9A%B0%EB%AF%B8%EC%BD%94_%ED%8E%98%EC%96%B4%EB%A6%AC_%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4_%EC%9C%84%ED%82%A4.md">시미즈_우미코_페어리_아쿠아리우스_위키.md 열기 ↗</a></p><p>사용자가 제공한 원작소설 1~5권 DOCX의 주요 장면을 직접 대조했습니다. 다른 캐릭터 문서를 사실 확인의 근거로 대체하지 않습니다. 기본 프로필의 사용자 제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존합니다. <a href="../guide.html#novel-audit">기준 판본·정정 내용·재확인 지점 →</a></p><div class="notice"><strong>게임화</strong><p>원작과 게임의 기본 스토리는 동일합니다. 전체 구성은 게임 기획서 v1과 사용자 전투 보완을 따릅니다. 장면별 변경·축소·확장 사유와 ADV·전투 배치는 각색 시 기록합니다. <a href="../systems.html#battle">공통 전투 규칙 →</a></p></div><div class="table-wrap"><table class="wiki-table"><tbody><tr><th class="label" scope="row">대응 게임 챕터</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">축소·확장·변경 내역</th><td><span class="badge tbd">TBD</span></td></tr><tr><th class="label" scope="row">변경 사유·담당자·승인일</th><td><span class="badge tbd">TBD</span></td></tr></tbody></table></div></section></div><aside class="toc" aria-label="이 문서의 목차"><strong>이 문서의 목차</strong><a class="" href="#profile">1. 기본 프로필</a><a class="" href="#production">2. 제작용 프로필</a><a class="" href="#artwork">설정화·바디</a><a class="" href="#overview">3. 개요</a><a class="" href="#traits">4. 특징</a><a class="" href="#abilities">5. 능력</a><a class="" href="#family">6. 가족관계</a><a class="" href="#relationships">7. 인간관계</a><a class="" href="#story">8. 작중 행적</a><a class="sub" href="#volume-1">1권</a><a class="sub" href="#volume-2">2권</a><a class="sub" href="#volume-3">3권</a><a class="sub" href="#volume-4">4권</a><a class="sub" href="#volume-5">5권</a><a class="" href="#quotes">9. 어록</a><a class="" href="#trivia">10. 기타</a><a class="" href="#source">출처·게임화 메모</a><a href="../resources.html">리소스 제작 기준 ↗</a></aside></div></article><footer class="footer"><span>Blossom Games · STARLIGHT FAIRIES DEVELOPMENT WIKI</span><span>설정 미확정 항목은 TBD로 표기합니다.</span></footer></main></div><a class="top-link" href="#top" aria-label="문서 맨 위로">↑</a></body></html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="시미즈 우미코 — 스타라이트 페어리즈 내부 개발용 위키. 원작소설 1~5권 설정과 2D ADV·3D 턴제 전투 제작 자료.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#ab2867">
+    <title>시미즈 우미코 | 스타라이트 페어리즈 개발 위키</title>
+    <link rel="icon" href="../sources/branding/StarlightFairiesLogo.png">
+    <link rel="stylesheet" href="../assets/style.css">
+    <script defer src="../assets/app.js"></script>
+</head>
+
+<body id="top"><a class="skip" href="#content">본문으로 건너뛰기</a>
+    <header class="topbar">
+        <div class="topbar-inner"><button class="menu-button" type="button" aria-label="문서 메뉴 열기"
+                aria-controls="sidebar" aria-expanded="false">☰</button><a class="brand" href="../index.html"><img
+                    class="header-logo" src="../sources/branding/StarlightFairiesLogo.png" alt="스타라이트 페어리즈"><span
+                    class="brand-caption">DEV WIKI</span></a>
+            <form class="search" action="../characters.html" role="search"><label class="sr-only"
+                    for="global-search">캐릭터 문서 검색</label><input id="global-search" name="q" type="search"
+                    placeholder="캐릭터·변신명·설정 검색" autocomplete="off"><button type="submit">검색</button></form><span
+                class="internal-label">INTERNAL DOCUMENTS</span><button class="theme-button" type="button"
+                aria-label="어두운 테마로 변경" aria-pressed="false">◐</button>
+        </div>
+    </header>
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <nav aria-label="주요 문서">
+                <p class="nav-heading">프로젝트</p><a class="nav-link " href="../index.html"><span class="nav-symbol"
+                        aria-hidden="true">⌂</span>대문</a><a class="nav-link active" aria-current="page"
+                    href="../characters.html"><span class="nav-symbol" aria-hidden="true">♧</span>등장인물</a>
+                <p class="nav-heading">원작과 게임</p><a class="nav-link " href="../world.html"><span class="nav-symbol"
+                        aria-hidden="true">◇</span>세계관·용어</a><a class="nav-link " href="../story.html"><span
+                        class="nav-symbol" aria-hidden="true">▤</span>원작 1~5권</a><a class="nav-link "
+                    href="../systems.html"><span class="nav-symbol" aria-hidden="true">▣</span>게임 기획</a>
+                <p class="nav-heading">개발 자료</p><a class="nav-link " href="../artwork.html"><span class="nav-symbol"
+                        aria-hidden="true">▧</span>캐릭터 설정화</a><a class="nav-link " href="../resources.html"><span
+                        class="nav-symbol" aria-hidden="true">▦</span>리소스 제작 기준</a><a class="nav-link "
+                    href="../adv-guide.html"><span class="nav-symbol" aria-hidden="true">▧</span>ADV·2D 제작 가이드</a><a
+                    class="nav-link " href="../modeling-guide.html"><span class="nav-symbol"
+                        aria-hidden="true">◇</span>3D 모델링 가이드</a><a class="nav-link " href="../guide.html"><span
+                        class="nav-symbol" aria-hidden="true">≡</span>자료·편집 안내</a>
+                <p class="nav-heading">스타라이트 페어리즈</p><a class="nav-link" href="../characters/momoka.html"><span
+                        class="nav-symbol" aria-hidden="true" style="color:#bc3976">✦</span>사쿠라이 모모카</a><a
+                    class="nav-link" href="../characters/umiko.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#236ca5">✦</span>시미즈 우미코</a><a class="nav-link"
+                    href="../characters/hina.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#a56b16">✦</span>미츠하라 히나</a><a class="nav-link"
+                    href="../characters/shizuki.html"><span class="nav-symbol" aria-hidden="true"
+                        style="color:#7952b0">✦</span>호시조라 시즈키</a>
+            </nav>
+            <div class="sidebar-brand"><img src="../sources/branding/BlossomGamesLogo.png" alt="Blossom Games"><span>원작
+                    1–5권 · 게임 개발 자료</span></div>
+        </aside>
+        <div class="scrim" aria-hidden="true"></div>
+        <main class="main" id="content">
+            <nav class="breadcrumbs" aria-label="현재 위치"><a href="../index.html">스타라이트 페어리즈</a><span>›</span><a
+                    href="../characters.html">등장인물</a><span>›</span><span>시미즈 우미코</span></nav>
+            <article class="article">
+                <header class="article-heading"><span class="eyebrow">CHARACTER DOCUMENT · UMIKO</span>
+                    <h1>시미즈 우미코</h1>
+                    <p class="subtitle">페어리 아쿠아리우스</p>
+                    <div class="meta"><span>기준 · 원작소설 1~5권</span><span>게임 · 2D ADV + 3D 턴제 전투</span><span>정리 ·
+                            2026.09.06</span></div>
+                </header>
+                <div class="article-layout">
+                    <div class="article-body">
+                        <div class="notice"><strong>스포일러 안내</strong>
+                            <p>원작소설 1~5권의 정체·결말을 포함합니다. 작중 행적은 원작 기준이며, 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있습니다.</p>
+                        </div>
+                        <div class="character-top" style="--character:#236ca5">
+                            <div>
+                                <div class="summary-copy">
+                                    <p>호시노미야 여학원 학생회장이자 희망의 페어리 아쿠아리우스. 본편 이전부터 활동해 온 경험자로서 전투 기록, 정체 보호, 동선과 정밀 사격을
+                                        맡는다. 첫 화에는 미나미의 정화가 끝난 뒤 등장하며 로제트와의 첫 공동 전투는 2화다.</p>
+                                </div>
+                                <div class="tag-row"><span class="badge pink">원작소설 직접 대조</span><span
+                                        class="badge ">신장·체중 반영</span><span class="badge ">가상 캐스팅 ≠ 확정 성우</span></div>
+                                <p class="source-ref">출처: 원작소설 1~5권 · 권·화 근거는 본문 참조</p>
+                            </div>
+                            <aside class="infobox" aria-label="캐릭터 기본 정보">
+                                <div class="box-title">시미즈 우미코</div>
+                                <div class="portrait-switch" data-portrait-switch>
+                                    <div class="portrait-tabs" role="tablist" aria-label="시미즈 우미코 모습 선택"><button
+                                            type="button" role="tab" id="umiko-tab-0" aria-selected="true"
+                                            aria-controls="umiko-portrait-0" tabindex="0" data-portrait-tab>변신
+                                            전</button><button type="button" role="tab" id="umiko-tab-1"
+                                            aria-selected="false" aria-controls="umiko-portrait-1" tabindex="-1"
+                                            data-portrait-tab>변신 후</button></div>
+                                    <div class="portrait-panel" id="umiko-portrait-0" role="tabpanel"
+                                        aria-labelledby="umiko-tab-0" tabindex="0">
+                                        <div class="front-frame"><svg class="front-illustration"
+                                                viewBox="115 78 605 1080" role="img" aria-label="시미즈 우미코 · 동복 정면"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <clipPath id="umiko-clip-0">
+                                                        <polygon
+                                                            points="275,78 555,78 555,360 720,545 720,610 580,610 580,1158 115,1158 115,410 275,300" />
+                                                    </clipPath>
+                                                </defs>
+                                                <image
+                                                    href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                    width="2048" height="1174.8726860596903"
+                                                    clip-path="url(#umiko-clip-0)" />
+                                            </svg></div>
+                                        <p class="portrait-caption">시미즈 우미코 · 동복</p>
+                                    </div>
+                                    <div class="portrait-panel" id="umiko-portrait-1" role="tabpanel"
+                                        aria-labelledby="umiko-tab-1" tabindex="0" hidden>
+                                        <div class="front-frame"><svg class="front-illustration"
+                                                viewBox="520 20 405 775" role="img" aria-label="페어리 아쿠아리우스 · 망토 착용 정면"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <image
+                                                    href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4%20%EC%8B%9C%ED%8A%B8.png"
+                                                    width="2048" height="806.50622406639" />
+                                            </svg></div>
+                                        <p class="portrait-caption">페어리 아쿠아리우스 · 망토 착용</p>
+                                    </div><a class="artwork-shortcut" href="../artwork.html#umiko">설정화·바디 시트 보기 →</a>
+                                </div>
+                                <dl class="kv">
+                                    <dt>이름</dt>
+                                    <dd>시미즈 우미코</dd>
+                                    <dt>변신·이명</dt>
+                                    <dd>페어리 아쿠아리우스</dd>
+                                    <dt>연령</dt>
+                                    <dd>17세(호시노미야 여학원 2학년)</dd>
+                                    <dt>신장</dt>
+                                    <dd>158 cm</dd>
+                                    <dt>체중</dt>
+                                    <dd>42 kg</dd>
+                                    <dt>상징</dt>
+                                    <dd>희망</dd>
+                                    <dt>구분</dt>
+                                    <dd>페어리즈</dd>
+                                    <dt>첫 등장</dt>
+                                    <dd>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                        <section class="section" id="profile">
+                            <h2><span class="section-number">1.</span>기본 프로필</h2>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">문서 ID</th>
+                                            <td><code>umiko</code></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">이름</th>
+                                            <td>시미즈 우미코</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성별</th>
+                                            <td>여성</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">연령</th>
+                                            <td>17세(호시노미야 여학원 2학년)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">신장</th>
+                                            <td>158 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체중</th>
+                                            <td>42 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">쓰리사이즈 (B / W / H)</th>
+                                            <td>82(A) / 56 / 83 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">신체정보 출처</th>
+                                            <td>사용자 제공 제작 설정 · 2026.09.06</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">생일</th>
+                                            <td>7월 20일</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">가족</th>
+                                            <td>아버지(시미즈 가문 현 당주), 어머니, 시미즈 렌지(남동생)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">소속</th>
+                                            <td>호시노미야 여학원 학생회</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">직책</th>
+                                            <td>학생회장</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">상징 모티브</th>
+                                            <td>물병자리</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">상징색</th>
+                                            <td>푸른색</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">계승한 힘</th>
+                                            <td>희망</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">주요 출연작</th>
+                                            <td>《스타라이트 페어리즈》</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">인물 유형</th>
+                                            <td>주연, 주인공 일행</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변신체</th>
+                                            <td>페어리 아쿠아리우스, 루미너스 변형</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변신 타입</th>
+                                            <td>페어리즈</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">좋아하는 것</th>
+                                            <td>로맨스 만화, 계획대로 일이 진행되는 것, 스타라이트 페어리즈 구성원</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">싫어하는 것</th>
+                                            <td>노력을 재능으로만 치부하는 시선, 타인의 선택을 대신 정하는 일, 무계획한 돌진</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">첫 등장</th>
+                                            <td>원작소설 1권 1화 〈운명이 소녀를 부를 때〉</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성우(가상 캐스팅)</th>
+                                            <td><span class="badge tbd">TBD</span> <span class="muted">원문: 미정</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">게임 확정 성우</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">컬러 팔레트</th>
+                                            <td>
+                                                <div class="palette" aria-label="시미즈 우미코 5색 참고 팔레트">
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#617597"
+                                                            aria-hidden="true"></span><code>#617597</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#9ED7EF"
+                                                            aria-hidden="true"></span><code>#9ED7EF</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#29447C"
+                                                            aria-hidden="true"></span><code>#29447C</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#D8CDE0"
+                                                            aria-hidden="true"></span><code>#D8CDE0</code></div>
+                                                    <div class="palette-chip"><span class="swatch"
+                                                            style="background:#F8F4EE"
+                                                            aria-hidden="true"></span><code>#F8F4EE</code></div>
+                                                </div>
+                                                <p class="palette-note">이미지 기반 추정 · 교복·아쿠아리우스 시트의 머리, 하늘색 의상, 짙은 파랑, 머리
+                                                    끝, 흰 의상에서 추정. 확정 색상 규격은 TBD.</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section" id="production">
+                            <h2><span class="section-number">2.</span>리소스 제작용 프로필</h2>
+                            <p class="muted small">신체 수치는 기본 프로필의 사용자 제공 제작 설정을 따르며, 기재하지 않은 항목은 추정하지 않습니다. 성격·모에요소는 원문
+                                묘사를 바탕으로 묶은 제작용 분류이며, 추가 공식 설정을 의미하지 않습니다.</p>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">신장</th>
+                                            <td>158 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체중</th>
+                                            <td>42 kg</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">쓰리사이즈 (B / W / H)</th>
+                                            <td>82(A) / 56 / 83 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">혈액형</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">체형·등신·상대 스케일</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">헤어</th>
+                                            <td>허리 아래까지 내려오는 긴 푸른 머리</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">눈동자</th>
+                                            <td>푸른색</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">성격 키워드</th>
+                                            <td>완벽주의 · 계획적 · 자존심 · 행동으로 표현하는 배려 <span class="badge ">원문 기반 요약</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">모에요소·캐릭터 속성</th>
+                                            <td>학생회장 · 우등생 · 츤데레 · 로맨스 만화 애호 <span class="badge ">제작용 분류</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">무기·주요 소품</th>
+                                            <td>별빛의 활과 화살 · 희망의 브로치</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">색상 수치·소재 규격</th>
+                                            <td><span class="badge tbd">TBD</span> <span class="muted">원문 색상명은 기본 프로필·특징
+                                                    참조</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">게임 리소스 경로·담당자</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h3>형태·의상 구분</h3>
+                            <p class="muted small">원작에 등장하는 형태를 정리했습니다. 게임에서 필요한 모델·스탠딩·차분의 범위는 TBD입니다.</p>
+                            <div class="form-line"><span>일상·교복</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>페어리 아쿠아리우스</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>일곱 살 모습</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="form-line"><span>루미너스 변형</span><span><span class="badge tbd">TBD</span> <span
+                                        class="muted small">구현·규격</span></span></div>
+                            <div class="notice"><strong>디자인 메모</strong>
+                                <p>학생회장 완장과 단정한 자세. 변신체에는 별무늬 망토와 투명한 왕관 장식. 루미너스 변형은 기존 의상 위 발광 연출.</p>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">ADV</th>
+                                            <td>공통 규격·추천 수량: <a href="../adv-guide.html#standing">ADV·2D 제작 가이드</a>.
+                                                캐릭터별 발주·완료 상태: <span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">3D 전투</th>
+                                            <td><a href="../modeling-guide.html">파츠 분리·전체 바디・Shape Key 가이드</a>.
+                                                리깅・VFX・소켓・성능 예산: <span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="section" id="artwork">
+                            <h2><span class="section-number">자료.</span>설정화</h2>
+                            <details class="character-artwork">
+                                <summary>캐릭터 시트 펼치기 <span class="badge">형태별·바디</span></summary>
+                                <div class="character-artwork-content">
+                                    <details class="sheet-group">
+                                        <summary>변신 전<span class="badge">2개 시트</span></summary>
+                                        <div class="sheet-content">
+                                            <figure class="sheet-figure"><a
+                                                    href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    aria-label="동복 원본 크기로 열기"><img class="sheet-image"
+                                                        src="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        alt="동복 전체 설정화" loading="lazy" decoding="async"></a>
+                                                <figcaption>동복 <a
+                                                        href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%EB%8F%99%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a>
+                                                </figcaption>
+                                            </figure>
+                                            <figure class="sheet-figure"><a
+                                                    href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                    target="_blank" rel="noopener noreferrer"
+                                                    aria-label="하복 원본 크기로 열기"><img class="sheet-image"
+                                                        src="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        alt="하복 전체 설정화" loading="lazy" decoding="async"></a>
+                                                <figcaption>하복 <a
+                                                        href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%9A%B0%EB%AF%B8%EC%BD%94%20%ED%95%98%EB%B3%B5%20%EC%8B%9C%ED%8A%B8.png"
+                                                        target="_blank" rel="noopener noreferrer">원본 크기로 보기 ↗</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </details>
+                                    <details class="sheet-group">
+                                        <summary>변신 후<span class="badge">1개 시트</span></summary>
+                                        <div class="sheet-content">
+                                            <figure class="sheet-figure">
+                                                <div class="sheet-svg-wrap"><svg class="sheet-image"
+                                                        viewBox="0 0 2048 806.50622406639" role="img"
+                                                        aria-label="페어리 아쿠아리우스 · 의상 도면"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <defs>
+                                                            <clipPath id="local-umiko-sheet-1-0">
+                                                                <path clip-rule="evenodd"
+                                                                    d="M0 0H2048V806.50622406639H0Z M1647 0H1787V291H1647Z" />
+                                                            </clipPath>
+                                                        </defs>
+                                                        <image
+                                                            href="../sources/CharacterSheet/%EC%9A%B0%EB%AF%B8%EC%BD%94-%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4/%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4%20%EC%8B%9C%ED%8A%B8.png"
+                                                            width="2048" height="806.50622406639"
+                                                            clip-path="url(#local-umiko-sheet-1-0)" />
+                                                    </svg></div>
+                                                <figcaption>페어리 아쿠아리우스 · 의상 도면 · 의복을 착용한 도면만 표시</figcaption>
+                                            </figure>
+                                        </div>
+                                    </details>
+                                    <details class="sheet-group">
+                                        <summary>바디<span class="badge">TBD</span></summary>
+                                        <div class="sheet-content">
+                                            <div class="sheet-tbd"><strong>TBD</strong>
+                                                <p>의복을 착용한 체형 참고 시트 TBD</p>
+                                            </div>
+                                        </div>
+                                    </details>
+                                    <p class="small"><a href="../artwork.html#umiko">설정화 모음 페이지에서 보기 →</a></p>
+                                </div>
+                            </details>
+                        </section>
+                        <section class="section" id="overview">
+                            <h2><span class="section-number">3.</span>개요</h2>
+                            <div class="prose">
+                                <p>호시노미야 여학원 학생회장이자 희망의 페어리 아쿠아리우스. 본편 이전부터 활동해 온 경험자로서 전투 기록, 정체 보호, 동선과 정밀 사격을 맡는다. 첫
+                                    화에는 미나미의 정화가 끝난 뒤 등장하며 로제트와의 첫 공동 전투는 2화다.</p>
+                                <p>시미즈가의 장녀로 후계 교육을 받았지만 남동생 렌지가 태어난 뒤 그 역할이 끝났다. 가문으로부터 받은 것과 스스로 이루려 노력한 것을 함께 인정하고,
+                                    정해진 역할 대신 자신이 바라는 내일을 선택하는 것이 주요 서사다. 마이·카오리와의 관계는 이 갈등을 경쟁과 가족이라는 서로 다른 방향에서 비춘다.
+                                    [1권 1<del>2화, 2권 12</del>20화, 4권 34~35화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="traits">
+                            <h2><span class="section-number">4.</span>특징</h2>
+                            <div class="prose">
+                                <h3>4.1. 계획과 배려</h3>
+                                <p>규칙과 준비를 중시하고 허점을 직설적으로 지적한다. 기록·자료 복제·대피 경로 확보처럼 눈에 잘 띄지 않는 일을 꾸준히 맡는다. 말은 냉정해도 붕대와
+                                    공부 자료를 준비하고 친구를 기다리는 행동으로 마음을 표현한다. 도움을 주는 사람으로만 완벽하게 남으려는 부담도 있다. [1권 2~6화, 3권 29화,
+                                    5권 45·48화]</p>
+                                <h3>4.2. 성취와 가족의 역할</h3>
+                                <p>좋은 환경과 가문의 힘을 받았다는 사실을 부정하지 않는다. 그렇다고 성적과 전투 능력을 노력 없는 재능으로만 설명할 수도 없다. 렌지를 미워하는 대신,
+                                    교육을 시작하고 끝낼 때 자신의 생각을 묻지 않은 방식에 문제를 제기한다. 일곱 살 모습에서는 울거나 도움을 청하면 안 된다는 압박이 선명해진다.
+                                    [2권 13~18화]</p>
+                                <h3>4.3. 일상·표현</h3>
+                                <p>소개 동작을 불필요하다고 하면서도 자세와 배치를 세심히 조정한다. 로맨스 만화를 읽는 이야기를 듣고 당황하는 장면은 공적 역할 밖의 취향을 드러낸다.
+                                    마지막의 요비스테 허용은 역할과 성씨 뒤에 감춘 자신에게 친구들이 가까이 오게 하는 선택이다. [2권 11화, 3권 21화, 4권 31화, 5권
+                                    50화]</p>
+                                <h3>4.4. 외형·제작 설정 보존</h3>
+                                <p>아래는 기존 개별 캐릭터 문서의 상세 외형 설정을 보존한 제작 참고다. 원작의 사건·발화 근거와 구분하며, 최종 형태와 정확한 색상·치수는 사용자 설정
+                                    및 제공 시트를 따른다.</p>
+                                <p>허리 아래까지 내려오는 긴 푸른 머리카락과 푸른 눈동자를 지녔다. 교복은 주름이나 리본 하나 흐트러지지 않도록 단정하게 착용하며, 학생회장 완장을 차고
+                                    다닌다. 자세와 걸음걸이에도 어린 시절부터 받은 예법 교육이 배어 있어 가만히 서 있기만 해도 엄격하고 빈틈없는 인상을 준다.</p>
+                                <p>페어리 아쿠아리우스로 변신하면 푸른색과 흰색을 중심으로 한 드레스를 입고, 별이 수놓인 망토와 투명한 왕관 장식이 나타난다. 길게 펼쳐진 푸른 머리카락과
+                                    치맛자락은 흐르는 물결을 연상시킨다. 손끝의 푸른빛은 마법으로 이루어진 활과 화살로 변하며, 화살이 날아간 자리에는 잔잔한 물결 같은 궤적이 남는다.
+                                </p>
+                                <p>전투 자세는 활을 세운 뒤 한 손을 허리 뒤로 돌리고 다른 손을 가슴 앞으로 펼치는 형태다. 본인은 실전 효율을 위한 자세라고 주장하지만, 실제로는 각성
+                                    후 아무도 없는 방에서 거울을 보며 손목 각도와 몸의 기울기까지 반복해서 연습했다.</p>
+                                <p>최종전의 루미너스 변형에서는 별도의 새 의상으로 바뀌지 않는다. 기존 아쿠아리우스의 모습 그대로 피부와 머리카락, 눈동자, 의상과 활 전체가 푸른빛과
+                                    루미너스의 순백색 빛으로 강하게 발광한다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="abilities">
+                            <h2><span class="section-number">5.</span>능력</h2>
+                            <div class="prose">
+                                <p>가문이 보관한 희망의 브로치를 받았지만 각성은 우미코 자신의 선택으로 이루어졌다. 활과 화살로 연결부를 정확히 끊거나 고정하고, 물결·방벽·사슬을 이용해
+                                    공격과 이동을 통제한다. 여러 인장을 동시에 끊는 작전과 자료 보존에도 강하다. [1권 2·10화, 3권 21·29~30화]</p>
+                                <p>보육원 영역에서 나이가 일곱 살로 돌아가자 정신과 기억도 해당 시기로 돌아가며, 열일곱 살에 생성된 팩트는 존재할 수 없어 사라진다. 이 모습은 임의로
+                                    전환하는 전투 폼이 아니다. 원래 나이를 되찾는 계기는 스스로 미래를 선택하려는 마음이며 가문의 후계자로 복귀하는 결말이 아니다. [2권 16~18화]
+                                </p>
+                                <p>최종전에는 실패 가능한 미래 속에서 다시 길을 선택한다. 원작의 정밀 사격·전술 역할을 게임의 속도 수치나 고정 지원 스킬로 곧바로 확정하지 않는다.
+                                    [5권 48~49화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="family">
+                            <h2><span class="section-number">6.</span>가족관계</h2>
+                            <div class="prose">
+                                <p>아버지는 시미즈가의 현 당주이며 어머니와 남동생 시미즈 렌지가 있다. 렌지는 보육원 사건 당시 다섯 살이다. 우미코는 동생을 아끼지만 ‘장녀·임시
+                                    후계자·누군가의 앞뒤’로만 자기 삶을 정하고 싶지는 않다. 부모도 딸을 자유롭게 해 주었다고 생각했으나 그 자유를 어떻게 살아야 하는지 묻고 가르치지
+                                    못했다. 가족과의 대화 뒤 아버지는 렌지에게도 당주가 되고 싶은지 묻기 시작한다. 부모의 실명은 TBD다. [2권 13·15~18화]</p>
+                            </div>
+                        </section>
+                        <section class="section" id="relationships">
+                            <h2><span class="section-number">7.</span>인간관계</h2>
+                            <div class="prose">
+                                <div class="table-wrap">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>인물</th>
+                                                <th>관계와 변화</th>
+                                                <th>원작 근거</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>모모카</td>
+                                                <td>준비와 즉흥성이 충돌하지만 서로의 빈틈을 보완한다. 치요 사건의 정체 공개로 신뢰가 깊어지고, 마지막에는 이름으로 부를 수
+                                                    있게 된다.</td>
+                                                <td>1권 2~6화, 5권 50화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>마이</td>
+                                                <td>노력과 성적을 두고 겨루는 경쟁자다. 상대의 열등감을 한마디로 해결하지 못하지만 서로의 노력을 인정하는 경쟁으로 바뀐다.
+                                                </td>
+                                                <td>2권 12~14화, 5권 48·50화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>카오리</td>
+                                                <td>자신을 가진 자로만 보는 적이었다. 가족의 역할 밖에서 자기 이름을 찾는 공통점을 통해 질문을 주고받고 에테르녹스 내부에서
+                                                    독립된 선택을 돕는다.</td>
+                                                <td>2권 14<del>20화, 4권 34</del>35화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>히나</td>
+                                                <td>어린 모습이 되었을 때 도움을 구해도 된다는 경험을 준 선배다. 훗날 히나의 꿈이 흔들릴 때도 대신 답하지 않고 지지한다.
+                                                </td>
+                                                <td>2권 16<del>18화, 4권 36</del>39화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>시즈키</td>
+                                                <td>조사 중에는 증거 없는 단정을 경계하며, 합류 뒤에는 책임과 소문을 구별한다. 학생과 이사장이라는 관계도 나누어 대한다.
+                                                </td>
+                                                <td>3권 21화, 4권 31·40화</td>
+                                            </tr>
+                                            <tr>
+                                                <td>유우나</td>
+                                                <td>잠입의 피해자이지만 복귀한 유우나에게 수업 자료와 자리를 마련한다. 신뢰와 상태 확인을 함께 이어 간다.</td>
+                                                <td>5권 41·45화</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="section" id="story">
+                            <h2><span class="section-number">8.</span>작중 행적</h2>
+                            <div class="notice"><strong>기준</strong>
+                                <p>원작소설 1~5권 기준. 아래 권·화 번호는 게임 챕터 번호나 전투 스테이지 번호가 아닙니다.</p>
+                            </div>
+                            <div class="prose">
+                                <p>사용자가 제공한 원작소설 1~5권 DOCX를 직접 대조한 주요 행적이다. 실제 등장·회상·언급을 구분하고 해당 근거가 있는 화만 수록한다. 모든 이름
+                                    언급을 빠짐없이 나열한 전수 출연표는 아니다. 게임화 과정에서 일부 내용이 변경·축소·확장될 수 있다.</p>
+                            </div>
+                            <div class="volume-actions"><button type="button" data-volumes="open">전체 권
+                                    펼치기</button><button type="button" data-volumes="close">전체 권 접기</button></div>
+                            <details class="volume" id="volume-1">
+                                <summary>1권 · 운명이 소녀를 부를 때 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-1">1화. 운명이 소녀를 부를 때</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>미나미의 정화가 끝난 뒤 남은 암흑태생을 푸른 화살로 제거하며 아쿠아리우스로 첫 등장한다. 로제트의 퇴로 확인과 경계 부족을 지적한 뒤 첫 정화는
+                                        나쁘지 않았다고 인정한다. 브로큰 스완과의 첫 정화를 함께 수행한 것으로 기록하지 않는다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 1화 〈운명이 소녀를 부를 때〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-2">2화. 이름을 모르는 동료</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>학생회장으로 모모카를 지도하고, 방과 후에는 아쿠아리우스로 잔류 균열의 핵과 암흑태생을 분석한다. 네 연결을 화살로 고정해 로제트와 제거하고,
+                                        별빛의 베일과 정화의 조건을 설명한다. 집의 전투 기록에 로제트를 신뢰하기로 적지만 지각자 모모카와 같은 인물인지는 알아보지 못한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 2화 〈이름을 모르는 동료〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-3">3화. 작은 별빛의 이야기</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>발표 뒤 바닥에 흩어진 치요의 원고를 말없이 모아 정리하고 자신의 클립을 건넨다. 내용을 억지로 읽거나 평가하지 않는 배려가 모모카의 성급한
+                                        격려와 함께 놓인다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 3화 〈작은 별빛의 이야기〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-4">4화. 비에 젖은 원고</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>종이인형의 몸과 그것을 움직이는 검은 문장을 구별해 공격한다. 정체를 영역에 새기면 게이트를 연 자에게 가족과 학교까지 알려질 수 있다며 로제트를
+                                        말린다. 치요가 잠식체가 되고 출구가 닫히는 상황에서도 퇴로와 일상 보호를 중시한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 4화 〈비에 젖은 원고〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-5">5화. 가면 너머의 이름</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>검은 문장을 고정하고 종이 가면을 공략해 치요의 내면에 닿게 돕는다. 모모카의 정체를 알게 된 뒤 자신만 베일 뒤에 남아 동료의 일상을 맡은
+                                        불균형을 고민하며, 재진입 직전 스스로 이름을 밝히려 한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 5화 〈가면 너머의 이름〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-6">6화. 별빛을 맡긴다는 것</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>가문의 비밀 규율보다 눈앞의 동료에게 자기 일상을 맡기는 선택을 하고 이름을 밝힌다. 로제트가 대화에 집중하도록 원고를 밟지 않으며 종이인형과
+                                        실을 막고 공동 정화를 완성한다. 현실에서는 치요를 함께 부축하고 한 줄이면 충분한 날도 있다고 말한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 6화 〈별빛을 맡긴다는 것〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-7">7화. 막이 오르지 않는 무대</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>학생회실에서 모모카와 동시에 강당을 가리키는 게이트 반응을 감지한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 7화 〈막이 오르지 않는 무대〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-8">8화. 닫힌 막, 열린 어둠</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>정체를 공유한 모모카를 학생회 업무를 이유로 불러 함께 출동한다. 리코의 영역에서 검은 실을 고정하며 접근로를 만들지만 흑성의 인장과 네뷸라의
+                                        방해로 민간인 대피와 정화를 동시에 해야 하는 상황에 놓인다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 8화 〈닫힌 막, 열린 어둠〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-9">9화. 용기의 황금빛 광채</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>화살로 방어막과 지형 고정을 만들며 네뷸라의 공격을 버틴다. 솔라리스가 홀로 깊이 들어가지 않도록 양옆의 지원과 역할을 제안하고 새 동료의
+                                        근접전을 뒷받침한다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 9화 〈용기의 황금빛 광채〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-10">10화. 빛이여, 마을의 천사들에게 닿아라!</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>전장과 퇴로를 통제하고 돌아온 부원들의 대본·사진을 연결한다. 흑성의 인장이 뻗은 여섯 지점 중 세 곳을 맡아 솔라리스와 동시에 끊는 작전을
+                                        수행한다. 전투 후 세 사람의 비밀 공유와 학교의 후속 수습을 돕는다.</p>
+                                    <p class="source-ref">근거: 원작소설 1권 10화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-2">
+                                <summary>2권 · 푸른 별빛이 비추는 내일 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-11">11화. 스타라이트 페어리즈, 비밀회의!</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>미나미·치요·리코 사건을 정리하고 정체 보호와 훈련을 논의한다. 소개 동작에는 난색을 보이면서도 배치를 구체적으로 조정하고, 아카리가 찍은 사진의
+                                        비밀 보관을 요구한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 11화 〈스타라이트 페어리즈, 비밀회의!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-12">12화. 언제나 두 번째</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>공부와 학교 업무를 수행하며 유우나·친구들과 만난다. 자신을 피하는 마이와의 거리를 아직 충분히 이해하지 못한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 12화 〈언제나 두 번째〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-13">13화. 누구의 그림자</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>아침 기록과 훈련, 동생 렌지와의 일상을 통해 후계 교육의 흔적을 드러낸다. 교실 안전 문제의 수리 안내로 마이를 만났다가 암흑영역에 들어간다.
+                                        자신이 받은 기회를 인정하지만 마이의 고통을 이해할 말을 곧바로 찾지 못한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 13화 〈누구의 그림자〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-14">14화. 보이지 않는 노력</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>자신도 노력해 왔다는 사실과 마이가 노력했다는 사실을 함께 인정한다. 활을 내려놓고 마이에게 다가가, 자신을 이기고 싶다는 마음을 자신을 없애고
+                                        싶다는 결론과 분리하도록 돕고 정화한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 14화 〈보이지 않는 노력〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-15">15화. 별빛을 잇는 집</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>친구들의 동의를 구해 부모에게 정체를 알리고 시미즈가의 별빛 기록을 함께 확인한다. 렌지의 출생으로 후계 교육이 끝났지만 주어진 자유를 어떻게
+                                        살아야 할지는 배우지 못했다고 부모에게 말한다. 동생을 미워하는 문제와 자신의 역할 상실을 구분한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 15화 〈별빛을 잇는 집〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-16">16화. 아이들만 있다면</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>보육원의 마지막 날 렌지를 데리러 갔다가 나이를 되돌리는 영역에 휘말린다. 신체와 정신이 일곱 살로 돌아가 아직 태어나지 않은 렌지를 기억하지
+                                        못하며, 열일곱 살에 생긴 팩트도 사라진다. 가문의 장녀로서 흐트러지면 안 된다는 교육이 어린 말과 행동에 남아 있다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 16화 〈아이들만 있다면〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-17">17화. 작은 우미코</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>일곱 살의 모습으로 도움을 청하면 후계자 자격을 잃는다고 두려워한다. 히나의 지지 속에서 두렵다고 말하고 도움을 구한다. 녹타라가 보여 준 미래
+                                        앞에서 당주가 아니면 자신이 없어지는지, 언니의 동생이 아니면 카오리가 없어지는지 되묻는다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 17화 〈작은 우미코〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-18">18화. 내가 바라는 내일</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>어린 상태에서도 나이 역행 공격의 전조를 파악한다. 자신의 미래를 선택하려는 마음으로 원래 나이를 되찾고 정화에 합류한다. 이후 가족에게 남이
+                                        정한 답으로 돌아가지 않겠다고 말하고, 소원 종이에 자신이 바라는 내일을 찾고 싶다고 적는다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 18화 〈내가 바라는 내일〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-19">19화. 별빛축제의 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>신사의 축제 안내를 맡고 자신의 소원을 건다. 습격 뒤 아쿠아리우스로 녹타라와 교전하며 시민들의 축제를 지킨다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 19화 〈별빛축제의 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-20">20화. 별빛 아래 드러난 얼굴</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>녹타라에게 받은 기회와 자신의 선택을 함께 인정하며, 언니의 뒤가 아니라 곁에 서고 싶었던 것인지 묻는다. 교전 뒤 동료들과 세 인장을 끊어
+                                        축제의 암흑영역 확장을 막고 유우나 문제를 함께 확인하기로 한다.</p>
+                                    <p class="source-ref">근거: 원작소설 2권 20화 〈별빛 아래 드러난 얼굴〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-3">
+                                <summary>3권 · 믿음의 보랏빛 광채 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-21">21화. 오로라 책방</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>팬던트만으로 시즈키의 정체를 단정하지 않도록 경계하며 사고 자료와 증언을 조사한다. 스펙트라에게 가문이 브로치를 전했어도 아쿠아리우스로 각성한
+                                        선택은 자신의 것이라는 설명을 듣는다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 21화 〈오로라 책방〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-22">22화. 8년 전의 관측자</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>신원을 제한적으로 밝힌 편지로 면담을 요청하고 사고 자료를 관리한다. 생존 연구원의 관측일지에서 카즈키의 가동과 세이이치의 중단 요구를 확인할
+                                        단서를 얻는다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 22화 〈8년 전의 관측자〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-23">23화. 기록되지 않은 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>관측일지와 출력물, 손상된 기록장치의 보존 상태를 확인한다. 시미즈가와 오로라 책방에도 사본을 보관해 단일 자료가 사라져 진실이 끊기는 일을
+                                        막으려 한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 23화 〈기록되지 않은 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-25">25화. 길을 잃은 북극성</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>게이트를 임시로 고정한 뒤 함께 추적하자고 판단한다. 붕괴하는 통제실에서 푸른 방벽으로 동료들을 보호한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 25화 〈길을 잃은 북극성〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-26">26화. 복수라는 이름의 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>길과 방향 감각이 뒤집히는 공격을 분석한다. 로제트에게 별빛 표식을, 솔라리스에게 진동 확인을 맡겨 실제 파괴 경로를 찾고 로스트 폴라리스를
+                                        저지한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 26화 〈복수라는 이름의 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-27">27화. 믿음의 보랏빛 광채</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>탐색용 별빛으로 제2 관측동이 무인 상태이며 카즈키의 음성과 신호만 남은 미끼임을 확인한다. 로스트 폴라리스를 게이트의 핵으로 만들려는 장치를
+                                        경고하고 공격 방향을 맡는다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 27화 〈믿음의 보랏빛 광채〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-28">28화. 아빠가 남긴 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>로스트 폴라리스의 몸이 현실과 어둠세계의 연결점이라는 구조를 분석하고 정화를 지원한다. 사건 뒤 열린 기록에서 요루의 암흑 전환 기술 제공과
+                                        카즈키의 승인을 확인한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 28화 〈아빠가 남긴 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-29">29화. 별빛연구소의 진실</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>자동삭제에 대비해 자료를 복제하고 시미즈가에도 보관한다. 재단 감사·수사·법률 지원과 가문의 시설 통제를 요청해 카즈키의 권력 및 은폐 수단을
+                                        제한한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 29화 〈별빛연구소의 진실〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-30">30화. 복수보다 내일</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>흡수 흐름을 역전시키고 저장 에너지를 분산해 카즈키를 약화시킨다. 패배한 카즈키를 구속하지만 아포크라의 개입으로 신병을 확보하지 못한다.</p>
+                                    <p class="source-ref">근거: 원작소설 3권 30화 〈복수보다 내일〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-4">
+                                <summary>4권 · 태양은 가려져도 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-31">31화. 네 개의 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>시즈키 자신의 책임과 카즈키의 범죄를 구분해야 한다고 말한다. 히나가 보이지 않을 때마다 확인하는 시즈키에게 안정감을 주려 하며 네 사람의 소개
+                                        동작을 구체화한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 31화 〈네 개의 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-32">32화. 내가 선택한 어둠</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>시민이 네뷸라를 두려워하는 이유를 부정하지 않고 현재의 구조 행동을 설명한다. 동료들과 잔류 장치와 균열에 대응한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 32화 〈내가 선택한 어둠〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-34">34화. 에테르녹스</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>회수되는 그림자 분신의 통로로 에테르녹스 내부에 들어가 카오리와 대화한다. 원하는 삶을 말하는 것은 상대를 버리는 일이 아니며, 피해자의 용서를
+                                        당연시할 수도 없다고 분명히 한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 34화 〈에테르녹스〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-35">35화. 언니가 바란 별빛</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>카오리가 저지른 피해와 살아갈 책임을 구분해 말하며 선택을 돕는다. 나츠미를 되살릴 수 있다고 거짓 약속하지 않고 동료들과 정화를 수행한다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 4권 35화 〈언니가 바란 별빛〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-36">36화. 꿈이었던 선생님</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>지친 히나의 식사와 휴식을 챙기고 요루와의 대면에 동행한다. 교사가 되려는 꿈에 요루의 허락이 필요하지 않다고 지지한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 36화 〈꿈이었던 선생님〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-37">37화. 서른 해 전의 월식</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>스승을 구할 확증이 없었다는 요루의 말을 실험을 중단하고 싶지 않았던 것이라고 지적한다. 흑월의 별빛 차단에 대응한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 37화 〈서른 해 전의 월식〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-38">38화. 태양을 가리는 검은 달</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>학교로 확산하는 어둠과 흑월의 공격에 대응한다. 동료들과 히나를 지지하되 반대편에서 또 하나의 정답을 강요하지 않도록 경계한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 38화 〈태양을 가리는 검은 달〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-39">39화. 내가 되고 싶은 선생님</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>촉수의 연결부를 화살로 꿰뚫어 솔라리스의 공격로를 확보한다. 동료들과 이클리시아의 흑월을 무너뜨린다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 39화 〈내가 되고 싶은 선생님〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-40">40화. 흑성교단의 끝</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>사후 현장과 교단 시설을 조사하고 학교 집회에서 시즈키의 취임을 맞는다. 학생 관계와 업무상의 이사장 관계를 구분해 부르겠다고 한다.</p>
+                                    <p class="source-ref">근거: 원작소설 4권 40화 〈흑성교단의 끝〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                            <details class="volume" id="volume-5">
+                                <summary>5권 · 빛이여, 마을의 천사들에게 닿아라 <span class="badge">원작</span></summary>
+                                <div class="volume-content prose">
+                                    <h4 id="chapter-41">41화. 돌아오지 않는 전학생</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>전학 절차가 끝날 때까지 유우나의 책상을 옮기지 않도록 요청한다. 모모카·치요와 유우나의 선택 및 돌아올 자리의 의미를 이야기한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 41화 〈돌아오지 않는 전학생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-42">42화. 머물고 싶었던 장소</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>유우나의 동기화와 영역 변화를 확인하며 일행과 놀이공원으로 간다. 유우나가 추적 표식으로 자신의 정체를 좁혀 왔다는 설명을 듣고 아포크라의 전투에
+                                        대비한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 42화 〈머물고 싶었던 장소〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-43">43화. 아포크라의 마지막 임무</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>아포크라의 복합된 힘과 놀이공원의 공격에 대응한다. 네메시스의 개입 뒤 동료들과 검은 별자리의 선에 붙잡힌다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 43화 〈아포크라의 마지막 임무〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-44">44화. 사랑의 스펙트럼</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>누군가 한 사람을 구했다고 모두가 안전해지는 것은 아니어도 포기할 이유는 아니라고 맞선다. 동료들과 스펙트럼의 정화와 구조를 지원한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 44화 〈사랑의 스펙트럼〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-45">45화. 단 하루의 전학생</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>복귀한 유우나에게 밀린 수업 자료를 준비하고 쏟아지는 질문을 막아 준다. 수업의 필기를 보여 주며 카페에도 합류하고 상태가 달라지면 즉시 알리라고
+                                        당부한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 45화 〈단 하루의 전학생〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-46">46화. 어둠이 태어나는 밤</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>유우나의 기억마다 좌표가 생겨 하나를 끊어도 길이 남는 구조를 확인한다. 게이트와 마을에서 몰려오는 에너지를 동시에 막으려 동료들과 대응한다.
+                                    </p>
+                                    <p class="source-ref">근거: 원작소설 5권 46화 〈어둠이 태어나는 밤〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-47">47화. 호시노미야 암흑현현</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>학교로 가 마이와 학생들을 구하려 한다. 한 명씩 구조하는 속도로는 영역 확장을 따라잡을 수 없음을 확인하고 네메시스 공략에 합류한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 47화 〈호시노미야 암흑현현〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-48">48화. 별빛이 꺼진 뒤에도</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>어떤 선택도 실패하는 미래와 완벽해서 아무도 걱정하지 않는 삶의 환영에 무너진다. 주민들의 빛이 닿지만 즉시 변신이 돌아오지는 않는다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 48화 〈별빛이 꺼진 뒤에도〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-49">49화. 빛이여, 마을의 천사들에게 닿아라!</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>실패 가능성이 남아도 동료 쪽으로 걸어가며 루미너스 변형에 합류한다. 네 색의 연계로 본체와 게이트를 함께 정화한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 49화 〈빛이여, 마을의 천사들에게 닿아라!〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                    <h4 id="chapter-50">50화. 별빛은 계속된다</h4>
+                                    <p><strong>구분: 직접 등장</strong></p>
+                                    <p>렌지와 재회하고 학교 복구와 친구들을 챙긴다. 마이와 두 점 차이의 시험 결과를 두고 다음 경쟁을 약속한다. 졸업식 뒤 친구들에게 시미즈 대신
+                                        우미코라고 불러도 된다고 말한다.</p>
+                                    <p class="source-ref">근거: 원작소설 5권 50화 〈별빛은 계속된다〉. <a
+                                            href="../guide.html#novel-audit">판본·대조 기록</a></p>
+                                </div>
+                            </details>
+                        </section>
+                        <section class="section" id="quotes">
+                            <h2><span class="section-number">9.</span>어록</h2>
+                            <div class="prose">
+                                <p>원작의 실제 발화를 대조했다. 아래 문장은 본인의 대사이며, 환영의 발언이나 편지·책의 문장을 섞지 않는다.</p>
+                                <blockquote>
+                                    <p>모른다는 이유로 다른 사람이 정해 준 답을 다시 살지는 않겠습니다.</p>
+                                </blockquote>
+                                <p>— 원작 2권 18화. 자신의 미래를 가족에게 말하는 장면.</p>
+                                <blockquote>
+                                    <p>하지만 받은 것이 제 내일까지 대신 정하도록 두지도 않을 겁니다.</p>
+                                </blockquote>
+                                <p>— 원작 2권 20화. 받은 기회를 인정하면서 자기 선택을 주장한다.</p>
+                                <blockquote>
+                                    <p>희망은 정답을 아는 게 아니라, 정답이 없어도 내일을 선택하는 마음이니까요.</p>
+                                </blockquote>
+                                <p>— 원작 3권 30화. 카즈키와의 전투에서 희망의 의미를 말한다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="trivia">
+                            <h2><span class="section-number">10.</span>기타</h2>
+                            <div class="prose">
+                                <ul>
+                                    <li>네 명의 페어리즈 가운데 가장 먼저 각성했으며, 본편 시작 전부터 두 달 동안 단독으로 암흑게이트를 조사했다.</li>
+                                    <li>페어리즈 중 전술 지휘와 정밀 사격을 담당한다. 최종전에서 맡은 역할도 ‘승리의 길을 찾는 것’이다.</li>
+                                    <li>성과 대부분이 타고난 재능처럼 보이지만, 실제로는 어린 시절부터 반복한 훈련과 공부의 결과다. 2권의 마이 에피소드가 이를 직접 다룬다.
+                                    </li>
+                                    <li>변신 포즈를 불필요하다고 주장하면서 집에서는 혼자 거울을 보며 연습했다. 각도와 손가락 간격까지 맞춰 두었으며, 들키면 실전 효율을 위한
+                                        점검이었다고 변명한다.</li>
+                                    <li>아카리의 페어리즈 촬영회에서 가장 내키지 않는 표정을 지으면서도 요청받은 포즈를 하나도 거절하지 않았다.</li>
+                                    <li>로맨스 만화를 몰래 좋아한다. 공적인 역할과 무관한 자신의 취향을 잘 말하지 못하는 우미코의 성격을 드러내는 설정이다.</li>
+                                    <li>변신 상태에서는 로제트에게 반말을 쓴다. 솔라리스와 네뷸라에게는 존댓말을 쓰지만 익명성 규칙에 따라 ‘선배’를 붙이지 않는다.</li>
+                                    <li>카오리와는 모두 가족 안에서 다른 사람과의 관계로 역할이 정해졌다는 공통점이 있다. 우미코는 자신의 미래를 다시 선택했고, 카오리가 같은 선택을
+                                        할 수 있도록 계속 질문을 남긴다.</li>
+                                    <li>렌지의 출생으로 후계자 자리를 잃었지만 렌지를 미워한 적은 없다. 갈등의 대상은 남동생이 아니라 두 사람의 미래를 당사자에게 묻지 않고 정한
+                                        가문의 방식이다.</li>
+                                    <li>부모와의 갈등은 가문을 떠나거나 후계자 자리를 되찾는 방식으로 끝나지 않는다. 가족과 연결된 채 자신의 희망을 분리해 내는 것이 우미코 서사의
+                                        핵심이다.</li>
+                                    <li>최종전에서 네메시스에게 보여진 최악의 미래는 ‘어떤 선택을 해도 실패한다’는 형태다. 이는 미래를 선택하는 힘인 희망을 가장 직접적으로 공격하는
+                                        환영이다.</li>
+                                    <li>최종화의 이름 부르기는 우미코 개인 서사의 마지막 사건이다. ‘시미즈’, ‘학생회장’, ‘아쿠아리우스’가 아닌 우미코 자신으로 불리기를
+                                        선택한다.</li>
+                                    <li>생일은 7월 20일로 설정되었다. 부모의 이름과 가상 성우는 원작소설 및 집필 기준서에서 확정되지 않았다. 별도 설정이 정해지기 전까지 임의로
+                                        추가하지 않는 것이 정본 관리에 적합하다.</li>
+                                </ul>
+                                <h3>원작 대조와 별도 설정</h3>
+                                <p>2026.09.06 제공된 원작소설 1~5권 DOCX를 기준으로 개요·특징·활동·관계·주요 행적·발화를 대조했다. 기본 프로필의 사용자 제작 수치·생일과
+                                    기존 테마곡·외전 메모는 별도 설정으로 보존한다. 위 기타 항목의 어원·디자인 해설·확장 설정은 소설 속 발화와 구분한다. 미확인 외형·가족·게임
+                                    수치는 임의로 보충하지 않는다. 기준 판본과 정정 사항은 자료·편집 안내의 원작 대조 기록을 참조한다.</p>
+                            </div>
+                        </section>
+                        <section class="section" id="source">
+                            <h2><span class="section-number">자료.</span>출처·게임화 메모</h2>
+                            <p><a
+                                    href="../sources/%EC%8B%9C%EB%AF%B8%EC%A6%88_%EC%9A%B0%EB%AF%B8%EC%BD%94_%ED%8E%98%EC%96%B4%EB%A6%AC_%EC%95%84%EC%BF%A0%EC%95%84%EB%A6%AC%EC%9A%B0%EC%8A%A4_%EC%9C%84%ED%82%A4.md">시미즈_우미코_페어리_아쿠아리우스_위키.md
+                                    열기 ↗</a></p>
+                            <p>사용자가 제공한 원작소설 1~5권 DOCX의 주요 장면을 직접 대조했습니다. 다른 캐릭터 문서를 사실 확인의 근거로 대체하지 않습니다. 기본 프로필의 사용자
+                                제작 수치·생일과 기존 테마곡·외전 메모는 별도 설정으로 보존합니다. <a href="../guide.html#novel-audit">기준 판본·정정
+                                    내용·재확인 지점 →</a></p>
+                            <div class="notice"><strong>게임화</strong>
+                                <p>원작과 게임의 기본 스토리는 동일합니다. 전체 구성은 게임 기획서 v1과 사용자 전투 보완을 따릅니다. 장면별 변경·축소·확장 사유와 ADV·전투 배치는
+                                    각색 시 기록합니다. <a href="../systems.html#battle">공통 전투 규칙 →</a></p>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="wiki-table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="label" scope="row">대응 게임 챕터</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">축소·확장·변경 내역</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th class="label" scope="row">변경 사유·담당자·승인일</th>
+                                            <td><span class="badge tbd">TBD</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                    <aside class="toc" aria-label="이 문서의 목차"><strong>이 문서의 목차</strong><a class="" href="#profile">1. 기본
+                            프로필</a><a class="" href="#production">2. 제작용 프로필</a><a class="" href="#artwork">설정화·바디</a><a
+                            class="" href="#overview">3. 개요</a><a class="" href="#traits">4. 특징</a><a class=""
+                            href="#abilities">5. 능력</a><a class="" href="#family">6. 가족관계</a><a class=""
+                            href="#relationships">7. 인간관계</a><a class="" href="#story">8. 작중 행적</a><a class="sub"
+                            href="#volume-1">1권</a><a class="sub" href="#volume-2">2권</a><a class="sub"
+                            href="#volume-3">3권</a><a class="sub" href="#volume-4">4권</a><a class="sub"
+                            href="#volume-5">5권</a><a class="" href="#quotes">9. 어록</a><a class="" href="#trivia">10.
+                            기타</a><a class="" href="#source">출처·게임화 메모</a><a href="../resources.html">리소스 제작 기준 ↗</a>
+                    </aside>
+                </div>
+            </article>
+            <footer class="footer"><span>Blossom Games · STARLIGHT FAIRIES DEVELOPMENT WIKI</span><span>설정 미확정 항목은 TBD로
+                    표기합니다.</span></footer>
+        </main>
+    </div><a class="top-link" href="#top" aria-label="문서 맨 위로">↑</a>
+</body>
+
+</html>

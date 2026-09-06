@@ -6,6 +6,8 @@ import vm from 'node:vm';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 const chars = JSON.parse(read('assets/characters.json'));
+const novelIndex = JSON.parse(read('sources/reference/novel-index.json'));
+assert.deepEqual(novelIndex.chapters.map(c=>c.number),Array.from({length:50},(_,i)=>i+1),'complete original chapter index');
 const pages = ['index','characters','world','story','systems','resources','guide','artwork','adv-guide','modeling-guide'].map(n=>n+'.html').concat(chars.map(c=>`characters/${c.id}.html`));
 let links = 0, records = 0, volumes = 0;
 for(const file of pages) {
@@ -30,15 +32,17 @@ for(const c of chars) {
   const raw = read(`sources/${c.file}`).replace(/\r\n/g,'\n');
   const sourceChapters = [...raw.matchAll(/^####\s+(\d+)화[.\s]+([^\n]+)/gm)];
   const sourceVolumes = [...raw.matchAll(/^### 6\.\d+\./gm)];
-  if(!c.supporting) {
-    assert.equal(sourceChapters.length,50,`${c.id}: original chapter count`);
-    assert.equal(sourceVolumes.length,5,`${c.id}: original volumes`);
+  assert.deepEqual(sourceChapters.map(m=>Number(m[1])),novelIndex.characters[c.id].chapters,`${c.id}: audited chapter selection`);
+  assert(html.includes('원작소설 직접 대조'),`${c.id}: primary-source provenance`);
+  for(const chapter of raw.split(/^#### /m).slice(1)) assert(chapter.includes('**구분:')&&chapter.includes('근거: 원작소설'),`${c.id}: story type and direct novel source`);
+  for(const q of novelIndex.characters[c.id].quotes) {
+    assert(raw.includes(q.text)&&html.includes(q.text),`${c.id}: verified quotation preserved`);
+    assert(q.volume===Math.ceil(q.chapter/10)&&q.paragraph>0,`${c.id}: quotation locator`);
   }
   assert.equal((html.match(/id="chapter-\d+"/g)||[]).length,sourceChapters.length,`${c.id}: output chapter count`);
   assert.equal((html.match(/class="volume"/g)||[]).length,sourceVolumes.length,`${c.id}: volumes`);
   volumes += sourceVolumes.length;
   if(c.supporting) {
-    assert(html.includes('관련 문서 기반 정리'),`${c.id}: source provenance`);
     assert(!html.includes('data-portrait-tab'),`${c.id}: no main portrait form switch`);
     assert.equal(html.includes('id="corruption"'),!!c.corrupted,`${c.id}: dedicated corruption section`);
     assert.equal(html.includes('data-volumes="open"'),sourceVolumes.length>0,`${c.id}: no empty story controls`);
@@ -90,21 +94,12 @@ assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='shizuki').text.includes('�
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='umiko').text.includes('로맨스 만화'));
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='kazuki').text.includes('외부 협력자'));
 console.log(`PASS: ${pages.length} pages, ${links} local links/assets, ${chars.length} character profiles, ${records} chapter records, ${volumes} volume sections and search data.`);
-const supportingChapters = {
-  akari:[1,11,19,21,31,42,43,47,48],
-  minami:[1,2,48,50],
-  chiyo:[3,4,5,6,11,12,19,21,39,40,41,42,43,45,46,47,48,49,50],
-  riko:[7,8,10,48,50],
-  mai:[12,13,14,48,50],
-  nagisa:[]
-};
-assert.deepEqual(chars.filter(c=>c.supporting).map(c=>c.id),Object.keys(supportingChapters),'requested six supporting characters');
-for(const [id,chapters] of Object.entries(supportingChapters)) {
-  const html=read(`characters/${id}.html`);
-  assert.deepEqual([...html.matchAll(/id="chapter-(\d+)"/g)].map(m=>Number(m[1])),chapters,`${id}: confirmed appearances and mentions only`);
-}
+assert.deepEqual(chars.filter(c=>c.supporting).map(c=>c.id),['akari','minami','chiyo','riko','mai','nagisa'],'requested six supporting characters');
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='minami').text.includes('브로큰 스완'));
-assert(read('characters/nagisa.html').includes('등장 화수 확인 대기'));
+assert(read('characters/nagisa.html').includes('id="chapter-1"'));
+for(const id of ['chiyo','riko']) assert(read(`characters/${id}.html`).includes('id="chapter-2"'),`${id}: early introduction`);
+assert(!read('story.html').includes('미등장 설명을 포함'),'no placeholder appearances');
+assert.equal((read('story.html').match(/class="chapter-number"/g)||[]).length,50,'global chapter index independent of Momoka appearances');
 console.log('PASS: six supporting profiles, confirmed chapter selection, four separate corruption sections and no portrait form toggles.');
 const production = JSON.parse(read('assets/resource-guide.json'));
 assert.equal(new Set(production.backgrounds.map(r=>r[0])).size,30,'background camera IDs');

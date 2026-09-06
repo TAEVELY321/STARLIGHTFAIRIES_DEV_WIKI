@@ -6,7 +6,7 @@ import vm from 'node:vm';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root,file),'utf8');
 const chars = JSON.parse(read('assets/characters.json'));
-const pages = ['index','characters','world','story','systems','resources','guide'].map(n=>n+'.html').concat(chars.map(c=>`characters/${c.id}.html`));
+const pages = ['index','characters','world','story','systems','resources','guide','artwork'].map(n=>n+'.html').concat(chars.map(c=>`characters/${c.id}.html`));
 let links = 0, records = 0;
 for(const file of pages) {
   const html = read(file);
@@ -41,6 +41,36 @@ for(const c of chars) {
   assert(html.includes('변경·축소·확장'),`${c.id}: adaptation notice`);
 }
 const context = {window:{}};
+const art = JSON.parse(read('assets/artwork.json'));
+const gallery = read('artwork.html');
+for(const c of chars) {
+  const html=read(`characters/${c.id}.html`);
+  const toggle=c.group==='페어리즈'||c.group==='흑성교단';
+  assert.equal((html.match(/data-portrait-tab/g)||[]).length,toggle?2:0,`${c.id}: portrait toggle scope`);
+  assert.equal((html.match(/class="swatch"/g)||[]).length,5,`${c.id}: five palette colors`);
+  assert(html.includes('class="character-artwork"')&&html.includes('class="sheet-group"'),`${c.id}: collapsible concept sheets`);
+  assert(gallery.includes(`id="${c.id}"`),`${c.id}: gallery section`);
+  if(art[c.id]) {
+    assert.equal(art[c.id].palette.length,5);
+    art[c.id].palette.forEach(color=>assert(/^#[A-F0-9]{6}$/.test(color)));
+    art[c.id].portraits.filter(p=>p.file).forEach(p=>{
+      const buffer=fs.readFileSync(path.join(root,'sources/CharacterSheet',p.file));
+      const scaleHeight=2048*buffer.readUInt32BE(20)/buffer.readUInt32BE(16);
+      assert(p.view[0]>=0 && p.view[1]>=0 && p.view[0]+p.view[2]<=2048 && p.view[1]+p.view[3]<=scaleHeight,`${c.id}: front viewport within image`);
+    });
+  } else assert(html.includes('회색은 TBD 자리 표시'),`${c.id}: gray fallback palette`);
+  const section=html.slice(html.indexOf('id="artwork"'),html.indexOf('id="overview"'));
+  const first=section.indexOf('<summary>'+(c.group==='페어리즈'?'변신 전':c.group==='흑성교단'?'인간 형태':'시트'));
+  const body=section.indexOf('<summary>바디');
+  assert(first>=0 && body>first,`${c.id}: body follows primary sheet`);
+  if(toggle) assert(section.indexOf('<summary>'+(c.group==='페어리즈'?'변신 후':'절광체 형태'))<body,`${c.id}: transformed sheet before body`);
+}
+assert(read('characters/natsumi.html').includes('히이라기 나츠미 · 인간 형태 정면'));
+for(const id of ['momoka','umiko','natsumi']) assert(!read(`characters/${id}.html`).includes(encodeURIComponent('바디 시트')),`${id}: replacement body slot without original image link`);
+for(const id of ['hina','shizuki']) assert(art[id].body.length===1,`${id}: supplied adult modeling reference`);
+assert(read('index.html').includes('src="sources/branding/StarlightFairiesMainTitle.png"'));
+assert(read('index.html').includes('class="header-logo"'));
+console.log('PASS: 8 two-form selectors, 8 front views, 10 five-color palettes, ordered collapsible sheets, body slots and relocated branding assets.');
 vm.runInNewContext(read('assets/search-index.js'),context);
 assert.equal(context.window.STARFAIR_SEARCH.length,10);
 assert(context.window.STARFAIR_SEARCH.find(c=>c.id==='shizuki').text.includes('다크니스 네뷸라'));

@@ -49,6 +49,29 @@
   document.querySelectorAll('[data-volumes]').forEach(button => button.addEventListener('click', () => {
     document.querySelectorAll('details.volume').forEach(item => { item.open = button.dataset.volumes === 'open'; });
   }));
+  document.querySelectorAll('[data-portrait-switch]').forEach(widget => {
+    const tabs = [...widget.querySelectorAll('[data-portrait-tab]')];
+    const panels = [...widget.querySelectorAll('.portrait-panel')];
+    function activate(index, focus = false) {
+      tabs.forEach((tab, i) => {
+        tab.setAttribute('aria-selected', String(i === index));
+        tab.setAttribute('tabindex', i === index ? '0' : '-1');
+      });
+      panels.forEach((panel, i) => { panel.hidden = i !== index; });
+      if (focus) tabs[index]?.focus();
+    }
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activate(index));
+      tab.addEventListener('keydown', event => {
+        let next;
+        if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+        if (event.key === 'ArrowLeft') next = (index + tabs.length - 1) % tabs.length;
+        if (event.key === 'Home') next = 0;
+        if (event.key === 'End') next = tabs.length - 1;
+        if (next !== undefined) { event.preventDefault(); activate(next, true); }
+      });
+    });
+  });
   const q = document.getElementById('character-query');
   if (q) {
     const select = document.getElementById('character-group');
